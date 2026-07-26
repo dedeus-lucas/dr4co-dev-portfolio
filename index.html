@@ -354,7 +354,119 @@
           </article>
         </div>
       </section>
+
+      <!-- 6. CONTACT SECTION -->
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <span class="contact-tag">[ INITIATE CONTACT ]</span>
+            <h2 class="contact-title">
+              Vamos construir a sua próxima <span>Experiência Web</span>.
+            </h2>
+            <p class="contact-desc">
+              Disponível para novos projetos de alta complexidade, consultorias
+              de performance e desenvolvimento de portfólios institucionais de
+              elite.
+            </p>
+
+            <div class="contact-direct-links">
+              <a
+                href="mailto:contato@dr4co.dev"
+                class="contact-link-item"
+                data-cursor="hover"
+              >
+                <span style="color: var(--accent-cyan)">[ MAIL ]</span>
+                <span>contato@dr4co.dev</span>
+              </a>
+              <a
+                href="https://wa.me/5500000000000"
+                target="_blank"
+                class="contact-link-item"
+                data-cursor="hover"
+              >
+                <span style="color: var(--accent-cyan)">[ WHATSAPP ]</span>
+                <span>Iniciar conversa direta</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" onsubmit="event.preventDefault()">
+            <div class="form-group">
+              <label class="form-label" for="name">01 // Nome Completo</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Seu nome ou empresa"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email"
+                >02 // E-mail Corporativo</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="seu@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message"
+                >03 // Detalhes do Projeto</label
+              >
+              <textarea
+                id="message"
+                class="form-textarea"
+                placeholder="Descreva brevemente seus objetivos, prazos e escopo..."
+                required
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-primary"
+              style="width: 100%; margin-top: 0.5rem"
+              data-cursor="hover"
+            >
+              TRANSMITIR MENSAGEM &rarr;
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <div class="footer-brand-group">
+        <span class="brand-dr4co"
+          ><span>&lt;</span>DR4CO <span>/&gt;</span></span
+        >
+        <span class="footer-copy"
+          >&copy; 2026 DR4CO ARCHITECTURE. ALL RIGHTS RESERVED.</span
+        >
+      </div>
+
+      <ul class="footer-socials">
+        <li>
+          <a href="#" class="footer-social-link" data-cursor="hover">GITHUB</a>
+        </li>
+        <li>
+          <a href="#" class="footer-social-link" data-cursor="hover"
+            >LINKEDIN</a
+          >
+        </li>
+        <li>
+          <a href="#" class="footer-social-link" data-cursor="hover"
+            >TWITTER / X</a
+          >
+        </li>
+      </ul>
+    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -6,6 +6,7 @@ import "./styles/hero.css";
 import "./styles/manifesto.css";
 import "./styles/projects.css";
 import "./styles/services.css";
+import "./styles/contact.css";
 
 import { initSmoothScroll } from "./scripts/lenis.js";
 import { initHudCursor } from "./scripts/cursor.js";
@@ -21,5 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroCarousel();
   initManifestoAnimations();
   initHorizontalProjectsScroll();
-  console.log("[SYSTEM] Services Bento Grid & Interactive Banner initialized.");
+  console.log("[SYSTEM] Cyber Portfolio fully mounted and operational.");
 });
