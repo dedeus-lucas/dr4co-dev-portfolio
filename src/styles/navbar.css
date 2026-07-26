@@ -39,7 +39,7 @@
   align-items: center;
   gap: 0.25rem;
   padding: 0.125rem 0.25rem;
-  animation: glitch 6s infinite;
+  animation: glitch 4s infinite;
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
 }
 

@@ -1,0 +1,142 @@
+/* Container que será preso pelo GSAP Pinning */
+.projects-pin-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-tactical);
+}
+
+.projects-header {
+  padding: 0 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projects-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.projects-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Track horizontal que desliza para a esquerda */
+.projects-track {
+  display: flex;
+  gap: 2.5rem;
+  padding: 0 4rem;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Card Individual de Projeto */
+.project-card {
+  width: clamp(320px, 30vw, 480px);
+  height: 480px;
+  background: rgba(15, 19, 28, 0.7);
+  border: 1px solid var(--border-tactical);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo);
+  flex-shrink: 0;
+}
+
+.project-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-6px);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--border-tactical);
+  position: relative;
+}
+
+.project-card-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 60%, rgba(7, 9, 14, 0.8) 100%);
+}
+
+.project-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.project-card-cat {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.project-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0.4rem 0;
+}
+
+.project-card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border-tactical);
+}
+
+.project-card-techs {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-subtle);
+}
+
+.project-card-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+}
