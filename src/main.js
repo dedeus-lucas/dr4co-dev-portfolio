@@ -1,4 +1,9 @@
 import "./styles/variables.css";
 import "./styles/reset.css";
 
-console.log("[SYSTEM] Core styles loaded successfully.");
+import { initSmoothScroll } from "./scripts/lenis.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  initSmoothScroll();
+  console.log("[SYSTEM] Lenis Smooth Scroll initialized.");
+});
