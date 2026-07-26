@@ -1,0 +1,103 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding 0.4s var(--ease-out-expo),
+    background-color 0.4s var(--ease-out-expo),
+    border-color 0.4s var(--ease-out-expo),
+    backdrop-filter 0.4s var(--ease-out-expo);
+  border-bottom: 1px solid transparent;
+}
+
+.navbar.scrolled {
+  padding: 1rem 3rem;
+  background-color: rgba(7, 9, 14, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom-color: var(--border-tactical);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--text-primary);
+}
+
+.navbar-brand-badge {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  border-radius: 2px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navbar-link {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--accent-cyan);
+  transition: width 0.3s var(--ease-out-expo);
+}
+
+.navbar-link:hover {
+  color: var(--text-primary);
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lang-selector {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-tactical);
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(22, 28, 40, 0.5);
+  backdrop-filter: blur(4px);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-selector:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
