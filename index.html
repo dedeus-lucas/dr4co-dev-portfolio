@@ -55,8 +55,9 @@
         <button class="lang-selector" data-cursor="hover">[ PT-BR ]</button>
       </div>
     </header>
-
+    <!-- Main Scroll Container -->
     <main id="app" class="smooth-scroll-wrapper">
+      <!-- 1. HERO SECTION (Carrossel, Título, Botões) -->
       <section class="hero-section" id="hero">
         <div class="hero-bg-container">
           <div
@@ -103,18 +104,49 @@
         </div>
       </section>
 
-      <section
-        style="
-          height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-top: 1px solid var(--border-tactical);
-        "
-      >
-        <p style="font-family: var(--font-mono); color: var(--text-muted)">
-          [ NEXT SECTION: MANIFESTO & COLOR SHIFT ]
-        </p>
+      <!-- 2. MANIFESTO SECTION (Entra no lugar da section de teste) -->
+      <section class="manifesto-section" id="experience">
+        <div class="manifesto-container">
+          <div class="manifesto-header">
+            <span class="manifesto-tag">[ MANIFESTO & PHILOSOPHY ]</span>
+            <div class="manifesto-line"></div>
+          </div>
+
+          <h2 class="manifesto-quote">
+            Código não é apenas instrução executável. É a
+            <span class="highlight">arquitetura invisível</span> que molda como
+            usuários percebem a qualidade e autoridade de uma marca.
+          </h2>
+
+          <div class="manifesto-grid">
+            <article class="manifesto-card" data-cursor="hover">
+              <span class="manifesto-card-num">01 // PERFORMANCE</span>
+              <h3 class="manifesto-card-title">Carga Instantânea</h3>
+              <p class="manifesto-card-desc">
+                Engenharia focada em Core Web Vitals, otimização de assets e
+                tempo de resposta mínimo.
+              </p>
+            </article>
+
+            <article class="manifesto-card" data-cursor="hover">
+              <span class="manifesto-card-num">02 // ARCHITECTURE</span>
+              <h3 class="manifesto-card-title">Código Escalável</h3>
+              <p class="manifesto-card-desc">
+                Padrões de projeto modernos, separação clara de
+                responsabilidades e fácil manutenção.
+              </p>
+            </article>
+
+            <article class="manifesto-card" data-cursor="hover">
+              <span class="manifesto-card-num">03 // INTERACTION</span>
+              <h3 class="manifesto-card-title">UI Awwwards-Level</h3>
+              <p class="manifesto-card-desc">
+                Microinterações fluidas a 60fps com GSAP e Lenis que encantam o
+                usuário em cada scroll.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 

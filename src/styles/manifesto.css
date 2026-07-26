@@ -1,0 +1,99 @@
+.manifesto-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  transition: background-color 0.8s var(--ease-out-expo);
+  border-top: 1px solid var(--border-tactical);
+  border-bottom: 1px solid var(--border-tactical);
+}
+
+.manifesto-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.manifesto-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.manifesto-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.manifesto-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-tactical) 0%, transparent 100%);
+}
+
+.manifesto-quote {
+  font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.manifesto-quote .highlight {
+  color: var(--accent-cyan);
+  position: relative;
+  display: inline-block;
+}
+
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.manifesto-card {
+  padding: 2rem;
+  border: 1px solid var(--border-tactical);
+  background: rgba(22, 28, 40, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo);
+}
+
+.manifesto-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-4px);
+}
+
+.manifesto-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.1em;
+}
+
+.manifesto-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.manifesto-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
