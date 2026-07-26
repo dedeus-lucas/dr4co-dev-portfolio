@@ -1,0 +1,146 @@
+/* 1. Full-Bleed Interactive Banner */
+.interactive-banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Efeito Parallax suave */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-tactical);
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 9, 14, 0.65);
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 2rem;
+  max-width: 900px;
+}
+
+.banner-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.banner-title span {
+  color: var(--accent-cyan);
+}
+
+/* 2. Bento Grid Section */
+.bento-section {
+  padding: 8rem 4rem;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-tactical);
+}
+
+.bento-header {
+  margin-bottom: 4rem;
+}
+
+.bento-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+}
+
+.bento-title {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+}
+
+/* Grid Layout Assimétrico (Bento Grid) */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.bento-card {
+  background: rgba(15, 19, 28, 0.6);
+  border: 1px solid var(--border-tactical);
+  border-radius: 6px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo);
+}
+
+.bento-card:hover {
+  border-color: var(--accent-cyan);
+  transform: translateY(-4px);
+}
+
+/* Variações de tamanho no Bento Grid */
+.bento-card.span-2 {
+  grid-column: span 2;
+}
+
+.bento-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  letter-spacing: 0.1em;
+}
+
+.bento-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0.8rem 0 0.5rem 0;
+}
+
+.bento-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.bento-card-techs {
+  margin-top: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-subtle);
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Responsividade do Bento Grid */
+@media (max-width: 900px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-card.span-2 {
+    grid-column: span 1;
+  }
+
+  .bento-section {
+    padding: 4rem 2rem;
+  }
+}

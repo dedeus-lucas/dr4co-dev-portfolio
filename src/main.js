@@ -5,6 +5,7 @@ import "./styles/navbar.css";
 import "./styles/hero.css";
 import "./styles/manifesto.css";
 import "./styles/projects.css";
+import "./styles/services.css";
 
 import { initSmoothScroll } from "./scripts/lenis.js";
 import { initHudCursor } from "./scripts/cursor.js";
@@ -20,5 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroCarousel();
   initManifestoAnimations();
   initHorizontalProjectsScroll();
-  console.log("[SYSTEM] Horizontal Pinning Projects Section initialized.");
+  console.log("[SYSTEM] Services Bento Grid & Interactive Banner initialized.");
 });
