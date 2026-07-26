@@ -147,3 +147,27 @@
   border-color: var(--accent-cyan);
   color: var(--accent-cyan);
 }
+
+/* Responsividade da Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar.scrolled {
+    padding: 0.8rem 1.5rem;
+  }
+
+  /* Esconde os links centrais no mobile para evitar colisão */
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-brand-badge {
+    display: none;
+  }
+
+  .brand-dr4co {
+    font-size: 1.1rem;
+  }
+}

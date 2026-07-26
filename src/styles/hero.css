@@ -136,3 +136,39 @@
 .btn-secondary:hover {
   border-color: var(--text-primary);
 }
+
+/* Ajustes para telas mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 6rem 1.25rem 2rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .hero-badge {
+    font-size: 0.65rem;
+    padding: 4px 12px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+}

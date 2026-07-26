@@ -75,3 +75,15 @@ body.cursor-hover .hud-cursor-ring {
 body.cursor-hover .hud-cursor-dot {
   background-color: var(--accent-amber);
 }
+
+/* Esconde o HUD Cursor em telas mobile/touch */
+@media (max-width: 768px),
+(pointer: coarse) {
+  .hud-cursor-wrapper {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+}

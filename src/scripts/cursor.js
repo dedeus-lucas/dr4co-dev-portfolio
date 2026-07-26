@@ -1,6 +1,16 @@
 import { gsap } from "gsap";
 
 export function initHudCursor() {
+  // Desativa a execução do HUD Cursor em telas touch ou telas menores que 768px
+  const isTouchOrMobile =
+    window.matchMedia("(max-width: 768px)").matches ||
+    window.matchMedia("(pointer: coarse)").matches;
+
+  if (isTouchOrMobile) {
+    document.body.classList.remove("cursor-hover");
+    return;
+  }
+
   const cursorDot = document.querySelector(".hud-cursor-dot");
   const cursorRing = document.querySelector(".hud-cursor-ring");
 
@@ -28,6 +38,7 @@ export function initHudCursor() {
   const interactiveElements = document.querySelectorAll(
     'a, button, [data-cursor="hover"]',
   );
+
   interactiveElements.forEach((el) => {
     el.addEventListener("mouseenter", () =>
       document.body.classList.add("cursor-hover"),
