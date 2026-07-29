@@ -149,9 +149,35 @@
     padding: 4px 12px;
   }
 
+  /* Título com Cursor Typewriter */
   .hero-title {
-    font-size: 2.2rem;
+    font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+    font-weight: 700;
     line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    min-height: 3.2em;
+    /* Evita pulo de layout enquanto digita */
+  }
+
+  .typewriter-cursor {
+    display: inline-block;
+    color: var(--accent-cyan);
+    font-weight: 300;
+    margin-left: 2px;
+    animation: blinkCursor 0.8s infinite;
+  }
+
+  @keyframes blinkCursor {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
   }
 
   .hero-description {
