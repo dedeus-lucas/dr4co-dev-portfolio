@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 
-/* Background Cross-Dissolve Carousel */
 .hero-bg-container {
   position: absolute;
   top: 0;
@@ -36,7 +35,6 @@
   transform: scale(1);
 }
 
-/* Tactical Dark Overlay & Scanlines */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -48,7 +46,6 @@
   z-index: 2;
 }
 
-/* Hero Content Wrapper */
 .hero-content {
   position: relative;
   z-index: 3;
@@ -75,15 +72,16 @@
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2.2rem, 4.5vw, 4.2rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--text-primary);
 }
 
-.hero-title span {
+.hero-title .accent-amp {
   color: var(--accent-cyan);
+  font-weight: 400;
 }
 
 .hero-description {
@@ -137,7 +135,7 @@
   border-color: var(--text-primary);
 }
 
-/* Ajustes para telas mobile */
+/* Responsividade Mobile Refinada (Mobile-First) */
 @media (max-width: 768px) {
   .hero-content {
     padding: 6rem 1.25rem 2rem 1.25rem;
@@ -149,35 +147,9 @@
     padding: 4px 12px;
   }
 
-  /* Título com Cursor Typewriter */
   .hero-title {
-    font-size: clamp(2.2rem, 4.5vw, 4.2rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    color: var(--text-primary);
-    min-height: 3.2em;
-    /* Evita pulo de layout enquanto digita */
-  }
-
-  .typewriter-cursor {
-    display: inline-block;
-    color: var(--accent-cyan);
-    font-weight: 300;
-    margin-left: 2px;
-    animation: blinkCursor 0.8s infinite;
-  }
-
-  @keyframes blinkCursor {
-
-    0%,
-    100% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+    line-height: 1.2;
   }
 
   .hero-description {

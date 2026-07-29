@@ -1,6 +1,8 @@
 export const translations = {
   "pt-BR": {
     badge: "[ FULL-STACK & SYSTEMS ARCHITECTURE ]",
+    heroTitle:
+      'Engenharia de Sistemas Resilientes <span class="accent-amp">&amp;</span> Cloud Security',
     subtitle:
       "Construindo microsserviços resilientes, arquitetura distribuída, automação DevSecOps e segurança em nuvem.",
     btnProjects: "Ver Arquitetura",
@@ -9,10 +11,11 @@ export const translations = {
     navProj: "Projetos",
     navStack: "Stack",
     navContact: "Contato",
-    typewriterText: "Engenharia de Sistemas Resilientes & Cloud Security",
   },
   "en-US": {
     badge: "[ FULL-STACK & SYSTEMS ARCHITECTURE ]",
+    heroTitle:
+      'Resilient Systems Engineering <span class="accent-amp">&amp;</span> Cloud Security',
     subtitle:
       "Building resilient microservices, distributed architecture, DevSecOps automation, and cloud security.",
     btnProjects: "View Architecture",
@@ -21,13 +24,12 @@ export const translations = {
     navProj: "Projects",
     navStack: "Stack",
     navContact: "Contact",
-    typewriterText: "Resilient Systems Engineering & Cloud Security",
   },
 };
 
 let currentLang = "pt-BR";
 
-export function initI18n(onLangChange) {
+export function initI18n() {
   const langBtn = document.querySelector(".lang-selector");
   if (!langBtn) return;
 
@@ -38,16 +40,12 @@ export function initI18n(onLangChange) {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.dataset.i18n;
       if (translations[currentLang][key]) {
-        el.textContent = translations[currentLang][key];
+        if (key === "heroTitle") {
+          el.innerHTML = translations[currentLang][key];
+        } else {
+          el.textContent = translations[currentLang][key];
+        }
       }
     });
-
-    if (onLangChange) {
-      onLangChange(currentLang);
-    }
   });
-}
-
-export function getCurrentLang() {
-  return currentLang;
 }

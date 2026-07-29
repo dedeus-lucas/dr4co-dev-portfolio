@@ -15,7 +15,6 @@ import { initHeroCarousel } from "./scripts/hero.js";
 import { initManifestoAnimations } from "./scripts/manifesto.js";
 import { initHorizontalProjectsScroll } from "./scripts/projects.js";
 import { initI18n } from "./scripts/i18n.js";
-import { typeWriterEffect } from "./scripts/typewriter.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
@@ -24,12 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroCarousel();
   initManifestoAnimations();
   initHorizontalProjectsScroll();
+  initI18n();
 
-  initI18n(() => {
-    typeWriterEffect();
-  });
-
-  typeWriterEffect();
-
-  console.log("[SYSTEM] Hero Typewriter & i18n bilingual engine initialized.");
+  console.log("[SYSTEM] Cyber Portfolio operational.");
 });
