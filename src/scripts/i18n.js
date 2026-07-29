@@ -36,7 +36,7 @@ export function initI18n(onLangChange) {
     langBtn.textContent = `[ ${currentLang.toUpperCase()} ]`;
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const key = el.dataset("data-i18n");
+      const key = el.dataset.i18n;
       if (translations[currentLang][key]) {
         el.textContent = translations[currentLang][key];
       }
