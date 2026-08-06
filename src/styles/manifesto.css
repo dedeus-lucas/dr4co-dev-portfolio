@@ -9,22 +9,7 @@
   background-color: var(--bg-primary);
 }
 
-.manifesto-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/assets/svg/tactical-grid.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.35;
-  pointer-events: none;
-  z-index: 1;
-}
-
+/* Feixe Neon Passante (Data-Stream Sweep Mantido) */
 .manifesto-section::after {
   content: '';
   position: absolute;
@@ -62,6 +47,7 @@
   }
 }
 
+/* Container HUD Overlay */
 .hud-data-overlay {
   position: absolute;
   top: 0;
@@ -73,43 +59,42 @@
   z-index: 2;
 }
 
-.hud-data-tag {
+/* Texto Hexadecimal Puro em Ciano Neon (Sem Caixas/Bordas/Background) */
+.hud-text-pure {
   position: absolute;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   color: var(--accent-cyan);
-  background: rgba(0, 240, 255, 0.03);
-  border: 1px solid rgba(0, 240, 255, 0.2);
-  padding: 4px 10px;
-  border-radius: 2px;
-  letter-spacing: 0.12em;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
-  animation: pulseGlow 4s infinite ease-in-out alternate;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+  letter-spacing: 0.15em;
+  opacity: 0;
+  animation: fadeInOutRandom infinite ease-in-out;
 }
 
-.hud-tag-icon {
-  color: var(--accent-amber);
-  margin-right: 4px;
-}
-
-@keyframes pulseGlow {
+/* Animação que faz o texto surgir do 0 ao visível e sumir 100% */
+@keyframes fadeInOutRandom {
   0% {
-    opacity: 0.2;
-    box-shadow: 0 0 4px rgba(0, 240, 255, 0.1);
+    opacity: 0;
   }
 
-  50% {
+  30% {
+    opacity: 0.75;
+  }
+
+  60% {
+    opacity: 0.1;
+  }
+
+  80% {
     opacity: 0.85;
-    box-shadow: 0 0 14px rgba(0, 240, 255, 0.5);
   }
 
   100% {
-    opacity: 0.3;
-    box-shadow: 0 0 6px rgba(0, 240, 255, 0.2);
+    opacity: 0;
   }
 }
 
+/* Conteúdo da Seção */
 .manifesto-container {
   max-width: 1000px;
   width: 100%;
