@@ -79,9 +79,9 @@
   color: var(--text-primary);
 }
 
-.hero-title .accent-amp {
+.hero-title .accent-highlight {
   color: var(--accent-cyan);
-  font-weight: 400;
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.25);
 }
 
 .hero-description {

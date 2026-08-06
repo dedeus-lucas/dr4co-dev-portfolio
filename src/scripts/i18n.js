@@ -1,11 +1,11 @@
 export const translations = {
   "pt-BR": {
-    badge: "[ FULL-STACK & SYSTEMS ARCHITECTURE ]",
+    badge: "[ BACKEND DEVELOPER // DEVSECOPS ]",
     heroTitle:
-      'Engenharia de Sistemas Resilientes <span class="accent-amp">&amp;</span> Cloud Security',
+      'Desenvolvendo <span class="accent-highlight">Sistemas Resilientes</span> e Arquitetura de Software',
     subtitle:
-      "Construindo microsserviços resilientes, arquitetura distribuída, automação DevSecOps e segurança em nuvem.",
-    btnProjects: "Ver Arquitetura",
+      "Desenvolvedor focado na construção de aplicações backend robustas, automação DevSecOps, microsserviços e segurança em nuvem.",
+    btnProjects: "Ver Projetos",
     btnContact: "Iniciar Contato",
     navExp: "Experiência",
     navProj: "Projetos",
@@ -13,12 +13,12 @@ export const translations = {
     navContact: "Contato",
   },
   "en-US": {
-    badge: "[ FULL-STACK & SYSTEMS ARCHITECTURE ]",
+    badge: "[ BACKEND DEVELOPER // DEVSECOPS ]",
     heroTitle:
-      'Resilient Systems Engineering <span class="accent-amp">&amp;</span> Cloud Security',
+      'Developing <span class="accent-highlight">Resilient Systems</span> and Software Architecture',
     subtitle:
-      "Building resilient microservices, distributed architecture, DevSecOps automation, and cloud security.",
-    btnProjects: "View Architecture",
+      "Developer focused on building robust backend applications, DevSecOps automation, microservices, and cloud security.",
+    btnProjects: "View Projects",
     btnContact: "Get in Touch",
     navExp: "Experience",
     navProj: "Projects",
