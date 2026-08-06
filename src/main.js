@@ -4,6 +4,7 @@ import "./styles/cursor.css";
 import "./styles/navbar.css";
 import "./styles/hero.css";
 import "./styles/manifesto.css";
+import "./styles/journey.css";
 import "./styles/projects.css";
 import "./styles/services.css";
 import "./styles/contact.css";
@@ -13,6 +14,7 @@ import { initHudCursor } from "./scripts/cursor.js";
 import { initNavbarScroll } from "./scripts/navbar.js";
 import { initHeroCarousel } from "./scripts/hero.js";
 import { initManifestoAnimations } from "./scripts/manifesto.js";
+import { initHudBackground } from "./scripts/hud-background.js";
 import { initHorizontalProjectsScroll } from "./scripts/projects.js";
 import { initI18n } from "./scripts/i18n.js";
 
@@ -22,8 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavbarScroll();
   initHeroCarousel();
   initManifestoAnimations();
+  initHudBackground();
   initHorizontalProjectsScroll();
   initI18n();
 
-  console.log("[SYSTEM] Cyber Portfolio operational.");
+  console.log(
+    "[SYSTEM] Cyber Portfolio operational with Ghost in the Shell HUD overlays.",
+  );
 });

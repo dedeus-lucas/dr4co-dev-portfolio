@@ -9,6 +9,59 @@
   background-color: var(--bg-primary);
 }
 
+.manifesto-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/svg/tactical-grid.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.manifesto-section::after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -50%;
+  width: 200%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 240, 255, 0) 30%, #00f0ff 50%, rgba(0, 240, 255, 0) 70%, transparent 100%);
+  box-shadow: 0 0 12px #00f0ff, 0 0 25px rgba(0, 240, 255, 0.8);
+  opacity: 0.7;
+  transform: rotate(-15deg);
+  pointer-events: none;
+  z-index: 1;
+  animation: dataStreamSweep 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes dataStreamSweep {
+  0% {
+    top: -20%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.8;
+  }
+
+  30% {
+    top: 120%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 120%;
+    opacity: 0;
+  }
+}
+
 .manifesto-container {
   max-width: 1000px;
   width: 100%;
