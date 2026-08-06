@@ -3,41 +3,39 @@ export function initHudBackground() {
     ".manifesto-section, .journey-section",
   );
 
-  sections.forEach((sec) => {
+  const hexCodes = [
+    "0x7F_SYS_CORE // SEC_9",
+    "0x3A_NET_NODE // ACTIVE",
+    "0x9E_MEM_GHOST // INIT",
+    "0x12_PORT_8080 // LISTEN",
+    "0x8C_CRYPT_KEY // OK",
+  ];
+
+  sections.forEach((sec, idx) => {
+    sec.style.position = "relative";
+
     const hudContainer = document.createElement("div");
     hudContainer.className = "hud-data-overlay";
-    hudContainer.style.cssText = `
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      pointer-events: none;
-      z-index: 1;
-    `;
 
-    for (let i = 0; i < 3; i++) {
-      const dataTag = document.createElement("span");
+    // Cria 2 tags hexadecimais por seção em posições estratégicas
+    for (let i = 0; i < 2; i++) {
+      const dataTag = document.createElement("div");
       dataTag.className = "hud-data-tag";
-      dataTag.textContent = `[ 0x${Math.floor(Math.random() * 8999 + 1000)
-        .toString(16)
-        .toUpperCase()} // NET_LOG ]`;
-      dataTag.style.cssText = `
-        position: absolute;
-        font-family: var(--font-mono);
-        font-size: 0.65rem;
-        color: #00f0ff;
-        text-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
-        opacity: 0.25;
-        top: ${20 + i * 30}%;
-        ${i % 2 === 0 ? "left: 4%;" : "right: 4%;"}
-        letter-spacing: 0.15em;
-      `;
+
+      const randomHex = hexCodes[Math.floor(Math.random() * hexCodes.length)];
+      dataTag.innerHTML = `<span class="hud-tag-icon">[+]</span> ${randomHex}`;
+
+      if (i === 0) {
+        dataTag.style.top = "15%";
+        dataTag.style.left = idx % 2 === 0 ? "3%" : "85%";
+      } else {
+        dataTag.style.bottom = "15%";
+        dataTag.style.right = idx % 2 === 0 ? "4%" : "82%";
+      }
+
       hudContainer.appendChild(dataTag);
     }
 
-    sec.style.position = "relative";
     sec.appendChild(hudContainer);
   });
 }
