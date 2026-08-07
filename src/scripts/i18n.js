@@ -46,7 +46,7 @@ export const translations = {
       "Aprofundamento no ecossistema Java/Spring Boot, proteção de APIs RESTful (OAuth2/JWT), conceitos de criptografia, conteinerização com Docker e noções de Cloud Security.",
     j2026Title: "Projetos Reais & Expansão",
     j2026Desc:
-      "Desenvolvimento de soluções em escala, integração multi-framework com Python para automação e scripts, conhecimentos em Node.js e aplicação practical de IA no fluxo de trabalho.",
+      "Desenvolvimento de soluções em escala, integração multi-framework com Python para automação e scripts, conhecimentos em Node.js e aplicação prática de IA no fluxo de trabalho.",
     jFutureTitle: "Especialização & Soluções",
     jFutureDesc:
       "Foco contínuo no aprimoramento de AppSec, pipelines robustos de DevSecOps, estudos em System Design e arquitetura de sistemas distribuídos.",
@@ -73,15 +73,15 @@ export const translations = {
     projectsScrollHint: "// ARRASTE OU USE O SCROLL PARA NAVEGAR",
     projectCaseBtn: "VER DETALHES \u2192",
 
-    p1Cat: "01 // COFRE & CRIPTOGRAFIA",
+    p1Cat: "01 // VAULT & CRIPTOGRAFIA",
     p1Title: "Sentinel-Vault Core Engine",
     p1Desc:
-      "Mecanismo central de gerenciamento de segredos com criptografia simétrica de alta performance e isolamento de chaves de ambiente.",
+      "Núcleo central de cofre criptográfico projetado para isolamento estrito de credenciais através do algoritmo AES-256-GCM. Elimina o vazamento de segredos em pipelines de CI/CD e infraestruturas distribuídas, oferecendo auditoria imutável e controle de acesso baseado em papéis.",
 
-    p2Cat: "02 // CLI & SEGURANÇA",
+    p2Cat: "02 // INJEÇÃO EM MEMÓRIA",
     p2Title: "Sentinel Env Injector",
     p2Desc:
-      "Injetor automatizado de variáveis de ambiente seguras construído sobre o Sentinel-Vault Core Engine para integração fluida em pipelines CI/CD.",
+      "Extensão para Spring Boot que intercepta a inicialização do contexto para injetar segredos do Vault diretamente na memória RAM volátil. Garante persistência zero em disco ao aplicar higienização ativa com sobrescrita de zeros em buffers sensíveis e vetores criptográficos.",
 
     p3Cat: "03 // API & MICROSSERVIÇOS",
     p3Title: "Identity Guard OAuth2 Server",
@@ -206,12 +206,12 @@ export const translations = {
     p1Cat: "01 // VAULT & CRYPTOGRAPHY",
     p1Title: "Sentinel-Vault Core Engine",
     p1Desc:
-      "Core secrets management engine featuring high-performance symmetric encryption and environment key isolation.",
+      "Central cryptographic vault core engineered for strict credential isolation via the AES-256-GCM algorithm. Eliminates secret leakage across CI/CD pipelines and distributed infrastructures while providing immutable auditing and role-based access control.",
 
-    p2Cat: "02 // CLI & SECURITY",
+    p2Cat: "02 // IN-MEMORY INJECTION",
     p2Title: "Sentinel Env Injector",
     p2Desc:
-      "Automated secure environment variable injector built on top of Sentinel-Vault Core Engine for seamless CI/CD integration.",
+      "Spring Boot extension that intercepts context initialization to inject Vault secrets directly into volatile RAM memory. Guarantees zero-disk persistence by applying active hygiene with zero-overwrite across sensitive buffers and cryptographic vectors.",
 
     p3Cat: "03 // API & MICROSERVICES",
     p3Title: "Identity Guard OAuth2 Server",

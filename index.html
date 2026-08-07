@@ -459,26 +459,28 @@
             <div
               class="project-card-image"
               style="
-                background-image: url(&quot;/assets/images/hero-1.webp&quot;);
+                background-image: url(&quot;/assets/images/sentinel-vault-img.webp&quot;);
               "
             ></div>
             <div class="project-card-body">
               <div>
                 <span class="project-card-cat" data-i18n="p1Cat"
-                  >01 // COFRE & CRIPTOGRAFIA</span
+                  >01 // VAULT & CRIPTOGRAFIA</span
                 >
                 <h3 class="project-card-title" data-i18n="p1Title">
                   Sentinel-Vault Core Engine
                 </h3>
                 <p class="project-card-desc" data-i18n="p1Desc">
-                  Mecanismo central de gerenciamento de segredos com
-                  criptografia simétrica de alta performance e isolamento de
-                  chaves de ambiente.
+                  Núcleo central de cofre criptográfico projetado para
+                  isolamento estrito de credenciais através do algoritmo
+                  AES-256-GCM. Elimina o vazamento de segredos em pipelines de
+                  CI/CD e infraestruturas distribuídas, oferecendo auditoria
+                  imutável e controle de acesso baseado em papéis.
                 </p>
               </div>
               <div class="project-card-footer">
                 <span class="project-card-techs"
-                  >Java • Spring Boot • AES-256</span
+                  >Java 21 • Spring Boot 3 • AES-256-GCM • PostgreSQL</span
                 >
                 <span class="project-card-link" data-i18n="projectCaseBtn"
                   >VER DETALHES &rarr;</span
@@ -492,26 +494,29 @@
             <div
               class="project-card-image"
               style="
-                background-image: url(&quot;/assets/images/hero-2.webp&quot;);
+                background-image: url(&quot;/assets/images/sentinel-env-injector-img.webp&quot;);
               "
             ></div>
             <div class="project-card-body">
               <div>
                 <span class="project-card-cat" data-i18n="p2Cat"
-                  >02 // CLI & SEGURANÇA</span
+                  >02 // INJEÇÃO EM MEMÓRIA</span
                 >
                 <h3 class="project-card-title" data-i18n="p2Title">
                   Sentinel Env Injector
                 </h3>
                 <p class="project-card-desc" data-i18n="p2Desc">
-                  Injetor automatizado de variáveis de ambiente seguras
-                  construído sobre o Sentinel-Vault Core Engine para integração
-                  fluida em pipelines CI/CD.
+                  Extensão para Spring Boot que intercepta a inicialização do
+                  contexto para injetar segredos do Vault diretamente na memória
+                  RAM volátil. Garante persistência zero em disco ao aplicar
+                  higienização ativa com sobrescrita de zeros em buffers
+                  sensíveis e vetores criptográficos.
                 </p>
               </div>
               <div class="project-card-footer">
                 <span class="project-card-techs"
-                  >Python • Vault CLI • Docker</span
+                  >Java 21 • Spring Boot SPI • Zero-Disk Security • RAM
+                  Hygiene</span
                 >
                 <span class="project-card-link" data-i18n="projectCaseBtn"
                   >VER DETALHES &rarr;</span
