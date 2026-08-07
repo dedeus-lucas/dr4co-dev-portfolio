@@ -49,11 +49,19 @@
 .bento-section {
   padding: 8rem 4rem;
   background-color: var(--bg-primary);
-  border-bottom: 1px solid var(--border-tactical);
 }
 
 .bento-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
   margin-bottom: 4rem;
+}
+
+.bento-header-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .bento-tag {
@@ -62,6 +70,13 @@
   letter-spacing: 0.2em;
   color: var(--accent-cyan);
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bento-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-tactical) 0%, transparent 100%);
 }
 
 .bento-title {
