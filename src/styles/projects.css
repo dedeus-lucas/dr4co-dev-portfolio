@@ -117,6 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   margin-top: 1rem;
   padding-top: 0.8rem;
   border-top: 1px solid var(--border-tactical);
@@ -126,6 +127,11 @@
   font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--text-subtle);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
 }
 
 .project-card-link {
@@ -137,5 +143,12 @@
   gap: 0.4rem;
   font-weight: 700;
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
 }
