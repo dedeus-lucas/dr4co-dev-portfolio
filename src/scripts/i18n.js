@@ -51,6 +51,19 @@ export const translations = {
     jFutureTitle: "Especialização & Soluções",
     jFutureDesc:
       "Foco contínuo no aprimoramento de AppSec, pipelines robustos de DevSecOps, estudos em System Design e arquitetura de sistemas distribuídos.",
+
+    // Seção 4: Stack Técnico (Bento Grid)
+    stackSectionTag: "[ STACK // TECNOLOGIAS ]",
+    stackTitle: "Tecnologias, Ferramentas e Ecossistema de Engenharia",
+    catBackendTitle: "Engenharia Backend & Arquitetura",
+    catBackendDesc:
+      "Desenvolvimento de APIs RESTful resilientes, microsserviços, modelagem de dados relacionais/não-relacionais, persistência com Spring Data JPA/Hibernate e arquitetura limpa.",
+    catSecurityTitle: "DevSecOps & Cloud",
+    catSecurityDesc:
+      "Automação de CI/CD via GitHub Actions, conteinerização com Docker, gestão de segurança com OWASP Top 10 e práticas de Cloud Security na AWS.",
+    catToolsTitle: "Linguagens & Scripts",
+    catToolsDesc:
+      "Base sólida em Ciência da Computação utilizando C para fundamentos de memória, Python para automação e scripts, e JavaScript/Node.js.",
   },
   "en-US": {
     badge: "[ BACKEND DEVELOPER // DEVSECOPS ]",
@@ -104,6 +117,19 @@ export const translations = {
     jFutureTitle: "Specialization & Solutions",
     jFutureDesc:
       "Continuous focus on AppSec enhancement, robust DevSecOps pipelines, ongoing study in System Design, and distributed systems architecture.",
+
+    // Section 4: Technical Stack (Bento Grid)
+    stackSectionTag: "[ STACK // TECHNOLOGIES ]",
+    stackTitle: "Technologies, Tools and Engineering Ecosystem",
+    catBackendTitle: "Backend Engineering & Architecture",
+    catBackendDesc:
+      "Development of resilient RESTful APIs, microservices, relational/non-relational data modeling, persistence with Spring Data JPA/Hibernate, and clean architecture.",
+    catSecurityTitle: "DevSecOps & Cloud",
+    catSecurityDesc:
+      "CI/CD automation via GitHub Actions, containerization with Docker, security management with OWASP Top 10, and Cloud Security practices on AWS.",
+    catToolsTitle: "Languages & Scripting",
+    catToolsDesc:
+      "Solid Computer Science foundation using C for memory management fundamentals, Python for automation and scripting, and JavaScript/Node.js.",
   },
 };
 
