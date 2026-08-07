@@ -9,7 +9,6 @@
   background-color: var(--bg-primary);
 }
 
-/* Feixe Neon Passante (Data-Stream Sweep Mantido) */
 .manifesto-section::after {
   content: '';
   position: absolute;
@@ -56,10 +55,9 @@
   height: 100%;
   overflow: hidden;
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* Texto Hexadecimal Puro em Ciano Neon (Sem Caixas/Bordas/Background) */
 .hud-text-pure {
   position: absolute;
   font-family: var(--font-mono);
@@ -71,7 +69,6 @@
   animation: fadeInOutRandom infinite ease-in-out;
 }
 
-/* Animação que faz o texto surgir do 0 ao visível e sumir 100% */
 @keyframes fadeInOutRandom {
   0% {
     opacity: 0;
@@ -94,16 +91,15 @@
   }
 }
 
-/* Conteúdo da Seção */
 .manifesto-container {
+  position: relative;
+  z-index: 2;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  position: relative;
-  z-index: 3;
 }
 
 .manifesto-header {
@@ -150,10 +146,13 @@
 }
 
 .manifesto-card {
+  position: relative;
+  z-index: 2;
   padding: 2rem;
   border: 1px solid var(--border-tactical);
   background: rgba(22, 28, 40, 0.4);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 4px;
   display: flex;
   flex-direction: column;

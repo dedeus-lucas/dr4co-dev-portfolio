@@ -8,6 +8,8 @@
 }
 
 .journey-container {
+  position: relative;
+  z-index: 2;
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
@@ -65,10 +67,13 @@
 }
 
 .journey-card {
+  position: relative;
+  z-index: 2;
   padding: 2rem;
   border: 1px solid var(--border-tactical);
   background: rgba(22, 28, 40, 0.4);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
