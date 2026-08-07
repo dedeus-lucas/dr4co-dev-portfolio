@@ -129,7 +129,7 @@
     </header>
 
     <main id="app" class="smooth-scroll-wrapper">
-      <!-- 1. Hero Section -->
+      <!-- 1. HERO SECTION -->
       <section class="hero-section" id="hero">
         <div class="hero-bg-container">
           <div
@@ -189,7 +189,7 @@
         </div>
       </section>
 
-      <!-- 2. Sobre / Filosofia -->
+      <!-- 2. ABOUT / PHILOSOPHY -->
       <section class="manifesto-section" id="experience">
         <div class="manifesto-container">
           <div class="manifesto-header">
@@ -251,7 +251,7 @@
         </div>
       </section>
 
-      <!-- 3. Jornada / Trajetória -->
+      <!-- 3. JOURNEY / TRAJECTORY -->
       <section class="journey-section" id="journey">
         <div class="journey-container">
           <div class="journey-header">
@@ -440,7 +440,7 @@
         </div>
       </section>
 
-      <!-- 5. Projetos -->
+      <!-- 5. PROJECTS -->
       <section class="projects-pin-wrapper" id="projects">
         <div class="projects-header">
           <div class="projects-title-group">
@@ -550,18 +550,23 @@
         </div>
       </section>
 
-      <!-- 6. Contato -->
+      <!-- 6. CONTACT SECTION -->
       <section class="contact-section" id="contact">
         <div class="contact-container">
+          <!-- Coluna 1: Informações e Apresentação -->
           <div class="contact-info">
-            <span class="contact-tag">[ INITIATE CONTACT ]</span>
-            <h2 class="contact-title">
-              Vamos construir a sua próxima <span>Experiência Web</span>.
+            <span class="contact-tag" data-i18n="contactTag"
+              >[ CONTATO // CANAIS DIRETO ]</span
+            >
+            <h2 class="contact-title" data-i18n="contactTitle">
+              Pronto para construir
+              <span class="highlight">soluções resilientes</span> e de alto
+              impacto?
             </h2>
-            <p class="contact-desc">
-              Disponível para novos projetos de alta complexidade, consultorias
-              de performance e desenvolvimento de portfólios institucionais de
-              elite.
+            <p class="contact-desc" data-i18n="contactDesc">
+              Aberto a oportunidades profissionais, colaboração em projetos de
+              engenharia backend, consultorias de arquitetura e segurança de
+              infraestrutura.
             </p>
 
             <div class="contact-direct-links">
@@ -570,80 +575,69 @@
                 class="contact-link-item"
                 data-cursor="hover"
               >
-                <span style="color: var(--accent-cyan)">[ EMAIL ]</span>
-                <span>silvadedeus.lucas@gmail.com</span>
+                <span class="link-label">[ EMAIL ]</span>
+                <span class="link-value">silvadedeus.lucas@gmail.com</span>
               </a>
+
               <a
                 href="https://wa.me/5573981230728"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="contact-link-item"
                 data-cursor="hover"
               >
-                <span style="color: var(--accent-cyan)">[ WHATSAPP ]</span>
-                <span>Iniciar conversa direta</span>
+                <span class="link-label">[ WHATSAPP ]</span>
+                <span class="link-value">+55 (73) 98123-0728</span>
               </a>
             </div>
           </div>
 
-          <form class="contact-form" onsubmit="event.preventDefault()">
-            <div class="form-group">
-              <label class="form-label" for="name">01 // Nome Completo</label>
-              <input
-                type="text"
-                id="name"
-                class="form-input"
-                placeholder="Seu nome ou empresa"
-                required
-              />
-            </div>
+          <!-- Coluna 2: Card de Disponibilidade Tática -->
+          <div class="contact-protocol-card">
+            <span class="protocol-card-num">01 // DISPONIBILIDADE TÁTICA</span>
+            <h3 class="protocol-card-title" data-i18n="protoTitle">
+              Conexão & Resposta Rápida
+            </h3>
+            <p class="protocol-card-desc" data-i18n="protoDesc">
+              Comunicação direta para alinhamento técnico, proposição de
+              demandas e contratação.
+            </p>
 
-            <div class="form-group">
-              <label class="form-label" for="email"
-                >02 // E-mail Pessoal ou Corporativo</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="form-input"
-                placeholder="seu@email.com"
-                required
-              />
+            <div class="protocol-status-group">
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text" data-i18n="statusText"
+                  >STATUS: DISPONÍVEL PARA NOVOS PROJETOS</span
+                >
+              </div>
+              <div class="time-indicator">
+                <span class="time-label" data-i18n="timeLabel"
+                  >Tempo Médio de Resposta:</span
+                >
+                <span class="time-value" data-i18n="timeValue"
+                  >&lt; 12 Horas</span
+                >
+              </div>
             </div>
-
-            <div class="form-group">
-              <label class="form-label" for="message"
-                >03 // Detalhes do Projeto</label
-              >
-              <textarea
-                id="message"
-                class="form-textarea"
-                placeholder="Descreva brevemente seus objetivos, prazos e escopo..."
-                required
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              class="btn-primary"
-              style="width: 100%; margin-top: 0.5rem"
-              data-cursor="hover"
-            >
-              TRANSMITIR MENSAGEM &rarr;
-            </button>
-          </form>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer-section">
       <div class="footer-brand-group">
-        <span class="brand-dr4co"
-          ><span>&lt;</span>DR4CO.DEV<span>/&gt;</span></span
-        >
-        <span class="footer-copy"
-          >&copy; 2026 DR4CO ARCHITECTURE. ALL RIGHTS RESERVED.</span
-        >
+        <!-- Brand draco.dev 100% intocado -->
+        <a href="#" class="navbar-brand" data-cursor="hover">
+          <span class="brand-dr4co">
+            <span>&lt;</span>DR4CO.DEV <span>/&gt;</span>
+          </span>
+        </a>
+        <span class="footer-copy">
+          &copy; <span id="copyright-year">2024 - 2026</span> DR4CO
+          ARCHITECTURE.
+          <span data-i18n="footerRights">TODOS OS DIREITOS RESERVADOS.</span>
+        </span>
       </div>
 
       <ul class="footer-socials">
@@ -653,7 +647,6 @@
             class="footer-social-link"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
             data-cursor="hover"
             >GITHUB</a
           >
@@ -664,7 +657,6 @@
             class="footer-social-link"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
             data-cursor="hover"
             >LINKEDIN</a
           >
@@ -681,7 +673,9 @@
             href="https://drive.google.com/file/d/1cy6OgzDS8Qa0QinTCOHugkuU71iqFfS2/view?usp=drive_link"
             class="footer-social-link"
             target="_blank"
-            >RÉSUMÉ</a
+            rel="noopener noreferrer"
+            data-i18n="navResume"
+            >CURRÍCULO</a
           >
         </li>
       </ul>

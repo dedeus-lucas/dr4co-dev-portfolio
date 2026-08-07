@@ -67,6 +67,21 @@ export const translations = {
     catQualityTitle: "Qualidade de Código & Segurança Ativa",
     catQualityDesc:
       "Foco contínuo na aplicação de Clean Code, testes unitários e de integração, autenticação segura e princípios de resiliência.",
+
+    // Seção 6: Contato
+    contactTag: "[ CONTATO // CANAIS DIRETO ]",
+    contactTitle:
+      'Pronto para construir <span class="highlight">soluções resilientes</span> e de alto impacto?',
+    contactDesc:
+      "Aberto a oportunidades profissionais, colaboração em projetos de engenharia backend, consultorias de arquitetura e segurança de infraestrutura.",
+    protoTitle: "Conexão & Resposta Rápida",
+    protoDesc:
+      "Comunicação direta para alinhamento técnico, proposição de demandas e contratação.",
+    statusText: "STATUS: DISPONÍVEL PARA NOVOS PROJETOS",
+    timeLabel: "Tempo Médio de Resposta:",
+    timeValue: "< 12 Horas",
+    footerRights: "TODOS OS DIREITOS RESERVADOS.",
+    navResume: "CURRÍCULO",
   },
   "en-US": {
     badge: "[ BACKEND DEVELOPER // DEVSECOPS ]",
@@ -136,6 +151,21 @@ export const translations = {
     catQualityTitle: "Code Quality & Active Security",
     catQualityDesc:
       "Continuous focus on applying Clean Code, unit and integration testing, secure authentication, and resilience principles.",
+
+    // Seção 6: Contact
+    contactTag: "[ CONTACT // DIRECT CHANNELS ]",
+    contactTitle:
+      'Ready to build <span class="highlight">resilient software</span> with high impact?',
+    contactDesc:
+      "Open to career opportunities, backend engineering collaboration, architecture consulting, and infrastructure security.",
+    protoTitle: "Connection & Fast Response",
+    protoDesc:
+      "Direct communication for technical alignment, project propositions, and hiring.",
+    statusText: "STATUS: AVAILABLE FOR NEW OPPORTUNITIES",
+    timeLabel: "Average Response Time:",
+    timeValue: "< 12 Hours",
+    footerRights: "ALL RIGHTS RESERVED.",
+    navResume: "RÉSUMÉ",
   },
 };
 

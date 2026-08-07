@@ -17,6 +17,7 @@ import { initManifestoAnimations } from "./scripts/manifesto.js";
 import { initHudBackground } from "./scripts/hud-background.js";
 import { initHorizontalProjectsScroll } from "./scripts/projects.js";
 import { initI18n } from "./scripts/i18n.js";
+import { initFooterYear } from "./scripts/footer-year.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initHudBackground();
   initHorizontalProjectsScroll();
   initI18n();
+  initFooterYear();
 
   console.log(
     "[SYSTEM] Cyber Portfolio operational with Ghost in the Shell HUD overlays.",
