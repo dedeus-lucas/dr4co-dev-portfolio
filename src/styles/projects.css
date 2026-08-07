@@ -132,6 +132,12 @@
   text-overflow: ellipsis;
   flex: 1;
   min-width: 0;
+  cursor: help;
+  transition: color 0.3s ease;
+}
+
+.project-card-techs:hover {
+  color: var(--accent-cyan);
 }
 
 .project-card-link {
