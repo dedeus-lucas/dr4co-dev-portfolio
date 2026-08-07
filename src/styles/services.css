@@ -7,7 +7,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* Efeito Parallax suave */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +71,6 @@
   margin-top: 0.5rem;
 }
 
-/* Grid Layout Assimétrico (Bento Grid) */
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -96,7 +94,6 @@
   transform: translateY(-4px);
 }
 
-/* Variações de tamanho no Bento Grid */
 .bento-card.span-2 {
   grid-column: span 2;
 }
