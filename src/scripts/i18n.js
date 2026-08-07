@@ -74,6 +74,7 @@ export const translations = {
       'Pronto para construir <span class="highlight">soluções resilientes</span> e de alto impacto?',
     contactDesc:
       "Aberto a oportunidades profissionais, colaboração em projetos de engenharia backend, consultorias de arquitetura e segurança de infraestrutura.",
+    protoCardNum: "01 // DISPONIBILIDADE TÁTICA",
     protoTitle: "Oportunidades & Atuação",
     protoDesc:
       "Aberto a contratações para posições de Estágio, Desenvolvedor Júnior e funções de engenharia backend/DevSecOps em nível inicial.",
@@ -158,6 +159,7 @@ export const translations = {
       'Ready to build <span class="highlight">resilient software</span> with high impact?',
     contactDesc:
       "Open to career opportunities, backend engineering collaboration, architecture consulting, and infrastructure security.",
+    protoCardNum: "01 // TACTICAL AVAILABILITY",
     protoTitle: "Opportunities & Roles",
     protoDesc:
       "Open to hiring for Internship positions, Junior Developer, and entry-level backend engineering/DevSecOps roles.",
