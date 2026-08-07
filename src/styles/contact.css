@@ -1,20 +1,20 @@
 .contact-section {
   position: relative;
   z-index: 2;
-  padding: 8rem 2rem;
-  background-color: var(--bg-primary);
+  padding: 8rem 4rem;
+  background-color: var(--bg-secondary);
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
 .contact-container {
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 4rem;
   align-items: stretch;
 }
 
@@ -33,11 +33,10 @@
 }
 
 .contact-title {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.25;
-  letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 
 .contact-title .highlight {
@@ -46,7 +45,7 @@
 }
 
 .contact-desc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -64,9 +63,9 @@
   align-items: center;
   gap: 1rem;
   font-family: var(--font-mono);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--text-primary);
-  padding: 1.1rem 1.25rem;
+  padding: 1rem 1.25rem;
   border: 1px solid var(--border-tactical);
   border-radius: 4px;
   background: rgba(22, 28, 40, 0.4);
@@ -95,9 +94,9 @@
 .contact-protocol-card {
   position: relative;
   z-index: 2;
-  background: rgba(22, 28, 40, 0.4);
+  background: rgba(15, 19, 28, 0.7);
   border: 1px solid var(--border-tactical);
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -118,10 +117,11 @@
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
+  margin-top: 0.5rem;
 }
 
 .protocol-card-desc {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -178,15 +178,13 @@
 .footer-section {
   position: relative;
   z-index: 2;
-  padding: 3rem 2rem;
+  width: 100%;
+  padding: 3rem 4rem;
   background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid var(--border-tactical);
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .footer-brand-group {
@@ -197,7 +195,7 @@
 
 .footer-copy {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--text-subtle);
 }
 
@@ -220,22 +218,22 @@
   color: var(--accent-cyan);
 }
 
-/* Responsividade */
+/* Responsividade Mobile-First */
 @media (max-width: 900px) {
   .contact-container {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 3rem;
   }
 
-  .contact-section {
-    padding: 5rem 1.25rem;
+  .contact-section,
+  .footer-section {
+    padding: 4rem 1.5rem;
   }
 
   .footer-section {
     flex-direction: column;
     gap: 1.5rem;
     align-items: flex-start;
-    padding: 3rem 1.25rem;
   }
 
   .footer-brand-group {

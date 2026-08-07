@@ -74,10 +74,10 @@ export const translations = {
       'Pronto para construir <span class="highlight">soluções resilientes</span> e de alto impacto?',
     contactDesc:
       "Aberto a oportunidades profissionais, colaboração em projetos de engenharia backend, consultorias de arquitetura e segurança de infraestrutura.",
-    protoTitle: "Conexão & Resposta Rápida",
+    protoTitle: "Oportunidades & Atuação",
     protoDesc:
-      "Comunicação direta para alinhamento técnico, proposição de demandas e contratação.",
-    statusText: "STATUS: DISPONÍVEL PARA NOVOS PROJETOS",
+      "Aberto a contratações para posições de Estágio, Desenvolvedor Júnior e funções de engenharia backend/DevSecOps em nível inicial.",
+    statusText: "STATUS: DISPONÍVEL PARA ESTÁGIO E JÚNIOR",
     timeLabel: "Tempo Médio de Resposta:",
     timeValue: "< 12 Horas",
     footerRights: "TODOS OS DIREITOS RESERVADOS.",
@@ -152,16 +152,16 @@ export const translations = {
     catQualityDesc:
       "Continuous focus on applying Clean Code, unit and integration testing, secure authentication, and resilience principles.",
 
-    // Seção 6: Contact
+    // Section 6: Contact
     contactTag: "[ CONTACT // DIRECT CHANNELS ]",
     contactTitle:
       'Ready to build <span class="highlight">resilient software</span> with high impact?',
     contactDesc:
       "Open to career opportunities, backend engineering collaboration, architecture consulting, and infrastructure security.",
-    protoTitle: "Connection & Fast Response",
+    protoTitle: "Opportunities & Roles",
     protoDesc:
-      "Direct communication for technical alignment, project propositions, and hiring.",
-    statusText: "STATUS: AVAILABLE FOR NEW OPPORTUNITIES",
+      "Open to hiring for Internship positions, Junior Developer, and entry-level backend engineering/DevSecOps roles.",
+    statusText: "STATUS: AVAILABLE FOR INTERNSHIP & JUNIOR ROLES",
     timeLabel: "Average Response Time:",
     timeValue: "< 12 Hours",
     footerRights: "ALL RIGHTS RESERVED.",
@@ -182,7 +182,11 @@ export function initI18n() {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.dataset.i18n;
       if (translations[currentLang][key]) {
-        if (key === "heroTitle" || key === "manifestoTitle") {
+        if (
+          key === "heroTitle" ||
+          key === "manifestoTitle" ||
+          key === "contactTitle"
+        ) {
           el.innerHTML = translations[currentLang][key];
         } else {
           el.textContent = translations[currentLang][key];
