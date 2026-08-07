@@ -46,7 +46,7 @@ export const translations = {
       "Aprofundamento no ecossistema Java/Spring Boot, proteção de APIs RESTful (OAuth2/JWT), conceitos de criptografia, conteinerização com Docker e noções de Cloud Security.",
     j2026Title: "Projetos Reais & Expansão",
     j2026Desc:
-      "Desenvolvimento de soluções em escala, integração multi-framework com Python para automação e scripts, conhecimentos em Node.js e aplicação prática de IA no fluxo de trabalho.",
+      "Desenvolvimento de soluções em escala, integração multi-framework com Python para automação e scripts, conhecimentos em Node.js e aplicação practical de IA no fluxo de trabalho.",
     jFutureTitle: "Especialização & Soluções",
     jFutureDesc:
       "Foco contínuo no aprimoramento de AppSec, pipelines robustos de DevSecOps, estudos em System Design e arquitetura de sistemas distribuídos.",
@@ -67,6 +67,51 @@ export const translations = {
     catQualityTitle: "Qualidade de Código & Segurança Ativa",
     catQualityDesc:
       "Foco contínuo na aplicação de Clean Code, testes unitários e de integração, autenticação segura e princípios de resiliência.",
+
+    // Seção 5: Projetos
+    projectsSectionTag: "[ PROJETOS // ENGENHARIA & ARQUITETURA ]",
+    projectsScrollHint: "// ARRASTE OU USE O SCROLL PARA NAVEGAR",
+    projectCaseBtn: "VER DETALHES \u2192",
+
+    p1Cat: "01 // COFRE & CRIPTOGRAFIA",
+    p1Title: "Sentinel-Vault Core Engine",
+    p1Desc:
+      "Mecanismo central de gerenciamento de segredos com criptografia simétrica de alta performance e isolamento de chaves de ambiente.",
+
+    p2Cat: "02 // CLI & SEGURANÇA",
+    p2Title: "Sentinel Env Injector",
+    p2Desc:
+      "Injetor automatizado de variáveis de ambiente seguras construído sobre o Sentinel-Vault Core Engine para integração fluida em pipelines CI/CD.",
+
+    p3Cat: "03 // API & MICROSSERVIÇOS",
+    p3Title: "Identity Guard OAuth2 Server",
+    p3Desc:
+      "Servidor centralizado de autenticação e autorização com suporte a tokens JWT e RBAC construído em Spring Boot.",
+
+    p4Cat: "04 // DEVSECOPS & INFRA",
+    p4Title: "Hardened Pipeline CI/CD",
+    p4Desc:
+      "Pipeline automatizado com análise estática de código (SAST), verificação de dependências vulneráveis e deploy seguro em contêineres.",
+
+    p5Cat: "05 // SISTEMAS DISTRIBUÍDOS",
+    p5Title: "Event Stream Telemetry",
+    p5Desc:
+      "Arquitetura orientada a eventos para coleta e processamento de logs distribuídos em tempo real com alta disponibilidade.",
+
+    p6Cat: "06 // RUST & APPSEC",
+    p6Title: "Hyperion Packet Monitor",
+    p6Desc:
+      "Ferramenta CLI para inspeção tática e análise de integridade de tráfego de rede focada em detecção de anomalias.",
+
+    p7Cat: "07 // BANCO DE DADOS",
+    p7Title: "Dicionário Eletrônico Engine",
+    p7Desc:
+      "Motor de busca lexical otimizado para dicionários técnicos com modelagem avançada de persistência e APIs de consulta rápida.",
+
+    p8Cat: "08 // ARQUITETURA FUTURA",
+    p8Title: "Cloud Shield Orchestrator",
+    p8Desc:
+      "Orquestrador defensivo em desenvolvimento focado no gerenciamento de políticas de segurança ativas em nuvem híbrida.",
 
     // Seção 6: Contato
     contactTag: "[ CONTATO // CANAIS DIRETO ]",
@@ -152,6 +197,51 @@ export const translations = {
     catQualityTitle: "Code Quality & Active Security",
     catQualityDesc:
       "Continuous focus on applying Clean Code, unit and integration testing, secure authentication, and resilience principles.",
+
+    // Section 5: Projects
+    projectsSectionTag: "[ PROJECTS // ENGINEERING & ARCHITECTURE ]",
+    projectsScrollHint: "// DRAG OR SCROLL HORIZONTALLY TO EXPLORE",
+    projectCaseBtn: "VIEW DETAILS \u2192",
+
+    p1Cat: "01 // VAULT & CRYPTOGRAPHY",
+    p1Title: "Sentinel-Vault Core Engine",
+    p1Desc:
+      "Core secrets management engine featuring high-performance symmetric encryption and environment key isolation.",
+
+    p2Cat: "02 // CLI & SECURITY",
+    p2Title: "Sentinel Env Injector",
+    p2Desc:
+      "Automated secure environment variable injector built on top of Sentinel-Vault Core Engine for seamless CI/CD integration.",
+
+    p3Cat: "03 // API & MICROSERVICES",
+    p3Title: "Identity Guard OAuth2 Server",
+    p3Desc:
+      "Centralized authentication and authorization server with JWT token support and RBAC built in Spring Boot.",
+
+    p4Cat: "04 // DEVSECOPS & INFRA",
+    p4Title: "Hardened Pipeline CI/CD",
+    p4Desc:
+      "Automated pipeline with static code analysis (SAST), vulnerable dependency scanning, and secure container deployment.",
+
+    p5Cat: "05 // DISTRIBUTED SYSTEMS",
+    p5Title: "Event Stream Telemetry",
+    p5Desc:
+      "Event-driven architecture for collecting and processing real-time distributed logs with high availability.",
+
+    p6Cat: "06 // RUST & APPSEC",
+    p6Title: "Hyperion Packet Monitor",
+    p6Desc:
+      "Tactical CLI tool for inspecting and analyzing network traffic integrity focused on anomaly detection.",
+
+    p7Cat: "07 // DATABASE ENGINE",
+    p7Title: "Electronic Dictionary Engine",
+    p7Desc:
+      "Optimized lexical search engine for technical dictionaries featuring advanced persistence modeling and fast lookup APIs.",
+
+    p8Cat: "08 // FUTURE ARCHITECTURE",
+    p8Title: "Cloud Shield Orchestrator",
+    p8Desc:
+      "Defensive orchestrator under active development focused on managing security policies in hybrid cloud environments.",
 
     // Section 6: Contact
     contactTag: "[ CONTACT // DIRECT CHANNELS ]",

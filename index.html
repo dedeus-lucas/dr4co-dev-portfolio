@@ -440,66 +440,87 @@
         </div>
       </section>
 
-      <!-- 5. PROJECTS -->
+      <!-- 5. PROJECTS SECTION (Horizontal Pinning Scroll - 8 Cards) -->
       <section class="projects-pin-wrapper" id="projects">
         <div class="projects-header">
           <div class="projects-title-group">
-            <span class="projects-tag">[ SELECTED WORKS & ARCHITECTURE ]</span>
+            <span class="projects-tag" data-i18n="projectsSectionTag"
+              >[ PROJETOS // ENGENHARIA & ARQUITETURA ]</span
+            >
           </div>
-          <span class="projects-subtitle"
-            >// ROLAGEM HORIZONTAL PARA EXPLORAR</span
+          <span class="projects-subtitle" data-i18n="projectsScrollHint"
+            >// ARRASTE OU USE O SCROLL PARA NAVEGAR</span
           >
         </div>
 
         <div class="projects-track">
+          <!-- Card 1: Sentinel-Vault Core Engine -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
               style="
-                background-image: url(&quot;/assets/images/hero-1.jpg&quot;);
+                background-image: url(&quot;/assets/images/hero-1.webp&quot;);
               "
             ></div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat">01 // FINTECH ARCHITECTURE</span>
-                <h3 class="project-card-title">Nexus Payment Core</h3>
-                <p class="project-card-desc">
-                  Plataforma de liquidação de ativos com processamento em tempo
-                  real e dashboard analítico.
-                </p>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-techs">Vite • React • GSAP</span>
-                <span class="project-card-link">VER CASE &rarr;</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-cursor="hover">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url(&quot;/assets/images/hero-2.jpg&quot;);
-              "
-            ></div>
-            <div class="project-card-body">
-              <div>
-                <span class="project-card-cat">02 // INDUSTRIAL HIGH-TECH</span>
-                <h3 class="project-card-title">Cybernet Operating System</h3>
-                <p class="project-card-desc">
-                  Interface de monitoramento industrial para ambientes
-                  automatizados com telemetria ativa.
+                <span class="project-card-cat" data-i18n="p1Cat"
+                  >01 // COFRE & CRIPTOGRAFIA</span
+                >
+                <h3 class="project-card-title" data-i18n="p1Title">
+                  Sentinel-Vault Core Engine
+                </h3>
+                <p class="project-card-desc" data-i18n="p1Desc">
+                  Mecanismo central de gerenciamento de segredos com
+                  criptografia simétrica de alta performance e isolamento de
+                  chaves de ambiente.
                 </p>
               </div>
               <div class="project-card-footer">
                 <span class="project-card-techs"
-                  >TypeScript • WebGL • Tailwind</span
+                  >Java • Spring Boot • AES-256</span
                 >
-                <span class="project-card-link">VER CASE &rarr;</span>
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
               </div>
             </div>
           </article>
 
+          <!-- Card 2: Sentinel Env Injector -->
+          <article class="project-card" data-cursor="hover">
+            <div
+              class="project-card-image"
+              style="
+                background-image: url(&quot;/assets/images/hero-2.webp&quot;);
+              "
+            ></div>
+            <div class="project-card-body">
+              <div>
+                <span class="project-card-cat" data-i18n="p2Cat"
+                  >02 // CLI & SEGURANÇA</span
+                >
+                <h3 class="project-card-title" data-i18n="p2Title">
+                  Sentinel Env Injector
+                </h3>
+                <p class="project-card-desc" data-i18n="p2Desc">
+                  Injetor automatizado de variáveis de ambiente seguras
+                  construído sobre o Sentinel-Vault Core Engine para integração
+                  fluida em pipelines CI/CD.
+                </p>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-techs"
+                  >Python • Vault CLI • Docker</span
+                >
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Identity Guard OAuth2 Server -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
@@ -509,41 +530,180 @@
             ></div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat">03 // E-COMMERCE PLATFORM</span>
-                <h3 class="project-card-title">Aether Luxury Store</h3>
-                <p class="project-card-desc">
-                  Loja virtual de alto padrão com carregamento sub-segundo e
-                  animações Awwwards-level.
+                <span class="project-card-cat" data-i18n="p3Cat"
+                  >03 // API & MICROSSERVIÇOS</span
+                >
+                <h3 class="project-card-title" data-i18n="p3Title">
+                  Identity Guard OAuth2 Server
+                </h3>
+                <p class="project-card-desc" data-i18n="p3Desc">
+                  Servidor centralizado de autenticação e autorização com
+                  suporte a tokens JWT e RBAC construído em Spring Boot.
                 </p>
               </div>
               <div class="project-card-footer">
-                <span class="project-card-techs">Astro • GSAP • Node.js</span>
-                <span class="project-card-link">VER CASE &rarr;</span>
+                <span class="project-card-techs">Java • OAuth2 • Security</span>
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
               </div>
             </div>
           </article>
 
+          <!-- Card 4: Hardened Pipeline CI/CD -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
               style="
-                background-image: url(&quot;/assets/images/hero-1.jpg&quot;);
+                background-image: url(&quot;/assets/images/hero-1.webp&quot;);
               "
             ></div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat">04 // WEB APPLICATION</span>
-                <h3 class="project-card-title">Data Mesh Telemetry</h3>
-                <p class="project-card-desc">
-                  Painel de controle em tempo real para infraestrutura
-                  distribuída em nuvem privada.
+                <span class="project-card-cat" data-i18n="p4Cat"
+                  >04 // DEVSECOPS & INFRA</span
+                >
+                <h3 class="project-card-title" data-i18n="p4Title">
+                  Hardened Pipeline CI/CD
+                </h3>
+                <p class="project-card-desc" data-i18n="p4Desc">
+                  Pipeline automatizado com análise estática de código (SAST),
+                  verificação de dependências vulneráveis e deploy seguro em
+                  contêineres.
                 </p>
               </div>
               <div class="project-card-footer">
                 <span class="project-card-techs"
-                  >Vue.js • D3.js • WebSockets</span
+                  >GitHub Actions • Docker • OWASP</span
                 >
-                <span class="project-card-link">VER CASE &rarr;</span>
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Event Stream Telemetry -->
+          <article class="project-card" data-cursor="hover">
+            <div
+              class="project-card-image"
+              style="
+                background-image: url(&quot;/assets/images/hero-2.webp&quot;);
+              "
+            ></div>
+            <div class="project-card-body">
+              <div>
+                <span class="project-card-cat" data-i18n="p5Cat"
+                  >05 // SISTEMAS DISTRIBUÍDOS</span
+                >
+                <h3 class="project-card-title" data-i18n="p5Title">
+                  Event Stream Telemetry
+                </h3>
+                <p class="project-card-desc" data-i18n="p5Desc">
+                  Arquitetura orientada a eventos para coleta e processamento de
+                  logs distribuídos em tempo real com alta disponibilidade.
+                </p>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-techs"
+                  >Node.js • PostgreSQL • Linux</span
+                >
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Hyperion Packet Monitor -->
+          <article class="project-card" data-cursor="hover">
+            <div
+              class="project-card-image"
+              style="
+                background-image: url(&quot;/assets/images/hero-3.webp&quot;);
+              "
+            ></div>
+            <div class="project-card-body">
+              <div>
+                <span class="project-card-cat" data-i18n="p6Cat"
+                  >06 // RUST & APPSEC</span
+                >
+                <h3 class="project-card-title" data-i18n="p6Title">
+                  Hyperion Packet Monitor
+                </h3>
+                <p class="project-card-desc" data-i18n="p6Desc">
+                  Ferramenta CLI para inspeção tática e análise de integridade
+                  de tráfego de rede focada em detecção de anomalias.
+                </p>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-techs">C • Python • NetUtils</span>
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Dicionário Eletrônico Engine -->
+          <article class="project-card" data-cursor="hover">
+            <div
+              class="project-card-image"
+              style="
+                background-image: url(&quot;/assets/images/hero-1.webp&quot;);
+              "
+            ></div>
+            <div class="project-card-body">
+              <div>
+                <span class="project-card-cat" data-i18n="p7Cat"
+                  >07 // BANCO DE DADOS</span
+                >
+                <h3 class="project-card-title" data-i18n="p7Title">
+                  Dicionário Eletrônico Engine
+                </h3>
+                <p class="project-card-desc" data-i18n="p7Desc">
+                  Motor de busca lexical otimizado para dicionários técnicos com
+                  modelagem avançada de persistência e APIs de consulta rápida.
+                </p>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-techs"
+                  >Java • Spring Data • PostgreSQL</span
+                >
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Cloud Shield Orchestrator -->
+          <article class="project-card" data-cursor="hover">
+            <div
+              class="project-card-image"
+              style="
+                background-image: url(&quot;/assets/images/hero-2.webp&quot;);
+              "
+            ></div>
+            <div class="project-card-body">
+              <div>
+                <span class="project-card-cat" data-i18n="p8Cat"
+                  >08 // ARQUITETURA FUTURA</span
+                >
+                <h3 class="project-card-title" data-i18n="p8Title">
+                  Cloud Shield Orchestrator
+                </h3>
+                <p class="project-card-desc" data-i18n="p8Desc">
+                  Orquestrador defensivo em desenvolvimento focado no
+                  gerenciamento de políticas de segurança ativas em nuvem
+                  híbrida.
+                </p>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-card-techs">AWS • Terraform • Python</span>
+                <span class="project-card-link" data-i18n="projectCaseBtn"
+                  >VER DETALHES &rarr;</span
+                >
               </div>
             </div>
           </article>

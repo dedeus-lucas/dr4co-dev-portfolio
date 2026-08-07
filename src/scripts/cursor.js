@@ -24,7 +24,6 @@ export function initHudCursor() {
     mouse.y = e.clientY;
   });
 
-  // Animação contínua e suave perseguindo o mouse via GSAP ticker
   gsap.ticker.add(() => {
     const dt = 1 - Math.pow(1 - 0.2, gsap.ticker.deltaRatio());
     pos.x += (mouse.x - pos.x) * dt;
@@ -34,7 +33,6 @@ export function initHudCursor() {
     gsap.set(cursorRing, { x: pos.x, y: pos.y });
   });
 
-  // Adiciona efeito visual ao passar sobre botões e links
   const interactiveElements = document.querySelectorAll(
     'a, button, [data-cursor="hover"]',
   );
