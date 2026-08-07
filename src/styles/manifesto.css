@@ -10,40 +10,9 @@
 }
 
 .manifesto-section::after {
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: -50%;
-  width: 200%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent 0%, rgba(0, 240, 255, 0) 20%, #00f0ff 50%, rgba(0, 240, 255, 0) 80%, transparent 100%);
-  box-shadow: 0 0 15px #00f0ff, 0 0 30px rgba(0, 240, 255, 0.8);
-  opacity: 0.6;
-  transform: rotate(-12deg);
-  pointer-events: none;
-  z-index: 1;
-  animation: dataStreamSweep 14s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@keyframes dataStreamSweep {
-  0% {
-    top: -30%;
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0.7;
-  }
-
-  35% {
-    top: 140%;
-    opacity: 0;
-  }
-
-  100% {
-    top: 140%;
-    opacity: 0;
-  }
+  content: none !important;
+  display: none !important;
+  animation: none !important;
 }
 
 /* Container de Código Java (Fundo Totalmente Escuro e Transparente) */
@@ -58,27 +27,29 @@
   z-index: 1;
   opacity: 0.85;
 
-  /* EFEITO LANTERNA (Spotlight Sweep Reveal) */
-  -webkit-mask-image: radial-gradient(circle 180px at var(--light-x, 10%) var(--light-y, 20%),
+  /* EFEITO LANTERNA EXPANDIDO (Cobrindo da ponta esquerda à direita) */
+  -webkit-mask-image: radial-gradient(circle 260px at var(--light-x, 5%) var(--light-y, 15%),
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.4) 60%,
       rgba(0, 0, 0, 0) 100%);
-  mask-image: radial-gradient(circle 180px at var(--light-x, 10%) var(--light-y, 20%),
+  mask-image: radial-gradient(circle 260px at var(--light-x, 5%) var(--light-y, 15%),
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.4) 60%,
       rgba(0, 0, 0, 0) 100%);
   animation: sweepLightBeam 14s infinite ease-in-out;
 }
 
 .java-code-content {
   font-family: var(--font-mono);
-  font-size: 0.82rem;
-  line-height: 1.6;
+  font-size: 0.85rem;
+  line-height: 1.8;
   color: #a0aab8;
   padding: 3rem;
   margin: 0;
+  width: 100%;
   white-space: pre;
   user-select: none;
+  display: block;
 }
 
 /* Syntax Highlighting do Código no Fundo */
@@ -88,36 +59,43 @@
 }
 
 /* Lilás/Rosa */
+
 .java-code-content .kw-cyan {
   color: #80efa8;
 }
 
 /* Verde/Ciano Menta */
+
 .java-code-content .kw-blue {
   color: #bd93f9;
 }
 
 /* Roxo/Azul Elétrico */
+
 .java-code-content .annotation {
   color: #ffb86c;
 }
 
 /* Laranja Tático */
+
 .java-code-content .fn {
   color: #50fa7b;
 }
 
 /* Verde Função */
+
 .java-code-content .str {
   color: #f1fa8c;
 }
 
 /* Amarelo String */
+
 .java-code-content .num {
   color: #bd93f9;
 }
 
 /* Número */
+
 .java-code-content .comment {
   color: #6272a4;
   font-style: italic;
@@ -125,54 +103,44 @@
 
 /* Cinza Comentário */
 
-/* Keyframes da Lanterna Varrendo em "S" de Cima a Baixo */
+/* Keyframes da Lanterna Varrendo em "Z" (Varre de 5% até 92% da tela de Cima a Baixo) */
 @keyframes sweepLightBeam {
   0% {
-    --light-x: 10%;
+    --light-x: 5%;
     --light-y: 15%;
   }
 
-  15% {
-    --light-x: 85%;
+  20% {
+    --light-x: 92%;
     --light-y: 25%;
   }
 
-  30% {
-    --light-x: 15%;
-    --light-y: 45%;
-  }
-
-  45% {
-    --light-x: 80%;
-    --light-y: 60%;
-  }
-
-  60% {
-    --light-x: 20%;
-    --light-y: 75%;
-  }
-
-  75% {
-    --light-x: 85%;
-    --light-y: 88%;
-  }
-
-  90% {
-    --light-x: 10%;
+  40% {
+    --light-x: 8%;
     --light-y: 50%;
   }
 
-  100% {
+  60% {
+    --light-x: 92%;
+    --light-y: 70%;
+  }
+
+  80% {
     --light-x: 10%;
+    --light-y: 88%;
+  }
+
+  100% {
+    --light-x: 5%;
     --light-y: 15%;
   }
 }
 
-/* Suporte de Propriedades CSS para Suavidade do Animação */
+/* Suporte de Propriedades CSS para Suavidade da Animação */
 @property --light-x {
   syntax: '<percentage>';
   inherits: false;
-  initial-value: 10%;
+  initial-value: 5%;
 }
 
 @property --light-y {
