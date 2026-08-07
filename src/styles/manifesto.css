@@ -46,8 +46,8 @@
   }
 }
 
-/* Container HUD Overlay */
-.hud-data-overlay {
+/* Container de Código Java (Fundo Totalmente Escuro e Transparente) */
+.java-code-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,39 +56,129 @@
   overflow: hidden;
   pointer-events: none;
   z-index: 1;
+  opacity: 0.85;
+
+  /* EFEITO LANTERNA (Spotlight Sweep Reveal) */
+  -webkit-mask-image: radial-gradient(circle 180px at var(--light-x, 10%) var(--light-y, 20%),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle 180px at var(--light-x, 10%) var(--light-y, 20%),
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  animation: sweepLightBeam 14s infinite ease-in-out;
 }
 
-.hud-text-pure {
-  position: absolute;
+.java-code-content {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--accent-cyan);
-  text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
-  letter-spacing: 0.15em;
-  opacity: 0;
-  animation: fadeInOutRandom infinite ease-in-out;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #a0aab8;
+  padding: 3rem;
+  margin: 0;
+  white-space: pre;
+  user-select: none;
 }
 
-@keyframes fadeInOutRandom {
+/* Syntax Highlighting do Código no Fundo */
+.java-code-content .kw-pink {
+  color: #ff79c6;
+  font-weight: 500;
+}
+
+/* Lilás/Rosa */
+.java-code-content .kw-cyan {
+  color: #80efa8;
+}
+
+/* Verde/Ciano Menta */
+.java-code-content .kw-blue {
+  color: #bd93f9;
+}
+
+/* Roxo/Azul Elétrico */
+.java-code-content .annotation {
+  color: #ffb86c;
+}
+
+/* Laranja Tático */
+.java-code-content .fn {
+  color: #50fa7b;
+}
+
+/* Verde Função */
+.java-code-content .str {
+  color: #f1fa8c;
+}
+
+/* Amarelo String */
+.java-code-content .num {
+  color: #bd93f9;
+}
+
+/* Número */
+.java-code-content .comment {
+  color: #6272a4;
+  font-style: italic;
+}
+
+/* Cinza Comentário */
+
+/* Keyframes da Lanterna Varrendo em "S" de Cima a Baixo */
+@keyframes sweepLightBeam {
   0% {
-    opacity: 0;
+    --light-x: 10%;
+    --light-y: 15%;
+  }
+
+  15% {
+    --light-x: 85%;
+    --light-y: 25%;
   }
 
   30% {
-    opacity: 0.75;
+    --light-x: 15%;
+    --light-y: 45%;
+  }
+
+  45% {
+    --light-x: 80%;
+    --light-y: 60%;
   }
 
   60% {
-    opacity: 0.1;
+    --light-x: 20%;
+    --light-y: 75%;
   }
 
-  80% {
-    opacity: 0.85;
+  75% {
+    --light-x: 85%;
+    --light-y: 88%;
+  }
+
+  90% {
+    --light-x: 10%;
+    --light-y: 50%;
   }
 
   100% {
-    opacity: 0;
+    --light-x: 10%;
+    --light-y: 15%;
   }
+}
+
+/* Suporte de Propriedades CSS para Suavidade do Animação */
+@property --light-x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 10%;
+}
+
+@property --light-y {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 15%;
 }
 
 .manifesto-container {

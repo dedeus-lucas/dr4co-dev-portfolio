@@ -109,7 +109,7 @@
 .protocol-card-header {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 2.85rem;
 }
 
 .protocol-card-num {
