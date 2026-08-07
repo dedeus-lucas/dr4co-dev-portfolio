@@ -7,9 +7,12 @@ export const translations = {
       "Desenvolvedor focado na construção de aplicações backend robustas, automação DevSecOps, microsserviços e segurança em nuvem.",
     btnProjects: "Ver Projetos",
     btnContact: "Iniciar Contato",
-    navExp: "Experiência",
-    navProj: "Projetos",
+
+    // Navbar Links
+    navExp: "Sobre",
+    navJourney: "Jornada",
     navStack: "Stack",
+    navProj: "Projetos",
     navContact: "Contato",
 
     // Seção 2: Sobre / Filosofia
@@ -73,9 +76,12 @@ export const translations = {
       "Developer focused on building robust backend applications, DevSecOps automation, microservices, and cloud security.",
     btnProjects: "View Projects",
     btnContact: "Get in Touch",
-    navExp: "Experience",
-    navProj: "Projects",
+
+    // Navbar Links
+    navExp: "About",
+    navJourney: "Journey",
     navStack: "Stack",
+    navProj: "Projects",
     navContact: "Contact",
 
     // Section 2: About / Philosophy
