@@ -12,7 +12,6 @@ import "./styles/contact.css";
 import { initSmoothScroll } from "./scripts/lenis.js";
 import { initHudCursor } from "./scripts/cursor.js";
 import { initNavbarScroll } from "./scripts/navbar.js";
-import { initHeroCarousel } from "./scripts/hero.js";
 import { initManifestoAnimations } from "./scripts/manifesto.js";
 import { initHudBackground } from "./scripts/hud-background.js";
 import { initHorizontalProjectsScroll } from "./scripts/projects.js";
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initHudCursor();
   initNavbarScroll();
-  initHeroCarousel();
   initManifestoAnimations();
   initHudBackground();
   initHorizontalProjectsScroll();
@@ -31,6 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initFooterYear();
 
   console.log(
-    "[SYSTEM] Cyber Portfolio operational with Ghost in the Shell HUD overlays.",
+    "[SYSTEM] Shield Protocol operational with Ghost in the Shell HUD overlays.",
   );
 });

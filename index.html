@@ -155,62 +155,49 @@
     </header>
 
     <main id="app" class="smooth-scroll-wrapper">
-      <!-- 1. HERO SECTION -->
+      <!-- 1. HERO SECTION (CYBERNETIC DEPTH & SHIELD INSIGNIA) -->
       <section class="hero-section" id="hero">
-        <div class="hero-bg-container">
-          <div
-            class="hero-bg-slide active"
-            style="
-              background-image: url(&quot;/assets/images/hero-1.webp&quot;);
-            "
-          ></div>
-          <div
-            class="hero-bg-slide"
-            style="
-              background-image: url(&quot;/assets/images/hero-2.webp&quot;);
-            "
-          ></div>
-          <div
-            class="hero-bg-slide"
-            style="
-              background-image: url(&quot;/assets/images/hero-3.webp&quot;);
-            "
-          ></div>
-        </div>
-
+        <div class="hero-static-bg"></div>
         <div class="hero-overlay"></div>
 
-        <div class="hero-content">
-          <span class="hero-badge" data-i18n="badge"
-            >[ BACKEND DEVELOPER // DEVSECOPS ]</span
-          >
+        <div class="hero-stage">
+          <!-- Camada 1 (Fundo Visual Decorativo com aria-hidden correto em span) -->
+          <span class="hero-layer-bg" aria-hidden="true">
+            CYBER DEFENSE &
+          </span>
 
-          <h1 class="hero-title" data-i18n="heroTitle">
-            Desenvolvendo
-            <span class="accent-highlight">Sistemas Resilientes</span> e
-            Arquitetura de Software
-          </h1>
+          <!-- Brasão Tático Central/Direita -->
+          <div class="hero-insignia-wrapper">
+            <img
+              src="/assets/images/shield-insignia-hero.webp"
+              alt="Shield Protocol Tactical Insignia"
+              class="hero-insignia-img"
+            />
+          </div>
 
-          <p class="hero-description" data-i18n="subtitle">
-            Desenvolvedor focado na construção de aplicações backend robustas,
-            automação DevSecOps, microsserviços e segurança em nuvem.
-          </p>
+          <!-- Camada 2 (Conteúdo Acessível e H1 Oficial) -->
+          <div class="hero-layer-fg">
+            <h1 class="hero-title-main" data-i18n="heroTitle">
+              CYBER DEFENSE &
+              <span class="accent-highlight">RED TEAM ARCHITECTURE</span>
+            </h1>
 
-          <div class="hero-actions">
-            <a
-              href="#projects"
-              class="btn-primary"
-              data-cursor="hover"
-              data-i18n="btnProjects"
-              >Ver Projetos</a
-            >
-            <a
-              href="#contact"
-              class="btn-secondary"
-              data-cursor="hover"
-              data-i18n="btnContact"
-              >Iniciar Contato</a
-            >
+            <div class="hero-actions">
+              <a
+                href="#projects"
+                class="btn-primary"
+                data-cursor="hover"
+                data-i18n="btnProjects"
+                >Ver Projetos</a
+              >
+              <a
+                href="#contact"
+                class="btn-secondary"
+                data-cursor="hover"
+                data-i18n="btnContact"
+                >Iniciar Contato</a
+              >
+            </div>
           </div>
         </div>
       </section>
