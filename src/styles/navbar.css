@@ -26,28 +26,60 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   z-index: 102;
+  text-decoration: none;
 }
 
-.brand-dr4co {
+.navbar-brand-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-brand-logo {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.85));
+}
+
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.brand-shield-title {
   font-family: var(--font-mono);
   font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: 0.06em;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
   color: var(--accent-cyan);
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.2rem 0.4rem;
   position: relative;
   animation: tacticalGlitch 6s infinite ease-in-out;
   text-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
 }
 
-.brand-dr4co span {
+.brand-shield-title span {
   color: var(--text-primary);
   opacity: 0.7;
+}
+
+.brand-sub-author {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 4px;
 }
 
 @keyframes tacticalGlitch {
