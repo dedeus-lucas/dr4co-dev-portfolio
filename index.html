@@ -155,18 +155,18 @@
     </header>
 
     <main id="app" class="smooth-scroll-wrapper">
-      <!-- 1. HERO SECTION (CYBERNETIC DEPTH & SHIELD INSIGNIA) -->
+      <!-- 1. HERO SECTION (TACTICAL SHIELD & LAYERED DEPTH) -->
       <section class="hero-section" id="hero">
         <div class="hero-static-bg"></div>
         <div class="hero-overlay"></div>
 
         <div class="hero-stage">
-          <!-- Camada 1 (Fundo Visual Decorativo com aria-hidden correto em span) -->
-          <span class="hero-layer-bg" aria-hidden="true">
-            CYBER DEFENSE &
-          </span>
+          <!-- Camada Traseira: CYBER DEFENSE por trás do brasão -->
+          <span class="hero-layer-behind" aria-hidden="true"
+            >CYBER DEFENSE</span
+          >
 
-          <!-- Brasão Tático Central/Direita -->
+          <!-- Brasão Tático Redimensionado -->
           <div class="hero-insignia-wrapper">
             <img
               src="/assets/images/shield-insignia-hero.webp"
@@ -175,10 +175,11 @@
             />
           </div>
 
-          <!-- Camada 2 (Conteúdo Acessível e H1 Oficial) -->
-          <div class="hero-layer-fg">
+          <!-- Camada Frontal: H1 Acessível com & branco e RED TEAM ARCHITECTURE por cima -->
+          <div class="hero-layer-front">
             <h1 class="hero-title-main" data-i18n="heroTitle">
-              CYBER DEFENSE &
+              <span class="title-lead">CYBER DEFENSE</span>
+              <span class="title-amp">&</span>
               <span class="accent-highlight">RED TEAM ARCHITECTURE</span>
             </h1>
 
