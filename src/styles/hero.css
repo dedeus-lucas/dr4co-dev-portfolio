@@ -114,18 +114,19 @@
   display: block;
 }
 
-.title-accent-group {
-  display: inline-flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.3em;
+.title-line-secondary {
+  display: block;
+  white-space: nowrap;
 }
 
 .title-amp {
   color: #ffffff;
+  margin-right: 0.25em;
+  display: inline;
 }
 
 .hero-title-main .accent-highlight {
+  display: inline;
   color: var(--accent-cyan, #00f0ff);
   text-shadow:
     0 0 20px rgba(0, 240, 255, 0.6),
@@ -211,8 +212,8 @@
     font-size: clamp(2.2rem, 8vw, 3.4rem);
   }
 
-  .title-accent-group {
-    justify-content: center;
+  .title-line-secondary {
+    white-space: normal;
   }
 
   .hero-actions {
