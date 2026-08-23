@@ -3,7 +3,7 @@ export function initHudBackground() {
     ".manifesto-section, .journey-section, .bento-section",
   );
 
-  const codeSnippet = `
+  const codeSnippet = String.raw`
 <span class="kw-pink">package</span> com.shield.protocol.redops;                                        <span class="comment">// 0xDEAD_BEEF // TACTICAL_EXPLOIT_PAYLOAD</span>
 <span class="kw-cyan">import</span> org.shield.offensive.security.<span class="kw-blue">RedTeamDriver</span>;                           <span class="kw-pink">import</span> java.lang.foreign.<span class="kw-blue">MemorySegment</span>;
 <span class="kw-cyan">import</span> org.shield.core.crypto.<span class="kw-blue">AESGCMVault</span>;                                     <span class="kw-pink">import</span> java.util.concurrent.<span class="kw-blue">CompletableFuture</span>;
@@ -31,7 +31,7 @@ export function initHudBackground() {
     }
 
     <span class="kw-pink">private boolean</span> <span class="fn">sanitizePipelineVulnerabilities</span>(<span class="kw-cyan">String</span> host) {
-        <span class="kw-pink">return</span> host != <span class="kw-pink">null</span> &amp;&amp; host.<span class="fn">matches</span>(<span class="str">"^[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$"</span>); <span class="comment">// DEVSECOPS_GATEWAY_OK</span>
+        <span class="kw-pink">return</span> host != <span class="kw-pink">null</span> &amp;&amp; host.<span class="fn">matches</span>(<span class="str">"^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"</span>); <span class="comment">// DEVSECOPS_GATEWAY_OK</span>
     }
 }
   `;
