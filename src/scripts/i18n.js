@@ -11,22 +11,22 @@ export const translations = {
     navProj: "Projetos",
     navContact: "Contato",
 
-    // Seção 2: Sobre / Filosofia
+    // Seção 2: Sobre / Filosofia (Alinhado com Currículo e Empregabilidade CyberSec)
     manifestoSectionTag: "[ SOBRE // FILOSOFIA ]",
     manifestoTitle:
-      'Código não é apenas um sistema executável. É a <span class="highlight">engenharia invisível</span> que garante resiliência, segurança e confiabilidade a operações críticas.',
-    card1Tag: "01 // BASE TÉCNICA",
-    card1Title: "Engenharia Backend & Core",
+      'Código não é apenas um sistema executável. É a <span class="highlight">engenharia invisível</span> que garante resiliência, segurança ativa e contenção de riscos em operações críticas.',
+    card1Tag: "01 // CORE BACKEND",
+    card1Title: "Engenharia Backend & APIs",
     card1Desc:
-      "Desenvolvimento e estruturação de APIs RESTful resilientes em Java/Spring Boot, persistência eficiente e arquitetura projetada para contenção de falhas.",
-    card2Tag: "02 // SEGURANÇA & INFRA",
-    card2Title: "DevSecOps & Red Ops",
+      "Desenvolvimento de APIs RESTful resilientes com Java 21, Spring Boot, Spring Security e JPA/Hibernate. Arquitetura orientada à contenção de falhas e controle de acesso estrito.",
+    card2Tag: "02 // DEVSECOPS & APPSEC",
+    card2Title: "DevSecOps & Red Operations",
     card2Desc:
-      "Segurança ativa no ciclo de vida de software, esteiras CI/CD blindadas, análise estática de código, auditoria de contêineres e testes de intrusão defensivos.",
-    card3Tag: "03 // FUNDAMENTAÇÃO",
-    card3Title: "Arquitetura & Qualidade",
+      "Integração contínua (CI/CD) com esteiras blindadas por SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog) e análise em contêineres Docker com foco em OWASP Top 10.",
+    card3Tag: "03 // SEGURANÇA ATIVA",
+    card3Title: "Criptografia & Resiliência",
     card3Desc:
-      "Aplicação prática de princípios de Clean Architecture, isolamento de recursos, observabilidade distribuída e mitigação de vulnerabilidades corporativas.",
+      "Cofres criptográficos em memória (AES-256-GCM), proteção contra força bruta com Rate Limiting (Bucket4j), observabilidade (Prometheus) e princípios de Clean Architecture.",
 
     // Seção 3: Jornada / Trajetória
     journeySectionTag: "[ JORNADA // TRAJETÓRIA ]",
@@ -126,7 +126,7 @@ export const translations = {
     navResume: "CURRÍCULO",
   },
   "en-US": {
-    // Hero Section (Cleaned)
+    // Hero Section
     btnProjects: "View Projects",
     btnContact: "Get in Touch",
 
@@ -137,22 +137,22 @@ export const translations = {
     navProj: "Projects",
     navContact: "Contact",
 
-    // Section 2: About / Philosophy
+    // Section 2: About / Philosophy (Aligned with Resume & Cybersecurity Focus)
     manifestoSectionTag: "[ ABOUT // PHILOSOPHY ]",
     manifestoTitle:
-      'Code is not merely executable logic. It is the <span class="highlight">invisible engineering</span> that ensures resilience, security, and reliability for critical operations.',
-    card1Tag: "01 // TECHNICAL CORE",
-    card1Title: "Backend & Core Engineering",
+      'Code is not merely executable logic. It is the <span class="highlight">invisible engineering</span> that ensures resilience, active security, and risk containment for critical operations.',
+    card1Tag: "01 // CORE BACKEND",
+    card1Title: "Backend & API Engineering",
     card1Desc:
-      "Development and structuring of resilient RESTful APIs using Java/Spring Boot, efficient data persistence, and architecture built for failure containment.",
-    card2Tag: "02 // SECURITY & INFRA",
-    card2Title: "DevSecOps & Red Ops",
+      "Development of resilient RESTful APIs using Java 21, Spring Boot, Spring Security, and JPA/Hibernate. Failure-containment architecture and strict access control.",
+    card2Tag: "02 // DEVSECOPS & APPSEC",
+    card2Title: "DevSecOps & Red Operations",
     card2Desc:
-      "Active security throughout the software lifecycle, hardened CI/CD pipelines, static code analysis, container auditing, and defensive intrusion testing.",
-    card3Tag: "03 // FOUNDATION",
-    card3Title: "Architecture & Quality",
+      "Continuous integration (CI/CD) with hardened pipelines via SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), and container security focusing on OWASP Top 10.",
+    card3Tag: "03 // ACTIVE SECURITY",
+    card3Title: "Cryptography & Resilience",
     card3Desc:
-      "Practical application of Clean Architecture principles, resource isolation, distributed observability, and corporate vulnerability mitigation.",
+      "In-memory cryptographic vaults (AES-256-GCM), brute-force rate limiting (Bucket4j), telemetry observability (Prometheus), and Clean Architecture principles.",
 
     // Section 3: Journey / Trajectory
     journeySectionTag: "[ JOURNEY // TRAJECTORY ]",
