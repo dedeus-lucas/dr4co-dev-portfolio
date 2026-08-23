@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DR4CO.DEV | Portfolio</title>
+    <title>Shield Protocol - Technical Portfolio</title>
+    <meta
+      name="description"
+      content="Portfólio de engenharia de sistemas seguros com foco em backend, arquitetura escalável, segurança de APIs, DevSecOps e cloud security."
+    />
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -21,12 +25,12 @@
       sizes="512x512"
       href="/android-chrome-512x512.png"
     />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#07090e" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@700;800;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -44,7 +48,7 @@
       <a href="#" class="navbar-brand" data-cursor="hover">
         <img
           src="/assets/images/shield-insignia-core.webp"
-          alt="Shield Protocol Core Insignia"
+          alt="Shield Insignia"
           class="navbar-brand-logo"
         />
         <div class="brand-text-group">
@@ -108,8 +112,7 @@
       </nav>
 
       <div class="navbar-actions">
-        <button class="lang-selector">[ PT-BR ]</button>
-
+        <button class="lang-selector nav-lang-desktop">[ PT-BR ]</button>
         <button class="mobile-menu-btn" aria-label="Abrir Menu">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -120,6 +123,7 @@
       <div class="mobile-menu-overlay">
         <div class="mobile-menu-header">
           <span class="mobile-menu-tag">[ NAVIGATION_SYSTEM ]</span>
+          <button class="lang-selector mobile-lang-btn">[ PT-BR ]</button>
         </div>
         <ul class="mobile-menu-links">
           <li>
@@ -155,34 +159,38 @@
     </header>
 
     <main id="app" class="smooth-scroll-wrapper">
-      <!-- 1. HERO SECTION (TACTICAL SHIELD & LAYERED DEPTH) -->
+      <!-- 1. HERO SECTION -->
       <section class="hero-section" id="hero">
         <div class="hero-static-bg"></div>
         <div class="hero-overlay"></div>
 
         <div class="hero-stage">
-          <!-- Camada Traseira: CYBER DEFENSE por trás do brasão -->
-          <span class="hero-layer-behind" aria-hidden="true"
-            >CYBER DEFENSE</span
-          >
-
-          <!-- Brasão Tático em Alta Fidelidade -->
+          <!-- Brasão Tático (Camada Intermediária) -->
           <div class="hero-insignia-wrapper">
             <img
               src="/assets/images/shield-insignia-hero.webp"
-              alt="Shield Protocol Tactical Insignia"
+              alt="Shield Protocol Insignia"
               class="hero-insignia-img"
             />
           </div>
 
-          <div class="hero-layer-front">
-            <h1 class="hero-title-main" data-i18n="heroTitle">
-              <span class="title-lead">CYBER DEFENSE</span>
-              <span class="title-line-secondary">
-                <span class="title-amp">&</span>
-                <span class="accent-highlight">RED TEAM ARCHITECTURE</span>
-              </span>
-            </h1>
+          <!-- Composição das Linhas Desacopladas com Z-Index Estrito -->
+          <div class="hero-content-stack">
+            <!-- Linha 1 (Z-Index 1: Fica ATRÁS da Insígnia) -->
+            <div class="hero-line hero-line-1">
+              <span class="text-white">CYBER DEFENSE</span>
+            </div>
+
+            <!-- Linha 2 (Z-Index 2: Mesmo nível de plano) -->
+            <div class="hero-line hero-line-2">
+              <span class="text-white-amp">&</span>
+              <span class="text-cyan">RED TEAM</span>
+            </div>
+
+            <!-- Linha 3 (Z-Index 3: Fica NA FRENTE de tudo) -->
+            <div class="hero-line hero-line-3">
+              <span class="text-cyan">ARCHITECTURE</span>
+            </div>
 
             <div class="hero-actions">
               <a
@@ -213,13 +221,11 @@
             >
             <div class="manifesto-line"></div>
           </div>
-
           <h2 class="manifesto-quote" data-i18n="manifestoTitle">
             Código não é apenas um sistema executável. É a
             <span class="highlight">engenharia invisível</span> que garante
             resiliência, segurança e confiabilidade a operações críticas.
           </h2>
-
           <div class="manifesto-grid">
             <div class="manifesto-card">
               <span class="manifesto-card-num" data-i18n="card1Tag"
@@ -234,7 +240,6 @@
                 dados relacionais.
               </p>
             </div>
-
             <div class="manifesto-card">
               <span class="manifesto-card-num" data-i18n="card2Tag"
                 >02 // SEGURANÇA & INFRA</span
@@ -248,7 +253,6 @@
                 aplicação das recomendações do OWASP Top 10.
               </p>
             </div>
-
             <div class="manifesto-card">
               <span class="manifesto-card-num" data-i18n="card3Tag"
                 >03 // FUNDAMENTAÇÃO</span
@@ -275,7 +279,6 @@
             >
             <div class="journey-line"></div>
           </div>
-
           <div class="journey-intro">
             <h2 class="journey-title" data-i18n="journeyTitle">
               Evolução técnica contínua e fundamentada em engenharia de software
@@ -285,7 +288,6 @@
               teórica para o desenvolvimento backend e segurança da informação.
             </p>
           </div>
-
           <div class="journey-grid">
             <div class="journey-card">
               <div class="journey-card-header">
@@ -301,7 +303,6 @@
                 JavaScript.
               </p>
             </div>
-
             <div class="journey-card">
               <div class="journey-card-header">
                 <span class="journey-year">2025</span>
@@ -315,7 +316,6 @@
                 com Docker e noções de Cloud Security.
               </p>
             </div>
-
             <div class="journey-card">
               <div class="journey-card-header">
                 <span class="journey-year">2026</span>
@@ -330,7 +330,6 @@
                 trabalho.
               </p>
             </div>
-
             <div class="journey-card journey-card-future">
               <div class="journey-card-header">
                 <span class="journey-year">FUTURO</span>
@@ -362,7 +361,6 @@
               Tecnologias, Ferramentas e Ecossistema de Engenharia
             </h2>
           </div>
-
           <div class="bento-grid">
             <div class="bento-card span-2" data-cursor="hover">
               <div>
@@ -378,15 +376,11 @@
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ Java ]</span>
-                <span>[ Spring Boot ]</span>
-                <span>[ JPA / Hibernate ]</span>
-                <span>[ PostgreSQL ]</span>
-                <span>[ REST APIs ]</span>
-                <span>[ JUnit / Mockito ]</span>
+                <span>[ Java ]</span><span>[ Spring Boot ]</span
+                ><span>[ JPA / Hibernate ]</span><span>[ PostgreSQL ]</span
+                ><span>[ REST APIs ]</span><span>[ JUnit / Mockito ]</span>
               </div>
             </div>
-
             <div class="bento-card" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card2Tag"
@@ -401,14 +395,10 @@
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ Docker ]</span>
-                <span>[ AWS ]</span>
-                <span>[ OWASP ]</span>
-                <span>[ OAuth2/JWT ]</span>
-                <span>[ Linux ]</span>
+                <span>[ Docker ]</span><span>[ AWS ]</span><span>[ OWASP ]</span
+                ><span>[ OAuth2/JWT ]</span><span>[ Linux ]</span>
               </div>
             </div>
-
             <div class="bento-card" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card3Tag"
@@ -423,13 +413,10 @@
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ C ]</span>
-                <span>[ Python ]</span>
-                <span>[ JavaScript ]</span>
-                <span>[ Git ]</span>
+                <span>[ C ]</span><span>[ Python ]</span
+                ><span>[ JavaScript ]</span><span>[ Git ]</span>
               </div>
             </div>
-
             <div class="bento-card span-2" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card4Tag"
@@ -445,17 +432,16 @@
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ Clean Code ]</span>
-                <span>[ SOLID ]</span>
-                <span>[ Observabilidade ]</span>
-                <span>[ Security Hardening ]</span>
+                <span>[ Clean Code ]</span><span>[ SOLID ]</span
+                ><span>[ Observabilidade ]</span
+                ><span>[ Security Hardening ]</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 5. PROJECTS SECTION (Horizontal Pinning Scroll - 8 Cards) -->
+      <!-- 5. PROJECTS SECTION -->
       <section class="projects-pin-wrapper" id="projects">
         <div class="projects-header">
           <div class="projects-title-group">
@@ -467,9 +453,8 @@
             >// ARRASTE OU USE O SCROLL PARA NAVEGAR</span
           >
         </div>
-
         <div class="projects-track">
-          <!-- Card 1: Sentinel-Vault Core Engine -->
+          <!-- Card 1 -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
@@ -488,17 +473,12 @@
                 <p class="project-card-desc" data-i18n="p1Desc">
                   Núcleo central de cofre criptográfico projetado para
                   isolamento estrito de credenciais através do algoritmo
-                  AES-256-GCM. Elimina o vazamento de segredos em pipelines de
-                  CI/CD e infraestruturas distribuídas, oferecendo auditoria
-                  imutável e controle de acesso baseado em papéis.
+                  AES-256-GCM.
                 </p>
               </div>
               <div class="project-card-footer">
-                <span
-                  class="project-card-techs"
-                  title="Java 21 • Spring Boot 3 • Spring Security (JWT) • Spring Data JPA • AES-256-GCM • Bucket4j (Rate Limiting) • Flyway (Migrations) • PostgreSQL • H2 Database • Prometheus • Spring Actuator • GitHub Actions • Docker • TruffleHog (Secret Scanning) • Semgrep (SAST) • Snyk (SCA) • Trivy (Container Scan)"
-                >
-                  >Java • Spring Boot • Spring Security (JWT) • PostgreSQL</span
+                <span class="project-card-techs"
+                  >&gt;Java • Spring Boot • PostgreSQL</span
                 >
                 <a
                   href="https://github.com/dedeus-lucas/sentinel-vault"
@@ -511,8 +491,7 @@
               </div>
             </div>
           </article>
-
-          <!-- Card 2: Sentinel Env Injector -->
+          <!-- Card 2 -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
@@ -531,18 +510,12 @@
                 <p class="project-card-desc" data-i18n="p2Desc">
                   Extensão para Spring Boot que intercepta a inicialização do
                   contexto para injetar segredos do Vault diretamente na memória
-                  RAM volátil. Garante persistência zero em disco ao aplicar
-                  higienização ativa com sobrescrita de zeros em buffers
-                  sensíveis e vetores criptográficos.
+                  RAM volátil.
                 </p>
               </div>
               <div class="project-card-footer">
-                <span
-                  class="project-card-techs"
-                  title="Java 21 • Spring Boot SPI • ApplicationContextInitializer • Volatile RAM Injection • Zero-Disk Persistence • Active Buffer Wiping • AES-256-GCM In-Memory Decryption • Native HTTP Client • Jackson BOM • Zero External Dep Footprint • Maven Wrapper (Build Independent) • GitHub Actions • Semgrep • JUnit 5 (MockWebServer Test Suite)"
-                >
-                  >Java • Spring Boot SPI • Zero-Disk Persistence •
-                  ApplicationContextInitializer</span
+                <span class="project-card-techs"
+                  >&gt;Java • Spring Boot SPI • Zero-Disk</span
                 >
                 <a
                   href="https://github.com/dedeus-lucas/sentinel-env-injector"
@@ -555,8 +528,7 @@
               </div>
             </div>
           </article>
-
-          <!-- Card 3: Identity Guard OAuth2 Server -->
+          <!-- Card 3 -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
@@ -585,8 +557,7 @@
               </div>
             </div>
           </article>
-
-          <!-- Card 4: Hardened Pipeline CI/CD -->
+          <!-- Card 4 -->
           <article class="project-card" data-cursor="hover">
             <div
               class="project-card-image"
@@ -618,138 +589,12 @@
               </div>
             </div>
           </article>
-
-          <!-- Card 5: Event Stream Telemetry -->
-          <article class="project-card" data-cursor="hover">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url(&quot;/assets/images/hero-2.webp&quot;);
-              "
-            ></div>
-            <div class="project-card-body">
-              <div>
-                <span class="project-card-cat" data-i18n="p5Cat"
-                  >05 // SISTEMAS DISTRIBUÍDOS</span
-                >
-                <h3 class="project-card-title" data-i18n="p5Title">
-                  Event Stream Telemetry
-                </h3>
-                <p class="project-card-desc" data-i18n="p5Desc">
-                  Arquitetura orientada a eventos para coleta e processamento de
-                  logs distribuídos em tempo real com alta disponibilidade.
-                </p>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-techs"
-                  >Node.js • PostgreSQL • Linux</span
-                >
-                <span class="project-card-link" data-i18n="projectCaseBtn"
-                  >VER DETALHES &rarr;</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 6: Hyperion Packet Monitor -->
-          <article class="project-card" data-cursor="hover">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url(&quot;/assets/images/hero-3.webp&quot;);
-              "
-            ></div>
-            <div class="project-card-body">
-              <div>
-                <span class="project-card-cat" data-i18n="p6Cat"
-                  >06 // RUST & APPSEC</span
-                >
-                <h3 class="project-card-title" data-i18n="p6Title">
-                  Hyperion Packet Monitor
-                </h3>
-                <p class="project-card-desc" data-i18n="p6Desc">
-                  Ferramenta CLI para inspeção tática e análise de integridade
-                  de tráfego de rede focada em detecção de anomalias.
-                </p>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-techs">C • Python • NetUtils</span>
-                <span class="project-card-link" data-i18n="projectCaseBtn"
-                  >VER DETALHES &rarr;</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 7: Dicionário Eletrônico Engine -->
-          <article class="project-card" data-cursor="hover">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url(&quot;/assets/images/hero-1.webp&quot;);
-              "
-            ></div>
-            <div class="project-card-body">
-              <div>
-                <span class="project-card-cat" data-i18n="p7Cat"
-                  >07 // BANCO DE DADOS</span
-                >
-                <h3 class="project-card-title" data-i18n="p7Title">
-                  Dicionário Eletrônico Engine
-                </h3>
-                <p class="project-card-desc" data-i18n="p7Desc">
-                  Motor de busca lexical otimizado para dicionários técnicos com
-                  modelagem avançada de persistência e APIs de consulta rápida.
-                </p>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-techs"
-                  >Java • Spring Data • PostgreSQL</span
-                >
-                <span class="project-card-link" data-i18n="projectCaseBtn"
-                  >VER DETALHES &rarr;</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 8: Cloud Shield Orchestrator -->
-          <article class="project-card" data-cursor="hover">
-            <div
-              class="project-card-image"
-              style="
-                background-image: url(&quot;/assets/images/hero-2.webp&quot;);
-              "
-            ></div>
-            <div class="project-card-body">
-              <div>
-                <span class="project-card-cat" data-i18n="p8Cat"
-                  >08 // ARQUITETURA FUTURA</span
-                >
-                <h3 class="project-card-title" data-i18n="p8Title">
-                  Cloud Shield Orchestrator
-                </h3>
-                <p class="project-card-desc" data-i18n="p8Desc">
-                  Orquestrador defensivo em desenvolvimento focado no
-                  gerenciamento de políticas de segurança ativas em nuvem
-                  híbrida.
-                </p>
-              </div>
-              <div class="project-card-footer">
-                <span class="project-card-techs">AWS • Terraform • Python</span>
-                <span class="project-card-link" data-i18n="projectCaseBtn"
-                  >VER DETALHES &rarr;</span
-                >
-              </div>
-            </div>
-          </article>
         </div>
       </section>
 
       <!-- 6. CONTACT SECTION -->
       <section class="contact-section" id="contact">
         <div class="contact-container">
-          <!-- Coluna 1: Informações e Apresentação -->
           <div class="contact-info">
             <span class="contact-tag" data-i18n="contactTag"
               >[ CONTATO // CANAIS DIRETO ]</span
@@ -764,7 +609,6 @@
               engenharia backend, consultorias de arquitetura e segurança de
               infraestrutura.
             </p>
-
             <div class="contact-direct-links">
               <a
                 href="mailto:silvadedeus.lucas@gmail.com"
@@ -774,7 +618,6 @@
                 <span class="link-label">[ EMAIL ]</span>
                 <span class="link-value">silvadedeus.lucas@gmail.com</span>
               </a>
-
               <a
                 href="https://wa.me/5573981230728"
                 target="_blank"
@@ -787,8 +630,6 @@
               </a>
             </div>
           </div>
-
-          <!-- Coluna 2: Card de Disponibilidade Tática -->
           <div class="contact-protocol-card">
             <div class="protocol-card-header">
               <span class="protocol-card-num" data-i18n="protoCardNum"
@@ -803,7 +644,6 @@
                 inicial.
               </p>
             </div>
-
             <div class="protocol-status-group">
               <div class="status-indicator">
                 <span class="status-dot"></span>
@@ -831,7 +671,7 @@
         <a href="#" class="footer-brand" data-cursor="hover">
           <img
             src="/assets/images/shield-insignia-core.webp"
-            alt="Shield Protocol Core Insignia"
+            alt="Shield Insignia"
             class="footer-brand-logo"
           />
           <div class="brand-text-group">

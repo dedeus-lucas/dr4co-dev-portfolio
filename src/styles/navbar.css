@@ -17,7 +17,7 @@
 
 .navbar.scrolled {
   padding: 1rem 3rem;
-  background-color: rgba(7, 9, 14, 0.85);
+  background-color: rgba(7, 9, 14, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom-color: var(--border-tactical);
@@ -32,16 +32,15 @@
 }
 
 .navbar-brand-logo {
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.5));
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .navbar-brand:hover .navbar-brand-logo {
-  transform: scale(1.08);
-  filter: drop-shadow(0 0 16px rgba(0, 240, 255, 0.85));
+  transform: scale(1.06);
 }
 
 .brand-text-group {
@@ -55,12 +54,14 @@
 .brand-shield-title {
   font-family: var(--font-mono);
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   letter-spacing: 0.08em;
   color: var(--accent-cyan);
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+  white-space: nowrap;
+  /* Impede quebra para linha inferior */
   position: relative;
   animation: tacticalGlitch 6s infinite ease-in-out;
   text-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
@@ -80,6 +81,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 4px;
+  white-space: nowrap;
 }
 
 @keyframes tacticalGlitch {
@@ -203,7 +205,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(7, 9, 14, 0.96);
+  background-color: rgba(7, 9, 14, 0.98);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   z-index: 101;
@@ -219,6 +221,12 @@
 .mobile-menu-overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mobile-menu-tag {
@@ -237,7 +245,7 @@
 
 .mobile-menu-link {
   font-family: var(--font-mono);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--text-primary);
   text-transform: uppercase;
@@ -252,11 +260,6 @@
   color: var(--accent-cyan);
 }
 
-.mobile-menu-link:active {
-  color: var(--accent-cyan);
-  transform: translateX(8px);
-}
-
 .mobile-menu-footer {
   border-top: 1px solid var(--border-tactical);
   padding-top: 1rem;
@@ -268,24 +271,33 @@
   color: var(--text-muted);
 }
 
-/* -------------------------------------------------------------
-MEDIA QUERIES (Mobile-First Responsiveness)
-------------------------------------------------------------- */
-@media (max-width: 768px) {
+/* ==========================================================================
+    RESPONSIVIDADE (MOBILE-FIRST / BREAKPOINTS)
+   ========================================================================== */
+@media (max-width: 900px) {
   .navbar {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.25rem;
   }
 
   .navbar.scrolled {
-    padding: 0.8rem 1.5rem;
+    padding: 0.85rem 1.25rem;
   }
 
-  .navbar-nav-desktop {
-    display: none;
+  .navbar-nav-desktop,
+  .navbar-brand-badge,
+  .nav-lang-desktop,
+  .navbar-brand-logo {
+    display: none !important;
   }
 
-  .navbar-brand-badge {
-    display: none;
+  .brand-shield-title {
+    font-size: 0.98rem;
+    letter-spacing: 0.05em;
+  }
+
+  .brand-sub-author {
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
   }
 
   .mobile-menu-btn {
