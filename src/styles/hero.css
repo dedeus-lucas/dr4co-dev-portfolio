@@ -47,8 +47,8 @@
    ========================================================================== */
 .hero-layer-behind {
   position: absolute;
-  left: 2rem;
-  top: 31%;
+  left: 0.8rem;
+  top: 28.5%;
   transform: translateY(-50%);
   font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
   font-size: clamp(3.5rem, 7.5vw, 6.9rem);
@@ -56,7 +56,7 @@
   line-height: 1.02;
   letter-spacing: -0.04em;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.25);
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.28);
   z-index: 0;
   pointer-events: none;
   white-space: nowrap;
