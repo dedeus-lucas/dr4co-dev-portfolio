@@ -10,13 +10,13 @@ export function initManifestoAnimations() {
   const quote = manifestoSection.querySelector(".manifesto-quote");
   if (quote) {
     gsap.from(quote, {
-      y: 40,
+      y: 35,
       opacity: 0,
       duration: 0.8,
       ease: "power3.out",
       scrollTrigger: {
         trigger: quote,
-        start: "top 80%",
+        start: "top 82%",
         toggleActions: "play none none reverse",
       },
     });
@@ -25,7 +25,7 @@ export function initManifestoAnimations() {
   const cards = manifestoSection.querySelectorAll(".manifesto-card");
   if (cards.length > 0) {
     gsap.from(cards, {
-      y: 40,
+      y: 35,
       opacity: 0,
       duration: 0.8,
       stagger: 0.15,

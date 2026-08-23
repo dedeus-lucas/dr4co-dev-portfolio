@@ -226,51 +226,59 @@
             >
             <div class="manifesto-line"></div>
           </div>
+
           <h2 class="manifesto-quote" data-i18n="manifestoTitle">
             Código não é apenas um sistema executável. É a
             <span class="highlight">engenharia invisível</span> que garante
-            resiliência, segurança e confiabilidade a operações críticas.
+            resiliência, segurança ativa e contenção de riscos em operações
+            críticas.
           </h2>
+
           <div class="manifesto-grid">
-            <div class="manifesto-card">
+            <!-- Card 01: Core Backend & APIs -->
+            <article class="manifesto-card" data-cursor="hover">
               <span class="manifesto-card-num" data-i18n="card1Tag"
-                >01 // BASE TÉCNICA</span
+                >01 // CORE BACKEND</span
               >
               <h3 class="manifesto-card-title" data-i18n="card1Title">
-                Engenharia Backend
+                Engenharia Backend & APIs
               </h3>
               <p class="manifesto-card-desc" data-i18n="card1Desc">
-                Desenvolvimento e estruturação de APIs RESTful utilizando Java,
-                ecossistema Spring Boot, JPA/Hibernate e modelagem de bancos de
-                dados relacionais.
+                Desenvolvimento de APIs RESTful resilientes com Java 21, Spring
+                Boot, Spring Security e JPA/Hibernate. Arquitetura orientada à
+                contenção de falhas e controle de acesso estrito.
               </p>
-            </div>
-            <div class="manifesto-card">
+            </article>
+
+            <!-- Card 02: DevSecOps & AppSec -->
+            <article class="manifesto-card" data-cursor="hover">
               <span class="manifesto-card-num" data-i18n="card2Tag"
-                >02 // SEGURANÇA & INFRA</span
+                >02 // DEVSECOPS & APPSEC</span
               >
               <h3 class="manifesto-card-title" data-i18n="card2Title">
-                DevSecOps & Cloud
+                DevSecOps & Red Operations
               </h3>
               <p class="manifesto-card-desc" data-i18n="card2Desc">
-                Práticas de segurança no ciclo de vida de software,
-                conteinerização com Docker, integração contínua (CI/CD) e
-                aplicação das recomendações do OWASP Top 10.
+                Integração contínua (CI/CD) com esteiras blindadas por SAST
+                (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog) e análise em
+                contêineres Docker com foco em OWASP Top 10.
               </p>
-            </div>
-            <div class="manifesto-card">
+            </article>
+
+            <!-- Card 03: Segurança Ativa & Resiliência -->
+            <article class="manifesto-card" data-cursor="hover">
               <span class="manifesto-card-num" data-i18n="card3Tag"
-                >03 // FUNDAMENTAÇÃO</span
+                >03 // SEGURANÇA ATIVA</span
               >
               <h3 class="manifesto-card-title" data-i18n="card3Title">
-                Arquitetura & Qualidade
+                Criptografia & Resiliência
               </h3>
               <p class="manifesto-card-desc" data-i18n="card3Desc">
-                Aplicação prática de princípios de Clean Architecture, Clean
-                Code, testes e estudo contínuo em sistemas distribuídos e
-                observabilidade.
+                Cofres criptográficos em memória (AES-256-GCM), proteção contra
+                força bruta com Rate Limiting (Bucket4j), observabilidade
+                (Prometheus) e princípios de Clean Architecture.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>

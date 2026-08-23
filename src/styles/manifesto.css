@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--bg-primary);
+  overflow: hidden;
 }
 
 .manifesto-section::after {
@@ -15,7 +16,7 @@
   animation: none !important;
 }
 
-/* Container de Código Java (Fundo Totalmente Escuro e Transparente) */
+/* Container do Código HUD de Fundo */
 .java-code-overlay {
   position: absolute;
   top: 0;
@@ -26,13 +27,11 @@
   pointer-events: none;
   z-index: 1;
   opacity: 0.85;
-
-  /* EFEITO LANTERNA EXPANDIDO (Cobrindo da ponta esquerda à direita) */
-  -webkit-mask-image: radial-gradient(circle 260px at var(--light-x, 5%) var(--light-y, 15%),
+  -webkit-mask-image: radial-gradient(circle 280px at var(--light-x, 5%) var(--light-y, 15%),
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.4) 60%,
       rgba(0, 0, 0, 0) 100%);
-  mask-image: radial-gradient(circle 260px at var(--light-x, 5%) var(--light-y, 15%),
+  mask-image: radial-gradient(circle 280px at var(--light-x, 5%) var(--light-y, 15%),
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0.4) 60%,
       rgba(0, 0, 0, 0) 100%);
@@ -52,58 +51,40 @@
   display: block;
 }
 
-/* Syntax Highlighting do Código no Fundo */
 .java-code-content .kw-pink {
   color: #ff79c6;
   font-weight: 500;
 }
 
-/* Lilás/Rosa */
-
 .java-code-content .kw-cyan {
   color: #80efa8;
 }
-
-/* Verde/Ciano Menta */
 
 .java-code-content .kw-blue {
   color: #bd93f9;
 }
 
-/* Roxo/Azul Elétrico */
-
 .java-code-content .annotation {
   color: #ffb86c;
 }
-
-/* Laranja Tático */
 
 .java-code-content .fn {
   color: #50fa7b;
 }
 
-/* Verde Função */
-
 .java-code-content .str {
   color: #f1fa8c;
 }
 
-/* Amarelo String */
-
 .java-code-content .num {
   color: #bd93f9;
 }
-
-/* Número */
 
 .java-code-content .comment {
   color: #6272a4;
   font-style: italic;
 }
 
-/* Cinza Comentário */
-
-/* Keyframes da Lanterna Varrendo em "Z" (Varre de 5% até 92% da tela de Cima a Baixo) */
 @keyframes sweepLightBeam {
   0% {
     --light-x: 5%;
@@ -136,7 +117,6 @@
   }
 }
 
-/* Suporte de Propriedades CSS para Suavidade da Animação */
 @property --light-x {
   syntax: '<percentage>';
   inherits: false;
@@ -152,7 +132,7 @@
 .manifesto-container {
   position: relative;
   z-index: 2;
-  max-width: 1000px;
+  max-width: 1080px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -197,7 +177,7 @@
 
 .manifesto-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
   align-items: stretch;
@@ -206,15 +186,15 @@
 .manifesto-card {
   position: relative;
   z-index: 2;
-  padding: 2rem;
+  padding: 2.25rem 2rem;
   border: 1px solid var(--border-tactical);
-  background: rgba(22, 28, 40, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(22, 28, 40, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.15rem;
   transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo);
 }
 
@@ -239,10 +219,12 @@
 .manifesto-card-desc {
   font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-/* Responsividade Mobile-First */
+/* ==========================================================================
+    RESPONSIVIDADE (MOBILE-FIRST / BREAKPOINTS)
+   ========================================================================== */
 @media (max-width: 768px) {
   .manifesto-section {
     padding: 5rem 1.25rem;
@@ -262,6 +244,6 @@
   }
 
   .manifesto-card {
-    padding: 1.5rem;
+    padding: 1.75rem 1.5rem;
   }
 }
