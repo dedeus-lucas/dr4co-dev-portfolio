@@ -487,32 +487,42 @@
         </div>
       </section>
 
-      <!-- 5. PROJECTS SECTION -->
+      <!-- 5. PROJECTS SECTION (HORIZONTAL TACTICAL VAULT) -->
       <section class="projects-pin-wrapper" id="projects">
+        <div class="projects-ambient-glow"></div>
         <div class="projects-header">
           <div class="projects-title-group">
             <span class="projects-tag" data-i18n="projectsSectionTag"
               >[ PROJETOS // ENGENHARIA & ARQUITETURA ]</span
             >
+            <span class="projects-live-pulse">LIVE_SYSTEMS</span>
           </div>
           <span class="projects-subtitle" data-i18n="projectsScrollHint"
             >// ARRASTE OU USE O SCROLL PARA NAVEGAR</span
           >
         </div>
+
         <div class="projects-track">
-          <!-- Card 1 -->
+          <!-- Card 1: Sentinel-Vault Core Engine -->
           <article class="project-card" data-cursor="hover">
+            <div class="project-card-header-hud">
+              <span class="hud-corner-tl"></span>
+              <span class="hud-corner-tr"></span>
+              <span class="project-card-cat" data-i18n="p1Cat"
+                >01 // VAULT & CRIPTOGRAFIA</span
+              >
+              <span class="project-status-pill">SYS.ONLINE</span>
+            </div>
             <div
               class="project-card-image"
               style="
                 background-image: url(&quot;/assets/images/sentinel-vault-img.webp&quot;);
               "
-            ></div>
+            >
+              <div class="project-image-scanline"></div>
+            </div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat" data-i18n="p1Cat"
-                  >01 // VAULT & CRIPTOGRAFIA</span
-                >
                 <h3 class="project-card-title" data-i18n="p1Title">
                   Sentinel-Vault Core Engine
                 </h3>
@@ -523,9 +533,16 @@
                 </p>
               </div>
               <div class="project-card-footer">
-                <span class="project-card-techs"
-                  >&gt;Java • Spring Boot • PostgreSQL</span
+                <div
+                  class="project-card-techs"
+                  title="Tecnologias: Java 21, Spring Boot, Spring Security, AES-256-GCM, BCrypt, PostgreSQL, Flyway, Docker, Semgrep, Snyk, TruffleHog, Prometheus"
                 >
+                  <span class="tech-icon">&gt;</span>
+                  <span class="tech-label"
+                    >Java 21 • Spring Boot • AES-256-GCM • PostgreSQL •
+                    Docker</span
+                  >
+                </div>
                 <a
                   href="https://github.com/dedeus-lucas/sentinel-vault"
                   target="_blank"
@@ -537,19 +554,27 @@
               </div>
             </div>
           </article>
-          <!-- Card 2 -->
+
+          <!-- Card 2: Sentinel Env Injector -->
           <article class="project-card" data-cursor="hover">
+            <div class="project-card-header-hud">
+              <span class="hud-corner-tl"></span>
+              <span class="hud-corner-tr"></span>
+              <span class="project-card-cat" data-i18n="p2Cat"
+                >02 // INJEÇÃO EM MEMÓRIA</span
+              >
+              <span class="project-status-pill">STEALTH_RAM</span>
+            </div>
             <div
               class="project-card-image"
               style="
                 background-image: url(&quot;/assets/images/sentinel-env-injector-img.webp&quot;);
               "
-            ></div>
+            >
+              <div class="project-image-scanline"></div>
+            </div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat" data-i18n="p2Cat"
-                  >02 // INJEÇÃO EM MEMÓRIA</span
-                >
                 <h3 class="project-card-title" data-i18n="p2Title">
                   Sentinel Env Injector
                 </h3>
@@ -560,9 +585,15 @@
                 </p>
               </div>
               <div class="project-card-footer">
-                <span class="project-card-techs"
-                  >&gt;Java • Spring Boot SPI • Zero-Disk</span
+                <div
+                  class="project-card-techs"
+                  title="Tecnologias: Java 21, Spring Boot SPI, In-Memory Decryption, Zero-Disk Persistence, Security Hardening"
                 >
+                  <span class="tech-icon">&gt;</span>
+                  <span class="tech-label"
+                    >Java 21 • Spring Boot SPI • RAM Injection • Zero-Disk</span
+                  >
+                </div>
                 <a
                   href="https://github.com/dedeus-lucas/sentinel-env-injector"
                   target="_blank"
@@ -574,48 +605,73 @@
               </div>
             </div>
           </article>
-          <!-- Card 3 -->
+
+          <!-- Card 3: Identity Guard OAuth2 Server -->
           <article class="project-card" data-cursor="hover">
+            <div class="project-card-header-hud">
+              <span class="hud-corner-tl"></span>
+              <span class="hud-corner-tr"></span>
+              <span class="project-card-cat" data-i18n="p3Cat"
+                >03 // API & MICROSSERVIÇOS</span
+              >
+              <span class="project-status-pill">AUTH_GUARD</span>
+            </div>
             <div
               class="project-card-image"
               style="
                 background-image: url(&quot;/assets/images/hero-3.webp&quot;);
               "
-            ></div>
+            >
+              <div class="project-image-scanline"></div>
+            </div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat" data-i18n="p3Cat"
-                  >03 // API & MICROSSERVIÇOS</span
-                >
                 <h3 class="project-card-title" data-i18n="p3Title">
                   Identity Guard OAuth2 Server
                 </h3>
                 <p class="project-card-desc" data-i18n="p3Desc">
                   Servidor centralizado de autenticação e autorização com
-                  suporte a tokens JWT e RBAC construído em Spring Boot.
+                  suporte a tokens JWT e controle de acesso RBAC construído em
+                  Spring Boot.
                 </p>
               </div>
               <div class="project-card-footer">
-                <span class="project-card-techs">Java • OAuth2 • Security</span>
+                <div
+                  class="project-card-techs"
+                  title="Tecnologias: Java 21, Spring Boot, Spring Security, OAuth2, JWT, RBAC, PostgreSQL"
+                >
+                  <span class="tech-icon">&gt;</span>
+                  <span class="tech-label"
+                    >Java • Spring Security • OAuth2/JWT • RBAC</span
+                  >
+                </div>
                 <span class="project-card-link" data-i18n="projectCaseBtn"
                   >VER DETALHES &rarr;</span
                 >
               </div>
             </div>
           </article>
-          <!-- Card 4 -->
+
+          <!-- Card 4: Hardened Pipeline CI/CD -->
           <article class="project-card" data-cursor="hover">
+            <div class="project-card-header-hud">
+              <span class="hud-corner-tl"></span>
+              <span class="hud-corner-tr"></span>
+              <span class="project-card-cat" data-i18n="p4Cat"
+                >04 // DEVSECOPS & INFRA</span
+              >
+              <span class="project-status-pill">DEVSECOPS</span>
+            </div>
             <div
               class="project-card-image"
               style="
                 background-image: url(&quot;/assets/images/hero-1.webp&quot;);
               "
-            ></div>
+            >
+              <div class="project-image-scanline"></div>
+            </div>
             <div class="project-card-body">
               <div>
-                <span class="project-card-cat" data-i18n="p4Cat"
-                  >04 // DEVSECOPS & INFRA</span
-                >
                 <h3 class="project-card-title" data-i18n="p4Title">
                   Hardened Pipeline CI/CD
                 </h3>
@@ -626,9 +682,15 @@
                 </p>
               </div>
               <div class="project-card-footer">
-                <span class="project-card-techs"
-                  >GitHub Actions • Docker • OWASP</span
+                <div
+                  class="project-card-techs"
+                  title="Tecnologias: GitHub Actions, Docker Multi-Stage, Semgrep (SAST), Snyk (SCA), TruffleHog (Secrets), OWASP"
                 >
+                  <span class="tech-icon">&gt;</span>
+                  <span class="tech-label"
+                    >GitHub Actions • Semgrep • Snyk • TruffleHog • Docker</span
+                  >
+                </div>
                 <span class="project-card-link" data-i18n="projectCaseBtn"
                   >VER DETALHES &rarr;</span
                 >

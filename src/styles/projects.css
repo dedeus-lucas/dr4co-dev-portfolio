@@ -10,7 +10,21 @@
   border-bottom: 1px solid var(--border-tactical);
 }
 
+.projects-ambient-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 60vh;
+  background: radial-gradient(ellipse at center, rgba(0, 240, 255, 0.07) 0%, rgba(0, 102, 255, 0.03) 50%, transparent 80%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .projects-header {
+  position: relative;
+  z-index: 2;
   padding: 0 4rem;
   margin-bottom: 2rem;
   display: flex;
@@ -21,7 +35,7 @@
 .projects-title-group {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .projects-tag {
@@ -32,6 +46,29 @@
   text-transform: uppercase;
 }
 
+.projects-live-pulse {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: #00ff88;
+  padding: 2px 8px;
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  border-radius: 2px;
+  background: rgba(0, 255, 136, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.projects-live-pulse::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00ff88;
+  box-shadow: 0 0 6px #00ff88;
+}
+
 .projects-subtitle {
   font-family: var(--font-mono);
   font-size: 0.85rem;
@@ -39,6 +76,8 @@
 }
 
 .projects-track {
+  position: relative;
+  z-index: 2;
   display: flex;
   gap: 2.5rem;
   padding: 0 4rem;
@@ -47,41 +86,109 @@
 }
 
 .project-card {
-  width: clamp(320px, 30vw, 480px);
-  height: 480px;
-  background: rgba(15, 19, 28, 0.7);
+  position: relative;
+  width: clamp(340px, 32vw, 490px);
+  height: 500px;
+  background: rgba(15, 19, 28, 0.75);
   border: 1px solid var(--border-tactical);
-  border-radius: 6px;
+  border-radius: 4px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(8px);
-  transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo), box-shadow 0.3s ease;
   flex-shrink: 0;
 }
 
 .project-card:hover {
   border-color: var(--accent-cyan);
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 240, 255, 0.15);
+}
+
+/* Header HUD do Card */
+.project-card-header-hud {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 240, 255, 0.15);
+  background: rgba(7, 9, 14, 0.6);
+}
+
+.hud-corner-tl,
+.hud-corner-tr {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  border-top: 1.5px solid var(--accent-cyan);
+}
+
+.hud-corner-tl {
+  left: 0;
+  border-left: 1.5px solid var(--accent-cyan);
+}
+
+.hud-corner-tr {
+  right: 0;
+  border-right: 1.5px solid var(--accent-cyan);
+}
+
+.project-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  padding: 1px 6px;
+  border-radius: 2px;
 }
 
 .project-card-image {
   width: 100%;
-  height: 240px;
+  height: 220px;
   background-size: cover;
   background-position: center;
   border-bottom: 1px solid var(--border-tactical);
   position: relative;
+  overflow: hidden;
 }
 
 .project-card-image::after {
   content: '';
   position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(7, 9, 14, 0.85) 100%);
+}
+
+.project-image-scanline {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, transparent 60%, rgba(7, 9, 14, 0.8) 100%);
+  height: 2px;
+  background: rgba(0, 240, 255, 0.6);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-image-scanline {
+  opacity: 1;
+  animation: projectScan 2s linear infinite;
+}
+
+@keyframes projectScan {
+  0% {
+    top: 0%;
+  }
+
+  100% {
+    top: 100%;
+  }
 }
 
 .project-card-body {
@@ -94,23 +201,23 @@
 
 .project-card-cat {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--accent-cyan);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .project-card-title {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
 }
 
 .project-card-desc {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .project-card-footer {
@@ -119,14 +226,17 @@
   justify-content: space-between;
   gap: 1rem;
   margin-top: 1rem;
-  padding-top: 0.8rem;
+  padding-top: 0.85rem;
   border-top: 1px solid var(--border-tactical);
 }
 
 .project-card-techs {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--text-subtle);
+  font-size: 0.72rem;
+  color: var(--text-muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -138,6 +248,17 @@
 
 .project-card-techs:hover {
   color: var(--accent-cyan);
+}
+
+.project-card-techs .tech-icon {
+  color: var(--accent-cyan);
+  font-weight: 800;
+}
+
+.project-card-techs .tech-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-card-link {
@@ -157,4 +278,38 @@
 .project-card-link:hover {
   color: #ffffff;
   transform: translateX(4px);
+}
+
+/* ==========================================================================
+    RESPONSIVIDADE (MOBILE / TABLET)
+   ========================================================================== */
+@media (max-width: 900px) {
+  .projects-pin-wrapper {
+    height: auto;
+    padding: 5rem 1.25rem;
+  }
+
+  .projects-header {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-track {
+    padding: 0;
+    flex-direction: column;
+    gap: 1.75rem;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card-image {
+    height: 200px;
+  }
 }
