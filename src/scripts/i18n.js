@@ -33,19 +33,19 @@ export const translations = {
     journeyTitle:
       "Evolução técnica contínua e fundamentada em engenharia e segurança ofensiva",
     journeySubtitle:
-      "Construção gradual de conhecimento prático, transicionando da base teórica de baixo nível para arquitetura de sistemas seguros e simulação de adversários.",
-    j2024Title: "Fundamentos & Base Técnica",
+      "Construção gradual de conhecimento prático, transicionando da base teórica e suporte operacional para arquitetura de sistemas seguros, DevSecOps e simulação de adversários.",
+    j2024Title: "Fundamentos & Ciência da Computação",
     j2024Desc:
-      "Ingresso formal em Ciência da Computação. Consolidação dos pilares estruturais de redes de computadores, arquitetura de SO (Linux/Windows), algoritmos e bases em C, Java e scripts.",
-    j2025Title: "Backend, Cloud & Segurança",
+      "Ingresso no Bacharelado em Ciência da Computação. Consolidação dos pilares de redes, arquitetura de SO (Linux/Windows), algoritmos, programação orientada a objetos e base em C, Java e automação.",
+    j2025Title: "Backend Seguro, Cloud & DevSecOps",
     j2025Desc:
-      "Aprofundamento no ecossistema Java/Spring Boot, proteção de APIs RESTful (OAuth2/JWT), algoritmos de criptografia, conteinerização com Docker e noções de Cloud Security.",
-    j2026Title: "Projetos Reais & Expansão",
+      "Ingresso em ADS na UESB e especializações em DevSecOps e Cibersegurança (Hackers do Bem, Mente Binária, AWS re/Start). Aprofundamento em Java 21, Spring Boot, Spring Security, Docker e Cloud Security (AWS/GCP).",
+    j2026Title: "Projetos Críticos, Suporte & Sentinel Vault",
     j2026Desc:
-      "Desenvolvimento de soluções em escala, ferramentas CLI para análise de tráfego, automação avançada com Python e implementação de controles estritos de segurança em pipeline.",
-    jFutureTitle: "Especialização & Soluções",
+      "Atuação prática em suporte técnico e ambientes computacionais (Rede ProCursos). Desenvolvimento do ecossistema autoral Sentinel Vault, integração de esteiras CI/CD com SAST/SCA e automações em Python.",
+    jFutureTitle: "Cybersecurity Engineering & Red Team",
     jFutureDesc:
-      "Foco contínuo no aprimoramento de AppSec, Red Teaming, cofres criptográficos em memória, System Design e arquitetura distribuída resiliente.",
+      "Especialização avançada em Application Security (AppSec), Red Teaming, pentest de aplicações complexas, mitigação de ameaças em tempo real e arquitetura de sistemas distribuídos resilientes.",
 
     // Seção 4: Stack Técnico (Bento Grid)
     stackSectionTag: "[ STACK // TECNOLOGIAS ]",
@@ -159,19 +159,19 @@ export const translations = {
     journeyTitle:
       "Continuous technical evolution grounded in software engineering and offensive security",
     journeySubtitle:
-      "Gradual building of practical knowledge, transitioning from low-level computing fundamentals to secure systems architecture and adversary simulation.",
-    j2024Title: "Fundamentals & Technical Core",
+      "Gradual building of practical knowledge, transitioning from theoretical fundamentals and operational support to secure systems architecture, DevSecOps, and adversary simulation.",
+    j2024Title: "Fundamentals & Computer Science",
     j2024Desc:
-      "Formal entry into Computer Science. Consolidation of structural pillars in networking, OS architecture (Linux/Windows), algorithms, and core foundations in C, Java, and scripting.",
-    j2025Title: "Backend, Cloud & Security",
+      "Formal entry into B.S. in Computer Science. Consolidation of structural pillars in networking, OS architecture (Linux/Windows), algorithms, OOP, and foundations in C, Java, and scripting.",
+    j2025Title: "Secure Backend, Cloud & DevSecOps",
     j2025Desc:
-      "Deep dive into Java/Spring Boot ecosystem, REST API protection (OAuth2/JWT), cryptography algorithms, Docker containerization, and Cloud Security principles.",
-    j2026Title: "Real Projects & Expansion",
+      "Entry into Systems Analysis and Development at UESB and specialized cybersecurity programs (Hackers do Bem, Mente Binária, AWS re/Start). Deep dive into Java 21, Spring Boot, Spring Security, Docker, and Cloud Security (AWS/GCP).",
+    j2026Title: "Critical Projects, Support & Sentinel Vault",
     j2026Desc:
-      "Developing scalable solutions, CLI network traffic inspection tools, advanced automation with Python, and enforcing strict pipeline security controls.",
-    jFutureTitle: "Specialization & Solutions",
+      "Hands-on IT support and computing environments operations (Rede ProCursos). Development of the proprietary Sentinel Vault ecosystem, CI/CD pipeline integration with SAST/SCA, and Python automation.",
+    jFutureTitle: "Cybersecurity Engineering & Red Team",
     jFutureDesc:
-      "Continuous focus on AppSec, Red Teaming, in-memory cryptographic vaults, System Design, and resilient distributed architecture.",
+      "Advanced specialization in Application Security (AppSec), Red Teaming, complex application penetration testing, real-time threat mitigation, and resilient distributed systems architecture.",
 
     // Section 4: Technical Stack (Bento Grid)
     stackSectionTag: "[ STACK // TECHNOLOGIES ]",

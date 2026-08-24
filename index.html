@@ -35,7 +35,6 @@
     />
   </head>
   <body>
-    <!-- HUD Cursor -->
     <div class="hud-cursor-wrapper">
       <div class="hud-cursor-dot"></div>
       <div class="hud-cursor-ring">
@@ -165,12 +164,10 @@
         <div class="hero-overlay"></div>
 
         <div class="hero-stage">
-          <!-- Camada Traseira: Contornos cinza passando atrás da insígnia -->
           <span class="hero-layer-behind" aria-hidden="true"
             >CYBER DEFENSE</span
           >
 
-          <!-- Brasão Tático (Camada Intermediária: Z-Index 2) -->
           <div class="hero-insignia-wrapper">
             <img
               src="/assets/images/shield-insignia-hero.webp"
@@ -179,20 +176,16 @@
             />
           </div>
 
-          <!-- Composição das Linhas Desacopladas com Z-Index Estrito -->
           <div class="hero-content-stack">
-            <!-- Linha 1 (Z-Index 1: Fica ATRÁS da Insígnia) -->
             <div class="hero-line hero-line-1">
               <span class="text-white">CYBER DEFENSE</span>
             </div>
 
-            <!-- Linha 2 (Z-Index 2: Mesmo nível de plano) -->
             <div class="hero-line hero-line-2">
               <span class="text-white-amp">&</span>
               <span class="text-cyan">RED TEAM</span>
             </div>
 
-            <!-- Linha 3 (Z-Index 3: Fica NA FRENTE de tudo) -->
             <div class="hero-line hero-line-3">
               <span class="text-cyan">ARCHITECTURE</span>
             </div>
@@ -234,7 +227,6 @@
           </h2>
 
           <div class="manifesto-grid">
-            <!-- Card 01: Cybersecurity Engineering -->
             <article class="manifesto-card" data-cursor="hover">
               <span class="manifesto-card-num" data-i18n="card1Tag"
                 >01 // SECURITY ENGINEERING</span
@@ -249,7 +241,6 @@
               </p>
             </article>
 
-            <!-- Card 02: Red Team & Pentest -->
             <article class="manifesto-card" data-cursor="hover">
               <span class="manifesto-card-num" data-i18n="card2Tag"
                 >02 // RED TEAM & PENTEST</span
@@ -264,7 +255,6 @@
               </p>
             </article>
 
-            <!-- Card 03: DevSecOps & Cloud Security -->
             <article class="manifesto-card" data-cursor="hover">
               <span class="manifesto-card-num" data-i18n="card3Tag"
                 >03 // DEVSECOPS & CLOUD</span
@@ -293,68 +283,78 @@
           </div>
           <div class="journey-intro">
             <h2 class="journey-title" data-i18n="journeyTitle">
-              Evolução técnica contínua e fundamentada em engenharia de software
+              Evolução técnica contínua e fundamentada em engenharia e segurança
+              ofensiva
             </h2>
             <p class="journey-subtitle" data-i18n="journeySubtitle">
               Construção gradual de conhecimento prático, transicionando da base
-              teórica para o desenvolvimento backend e segurança da informação.
+              teórica e suporte operacional para arquitetura de sistemas
+              seguros, DevSecOps e simulação de adversários.
             </p>
           </div>
           <div class="journey-grid">
-            <div class="journey-card">
+            <article class="journey-card" data-cursor="hover">
               <div class="journey-card-header">
                 <span class="journey-year">2024</span>
               </div>
               <h3 class="journey-card-title" data-i18n="j2024Title">
-                Fundamentos & Base Técnica
+                Fundamentos & Ciência da Computação
               </h3>
               <p class="journey-card-desc" data-i18n="j2024Desc">
-                Ingresso formal em Ciência da Computação. Consolidação dos
-                pilares estruturais de redes de computadores, arquitetura de SO
-                (Linux/Windows), algoritmos e bases técnicas em C, Java e
-                JavaScript.
+                Ingresso no Bacharelado em Ciência da Computação. Consolidação
+                dos pilares de redes, arquitetura de SO (Linux/Windows),
+                algoritmos, programação orientada a objetos e base em C, Java e
+                automação.
               </p>
-            </div>
-            <div class="journey-card">
+            </article>
+
+            <article class="journey-card" data-cursor="hover">
               <div class="journey-card-header">
                 <span class="journey-year">2025</span>
               </div>
               <h3 class="journey-card-title" data-i18n="j2025Title">
-                Backend, Cloud & Segurança
+                Backend Seguro, Cloud & DevSecOps
               </h3>
               <p class="journey-card-desc" data-i18n="j2025Desc">
-                Aprofundamento no ecossistema Java/Spring Boot, proteção de APIs
-                RESTful (OAuth2/JWT), conceitos de criptografia, conteinerização
-                com Docker e noções de Cloud Security.
+                Ingresso em ADS na UESB e especializações em DevSecOps e
+                Cibersegurança (Hackers do Bem, Mente Binária, AWS re/Start).
+                Aprofundamento em Java 21, Spring Boot, Spring Security, Docker
+                e Cloud Security (AWS/GCP).
               </p>
-            </div>
-            <div class="journey-card">
+            </article>
+
+            <article class="journey-card" data-cursor="hover">
               <div class="journey-card-header">
                 <span class="journey-year">2026</span>
               </div>
               <h3 class="journey-card-title" data-i18n="j2026Title">
-                Projetos Reais & Expansão
+                Projetos Críticos, Suporte & Sentinel Vault
               </h3>
               <p class="journey-card-desc" data-i18n="j2026Desc">
-                Desenvolvimento de soluções em escala, integração
-                multi-framework com Python para automação e scripts,
-                conhecimentos em Node.js e aplicação prática de IA no fluxo de
-                trabalho.
+                Atuação prática em suporte técnico e ambientes computacionais
+                (Rede ProCursos). Desenvolvimento do ecossistema autoral
+                Sentinel Vault, integração de esteiras CI/CD com SAST/SCA e
+                automações em Python.
               </p>
-            </div>
-            <div class="journey-card journey-card-future">
+            </article>
+
+            <article
+              class="journey-card journey-card-future"
+              data-cursor="hover"
+            >
               <div class="journey-card-header">
                 <span class="journey-year">FUTURO</span>
               </div>
               <h3 class="journey-card-title" data-i18n="jFutureTitle">
-                Especialização & Soluções
+                Cybersecurity Engineering & Red Team
               </h3>
               <p class="journey-card-desc" data-i18n="jFutureDesc">
-                Foco contínuo no aprimoramento de AppSec, pipelines robustos de
-                DevSecOps, estudos em System Design e arquitetura de sistemas
-                distribuídos.
+                Especialização avançada em Application Security (AppSec), Red
+                Teaming, pentest de aplicações complexas, mitigação de ameaças
+                em tempo real e arquitetura de sistemas distribuídos
+                resilientes.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
