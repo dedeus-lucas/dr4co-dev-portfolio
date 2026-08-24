@@ -1,61 +1,26 @@
-/* 1. Full-Bleed Interactive Banner */
-.interactive-banner {
+.bento-section {
   position: relative;
   width: 100%;
-  height: 70vh;
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  padding: 8rem 2rem;
+  background-color: var(--bg-primary);
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-bottom: 1px solid var(--border-tactical);
   overflow: hidden;
 }
 
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(7, 9, 14, 0.65);
-  backdrop-filter: blur(2px);
-  z-index: 1;
-}
-
-.banner-content {
+.bento-container {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 0 2rem;
-  max-width: 900px;
-}
-
-.banner-title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-.banner-title span {
-  color: var(--accent-cyan);
-}
-
-/* 2. Bento Grid Section */
-.bento-section {
-  padding: 8rem 4rem;
-  background-color: var(--bg-primary);
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .bento-header {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 }
 
 .bento-header-top {
@@ -80,30 +45,32 @@
 }
 
 .bento-title {
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-top: 0.5rem;
+  letter-spacing: -0.01em;
 }
 
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.75rem;
+  align-items: stretch;
 }
 
 .bento-card {
   position: relative;
   z-index: 2;
-  background: rgba(15, 19, 28, 0.6);
+  background: rgba(15, 19, 28, 0.55);
   border: 1px solid var(--border-tactical);
-  border-radius: 6px;
-  padding: 2.5rem;
+  border-radius: 4px;
+  padding: 2.25rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: border-color 0.3s ease, transform 0.3s var(--ease-out-expo);
 }
 
@@ -124,52 +91,55 @@
 }
 
 .bento-card-title {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin: 0.8rem 0 0.5rem 0;
+  margin: 0.75rem 0 0.5rem 0;
+  line-height: 1.3;
 }
 
 .bento-card-desc {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .bento-card-techs {
   margin-top: 2rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--text-subtle);
+  color: var(--accent-cyan);
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 0.75rem;
 }
 
+.bento-card-techs span {
+  padding: 4px 8px;
+  border-radius: 2px;
+  background: rgba(0, 240, 255, 0.05);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+    RESPONSIVIDADE (MOBILE-FIRST / BREAKPOINTS)
+   ========================================================================== */
 @media (max-width: 900px) {
+  .bento-section {
+    padding: 5rem 1.25rem;
+  }
+
   .bento-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 
   .bento-card.span-2 {
     grid-column: span 1;
   }
 
-  .bento-section {
-    padding: 4rem 2rem;
-  }
-}
-
-@media (max-width: 768px) {
   .bento-card {
-    padding: 1.5rem;
-  }
-
-  .bento-card-title {
-    font-size: 1.25rem;
-  }
-
-  .bento-card-techs {
-    font-size: 0.7rem;
+    padding: 1.75rem 1.5rem;
   }
 }

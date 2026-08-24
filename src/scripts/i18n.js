@@ -50,19 +50,22 @@ export const translations = {
     // Seção 4: Stack Técnico (Bento Grid)
     stackSectionTag: "[ STACK // TECNOLOGIAS ]",
     stackTitle: "Tecnologias, Ferramentas e Ecossistema Tático",
-    catBackendTitle: "Engenharia Backend",
+    card1Tag: "01 // CORE BACKEND & APIS",
+    catBackendTitle: "Engenharia Backend & Sistemas",
     catBackendDesc:
-      "Desenvolvimento de APIs RESTful resilientes, microsserviços, persistência de dados segura e arquitetura limpa.",
+      "Desenvolvimento de APIs REST stateless e resilientes com Java 21 e Spring Boot, persistência segura com JPA/Hibernate e PostgreSQL, além de arquitetura orientada a Clean Architecture.",
+    card2Tag: "02 // DEVSECOPS & CLOUD",
     catSecurityTitle: "DevSecOps & Cloud Security",
     catSecurityDesc:
-      "Automação de infraestrutura, conteinerização Docker, práticas de AppSec em esteiras e gerenciamento de nuvem.",
-    catToolsTitle: "Linguagens & Ecossistema",
+      "Esteiras CI/CD blindadas com análise SAST/SCA, Secret Scanning, contêineres Docker e postura defensiva em nuvem AWS e GCP.",
+    card3Tag: "03 // RED TEAM & APPSEC",
+    catToolsTitle: "Segurança Ofensiva & Análise",
     catToolsDesc:
-      "Linguagens compiladas e interpretadas utilizadas para desenvolvimento de ferramentas de auditoria, inspeção e automação.",
-    card4Tag: "04 // QUALIDADE & BOAS PRÁTICAS",
-    catQualityTitle: "Qualidade de Código & Segurança Ativa",
+      "Fundamentos de Pentest, mitigação do OWASP Top 10, simulação de adversários, auditoria de código, análise de redes e automações em Python e Linux.",
+    card4Tag: "04 // HARDENING & OBSERVABILIDADE",
+    catQualityTitle: "Segurança Ativa, Hardening & Métricas",
     catQualityDesc:
-      "Aplicação de Clean Code, testes unitários, isolamento de credenciais em memória RAM e práticas de Security Hardening.",
+      "Isolamento de credenciais na RAM (AES-256-GCM), proteção anti-brute force via Rate Limiting (Bucket4j), testes automatizados e observabilidade de microsserviços em tempo real.",
 
     // Seção 5: Projetos
     projectsSectionTag: "[ PROJETOS // ENGENHARIA & ARQUITETURA ]",
@@ -176,19 +179,22 @@ export const translations = {
     // Section 4: Technical Stack (Bento Grid)
     stackSectionTag: "[ STACK // TECHNOLOGIES ]",
     stackTitle: "Technologies, Tools and Tactical Ecosystem",
-    catBackendTitle: "Backend Engineering",
+    card1Tag: "01 // CORE BACKEND & APIS",
+    catBackendTitle: "Backend & Systems Engineering",
     catBackendDesc:
-      "Development of resilient RESTful APIs, microservices, secure data persistence, and clean architecture.",
+      "Development of resilient stateless REST APIs with Java 21 and Spring Boot, secure persistence with JPA/Hibernate and PostgreSQL, and Clean Architecture design.",
+    card2Tag: "02 // DEVSECOPS & CLOUD",
     catSecurityTitle: "DevSecOps & Cloud Security",
     catSecurityDesc:
-      "Infrastructure automation, Docker containerization, pipeline AppSec practices, and cloud management.",
-    catToolsTitle: "Languages & Ecosystem",
+      "Hardened CI/CD pipelines with SAST/SCA analysis, Secret Scanning, Docker containerization, and defensive posture across AWS and GCP clouds.",
+    card3Tag: "03 // RED TEAM & APPSEC",
+    catToolsTitle: "Offensive Security & Analysis",
     catToolsDesc:
-      "Compiled and interpreted programming languages used for developing audit tools, network sniffers, and automation scripts.",
-    card4Tag: "04 // QUALITY & BEST PRACTICES",
-    catQualityTitle: "Code Quality & Active Security",
+      "Penetration testing fundamentals, OWASP Top 10 mitigation, adversary emulation, source code auditing, network analysis, and automation in Python and Linux.",
+    card4Tag: "04 // HARDENING & OBSERVABILITY",
+    catQualityTitle: "Active Security, Hardening & Metrics",
     catQualityDesc:
-      "Application of Clean Code, unit testing, in-memory credential isolation in RAM, and Security Hardening practices.",
+      "In-memory credential isolation (AES-256-GCM), brute-force defense via rate limiting (Bucket4j), automated testing, and real-time microservices observability.",
 
     // Section 5: Projects
     projectsSectionTag: "[ PROJECTS // ENGINEERING & ARCHITECTURE ]",

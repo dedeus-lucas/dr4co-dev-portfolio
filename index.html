@@ -359,9 +359,9 @@
         </div>
       </section>
 
-      <!-- 4. BENTO GRID SECTION (STACK) -->
+      <!-- 4. BENTO GRID SECTION (STACK // TECNOLOGIAS) -->
       <section class="bento-section" id="stack">
-        <div style="max-width: 1000px; margin: 0 auto; width: 100%">
+        <div class="bento-container">
           <div class="bento-header">
             <div class="bento-header-top">
               <span class="bento-tag" data-i18n="stackSectionTag"
@@ -370,85 +370,115 @@
               <div class="bento-line"></div>
             </div>
             <h2 class="bento-title" data-i18n="stackTitle">
-              Tecnologias, Ferramentas e Ecossistema de Engenharia
+              Tecnologias, Ferramentas e Ecossistema Tático
             </h2>
           </div>
+
           <div class="bento-grid">
-            <div class="bento-card span-2" data-cursor="hover">
+            <!-- Card 01: Core Backend & APIs (Span 2) -->
+            <article class="bento-card span-2" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card1Tag"
-                  >01 // CORE BACKEND</span
+                  >01 // CORE BACKEND & APIS</span
                 >
                 <h3 class="bento-card-title" data-i18n="catBackendTitle">
-                  Engenharia Backend
+                  Engenharia Backend & Sistemas
                 </h3>
                 <p class="bento-card-desc" data-i18n="catBackendDesc">
-                  Desenvolvimento de APIs RESTful resilientes, microsserviços,
-                  persistência de dados e arquitetura limpa.
+                  Desenvolvimento de APIs REST stateless e resilientes com Java
+                  21 e Spring Boot, persistência segura com JPA/Hibernate e
+                  PostgreSQL, além de arquitetura orientada a Clean
+                  Architecture.
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ Java ]</span><span>[ Spring Boot ]</span
-                ><span>[ JPA / Hibernate ]</span><span>[ PostgreSQL ]</span
-                ><span>[ REST APIs ]</span><span>[ JUnit / Mockito ]</span>
+                <span>[ Java 21 ]</span>
+                <span>[ Spring Boot ]</span>
+                <span>[ Spring Security ]</span>
+                <span>[ JWT / OAuth2 ]</span>
+                <span>[ PostgreSQL ]</span>
+                <span>[ Flyway ]</span>
+                <span>[ Clean Architecture ]</span>
               </div>
-            </div>
-            <div class="bento-card" data-cursor="hover">
+            </article>
+
+            <!-- Card 02: DevSecOps & Cloud Security (Span 1) -->
+            <article class="bento-card" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card2Tag"
-                  >02 // INFRA & CLOUD</span
+                  >02 // DEVSECOPS & CLOUD</span
                 >
                 <h3 class="bento-card-title" data-i18n="catSecurityTitle">
-                  DevSecOps & Cloud
+                  DevSecOps & Cloud Security
                 </h3>
                 <p class="bento-card-desc" data-i18n="catSecurityDesc">
-                  Automação de infraestrutura, conteinerização, práticas de
-                  AppSec no pipeline e gerenciamento de nuvem.
+                  Esteiras CI/CD blindadas com análise SAST/SCA, Secret
+                  Scanning, contêineres Docker e postura defensiva em nuvem AWS
+                  e GCP.
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ Docker ]</span><span>[ AWS ]</span><span>[ OWASP ]</span
-                ><span>[ OAuth2/JWT ]</span><span>[ Linux ]</span>
+                <span>[ GitHub Actions ]</span>
+                <span>[ Docker ]</span>
+                <span>[ Semgrep ]</span>
+                <span>[ Snyk ]</span>
+                <span>[ TruffleHog ]</span>
+                <span>[ AWS ]</span>
+                <span>[ GCP ]</span>
               </div>
-            </div>
-            <div class="bento-card" data-cursor="hover">
+            </article>
+
+            <!-- Card 03: Red Team & AppSec (Span 1) -->
+            <article class="bento-card" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card3Tag"
-                  >03 // LINGUAGENS</span
+                  >03 // RED TEAM & APPSEC</span
                 >
                 <h3 class="bento-card-title" data-i18n="catToolsTitle">
-                  Linguagens & Ecossistema
+                  Segurança Ofensiva & Análise
                 </h3>
                 <p class="bento-card-desc" data-i18n="catToolsDesc">
-                  Linguagens de programação e ferramentas essenciais utilizadas
-                  no dia a dia de desenvolvimento e automação.
+                  Fundamentos de Pentest, mitigação do OWASP Top 10, simulação
+                  de adversários, auditoria de código, análise de redes e
+                  automações em Python e Linux.
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ C ]</span><span>[ Python ]</span
-                ><span>[ JavaScript ]</span><span>[ Git ]</span>
+                <span>[ OWASP Top 10 ]</span>
+                <span>[ Python ]</span>
+                <span>[ Linux / Bash ]</span>
+                <span>[ Pentest Basics ]</span>
+                <span>[ Red Team Ops ]</span>
+                <span>[ C ]</span>
               </div>
-            </div>
-            <div class="bento-card span-2" data-cursor="hover">
+            </article>
+
+            <!-- Card 04: Qualidade, Hardening & Observabilidade (Span 2) -->
+            <article class="bento-card span-2" data-cursor="hover">
               <div>
                 <span class="bento-card-num" data-i18n="card4Tag"
-                  >04 // QUALIDADE & BOAS PRÁTICAS</span
+                  >04 // HARDENING & OBSERVABILIDADE</span
                 >
                 <h3 class="bento-card-title" data-i18n="catQualityTitle">
-                  Qualidade de Código & Segurança Ativa
+                  Segurança Ativa, Hardening & Métricas
                 </h3>
                 <p class="bento-card-desc" data-i18n="catQualityDesc">
-                  Foco contínuo na aplicação de Clean Code, testes unitários e
-                  de integração, autenticação segura e princípios de
-                  resiliência.
+                  Isolamento de credenciais na RAM (AES-256-GCM), proteção
+                  anti-brute force via Rate Limiting (Bucket4j), testes
+                  automatizados e observabilidade de microsserviços em tempo
+                  real.
                 </p>
               </div>
               <div class="bento-card-techs">
-                <span>[ Clean Code ]</span><span>[ SOLID ]</span
-                ><span>[ Observabilidade ]</span
-                ><span>[ Security Hardening ]</span>
+                <span>[ AES-256-GCM ]</span>
+                <span>[ BCrypt ]</span>
+                <span>[ Bucket4j ]</span>
+                <span>[ Prometheus ]</span>
+                <span>[ Grafana ]</span>
+                <span>[ Actuator ]</span>
+                <span>[ JUnit 5 / Mockito ]</span>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
