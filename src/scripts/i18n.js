@@ -11,24 +11,24 @@ export const translations = {
     navProj: "Projetos",
     navContact: "Contato",
 
-    // Seção 2: Sobre / Filosofia
+    // Seção 2: Sobre // Filosofia
     manifestoSectionTag: "[ SOBRE // FILOSOFIA ]",
     manifestoTitle:
       'Segurança não é uma camada sobreposta. É a <span class="highlight">engenharia invisível</span> que garante resiliência, mitigação de riscos e integridade operacional contínua.',
-    card1Tag: "01 // SECURITY ENGINEERING",
-    card1Title: "Engenharia de Cibersegurança",
-    card1Desc:
+    aboutCard1Tag: "01 // SECURITY ENGINEERING",
+    aboutCard1Title: "Engenharia de Cibersegurança",
+    aboutCard1Desc:
       "Arquitetura de sistemas resilientes, segurança e proteção de APIs RESTful, modelagem de ameaças e isolamento criptográfico em memória RAM (AES-256-GCM / Java 21).",
-    card2Tag: "02 // RED TEAM & PENTEST",
-    card2Title: "Segurança Ofensiva & Testes",
-    card2Desc:
+    aboutCard2Tag: "02 // RED TEAM & PENTEST",
+    aboutCard2Title: "Segurança Ofensiva & Testes",
+    aboutCard2Desc:
       "Fundamentos de testes de intrusão, mapeamento do OWASP Top 10, simulação de adversários, auditoria ativa de vulnerabilidades e automação de scripts táticos com Python.",
-    card3Tag: "03 // DEVSECOPS & CLOUD",
-    card3Title: "DevSecOps & Cloud Security",
-    card3Desc:
+    aboutCard3Tag: "03 // DEVSECOPS & CLOUD",
+    aboutCard3Title: "DevSecOps & Cloud Security",
+    aboutCard3Desc:
       "Esteiras de CI/CD blindadas com SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), hardening de contêineres Docker e gestão de postura de segurança em Cloud (AWS/GCP).",
 
-    // Seção 3: Jornada / Trajetória
+    // Seção 3: Jornada // Trajetória
     journeySectionTag: "[ JORNADA // TRAJETÓRIA ]",
     journeyTitle:
       "Evolução técnica contínua e fundamentada em engenharia e segurança ofensiva",
@@ -47,22 +47,22 @@ export const translations = {
     jFutureDesc:
       "Especialização avançada em Application Security (AppSec), Red Teaming, pentest de aplicações complexas, mitigação de ameaças em tempo real e arquitetura de sistemas distribuídos resilientes.",
 
-    // Seção 4: Stack Técnico (Bento Grid)
+    // Seção 4: Stack Técnico // Bento Grid
     stackSectionTag: "[ STACK // TECNOLOGIAS ]",
     stackTitle: "Tecnologias, Ferramentas e Ecossistema Tático",
-    card1Tag: "01 // CORE BACKEND & APIS",
+    stackCard1Tag: "01 // CORE BACKEND & APIS",
     catBackendTitle: "Engenharia Backend & Sistemas",
     catBackendDesc:
       "Desenvolvimento de APIs REST stateless e resilientes com Java 21 e Spring Boot, persistência segura com JPA/Hibernate e PostgreSQL, além de arquitetura orientada a Clean Architecture.",
-    card2Tag: "02 // DEVSECOPS & CLOUD",
+    stackCard2Tag: "02 // DEVSECOPS & CLOUD",
     catSecurityTitle: "DevSecOps & Cloud Security",
     catSecurityDesc:
       "Esteiras CI/CD blindadas com análise SAST/SCA, Secret Scanning, contêineres Docker e postura defensiva em nuvem AWS e GCP.",
-    card3Tag: "03 // RED TEAM & APPSEC",
+    stackCard3Tag: "03 // RED TEAM & APPSEC",
     catToolsTitle: "Segurança Ofensiva & Análise",
     catToolsDesc:
       "Fundamentos de Pentest, mitigação do OWASP Top 10, simulação de adversários, auditoria de código, análise de redes e automações em Python e Linux.",
-    card4Tag: "04 // HARDENING & OBSERVABILIDADE",
+    stackCard4Tag: "04 // HARDENING & OBSERVABILIDADE",
     catQualityTitle: "Segurança Ativa, Hardening & Métricas",
     catQualityDesc:
       "Isolamento de credenciais na RAM (AES-256-GCM), proteção anti-brute force via Rate Limiting (Bucket4j), testes automatizados e observabilidade de microsserviços em tempo real.",
@@ -92,26 +92,6 @@ export const translations = {
     p4Desc:
       "Pipeline automatizado com análise estática de código (SAST), verificação de dependências vulneráveis (SCA) e deploy seguro em contêineres Docker.",
 
-    p5Cat: "05 // SISTEMAS DISTRIBUÍDOS",
-    p5Title: "Event Stream Telemetry",
-    p5Desc:
-      "Arquitetura orientada a eventos para coleta, agregação e processamento de logs de auditoria distribuídos em tempo real com alta disponibilidade.",
-
-    p6Cat: "06 // CLI & APPSEC",
-    p6Title: "Hyperion Packet Monitor",
-    p6Desc:
-      "Ferramenta CLI para inspeção tática, sniffing estruturado e análise de integridade de tráfego de rede focada em detecção de anomalias.",
-
-    p7Cat: "07 // BANCO DE DADOS",
-    p7Title: "Dicionário Eletrônico Engine",
-    p7Desc:
-      "Motor de busca lexical otimizado para dicionários técnicos com modelagem avançada de persistência e APIs de consulta rápida.",
-
-    p8Cat: "08 // ARQUITETURA DEFENSIVA",
-    p8Title: "Cloud Shield Orchestrator",
-    p8Desc:
-      "Orquestrador defensivo em desenvolvimento focado no gerenciamento e imposição de políticas de segurança ativas em nuvem híbrida.",
-
     // Seção 6: Contato
     contactTag: "[ CONTATO // CANAIS DIRETO ]",
     contactTitle:
@@ -140,24 +120,24 @@ export const translations = {
     navProj: "Projects",
     navContact: "Contact",
 
-    // Section 2: About / Philosophy (Aligned with Resume & Cybersecurity Focus)
+    // Section 2: About // Philosophy
     manifestoSectionTag: "[ ABOUT // PHILOSOPHY ]",
     manifestoTitle:
       'Security is not an added layer. It is the <span class="highlight">invisible engineering</span> that ensures resilience, risk mitigation, and continuous operational integrity.',
-    card1Tag: "01 // SECURITY ENGINEERING",
-    card1Title: "Cybersecurity Engineering",
-    card1Desc:
+    aboutCard1Tag: "01 // SECURITY ENGINEERING",
+    aboutCard1Title: "Cybersecurity Engineering",
+    aboutCard1Desc:
       "Resilient systems architecture, REST API security and hardening, threat modeling, and in-memory cryptographic isolation (AES-256-GCM / Java 21).",
-    card2Tag: "02 // RED TEAM & PENTEST",
-    card2Title: "Offensive Security & Testing",
-    card2Desc:
+    aboutCard2Tag: "02 // RED TEAM & PENTEST",
+    aboutCard2Title: "Offensive Security & Testing",
+    aboutCard2Desc:
       "Penetration testing fundamentals, OWASP Top 10 mitigation, adversary emulation, active vulnerability assessment, and tactical script automation via Python.",
-    card3Tag: "03 // DEVSECOPS & CLOUD",
-    card3Title: "DevSecOps & Cloud Security",
-    card3Desc:
+    aboutCard3Tag: "03 // DEVSECOPS & CLOUD",
+    aboutCard3Title: "DevSecOps & Cloud Security",
+    aboutCard3Desc:
       "Hardened CI/CD pipelines with SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), Docker container hardening, and cloud security posture management (AWS/GCP).",
 
-    // Section 3: Journey / Trajectory
+    // Section 3: Journey // Trajectory
     journeySectionTag: "[ JOURNEY // TRAJECTORY ]",
     journeyTitle:
       "Continuous technical evolution grounded in software engineering and offensive security",
@@ -176,22 +156,22 @@ export const translations = {
     jFutureDesc:
       "Advanced specialization in Application Security (AppSec), Red Teaming, complex application penetration testing, real-time threat mitigation, and resilient distributed systems architecture.",
 
-    // Section 4: Technical Stack (Bento Grid)
+    // Section 4: Technical Stack // Bento Grid
     stackSectionTag: "[ STACK // TECHNOLOGIES ]",
     stackTitle: "Technologies, Tools and Tactical Ecosystem",
-    card1Tag: "01 // CORE BACKEND & APIS",
+    stackCard1Tag: "01 // CORE BACKEND & APIS",
     catBackendTitle: "Backend & Systems Engineering",
     catBackendDesc:
       "Development of resilient stateless REST APIs with Java 21 and Spring Boot, secure persistence with JPA/Hibernate and PostgreSQL, and Clean Architecture design.",
-    card2Tag: "02 // DEVSECOPS & CLOUD",
+    stackCard2Tag: "02 // DEVSECOPS & CLOUD",
     catSecurityTitle: "DevSecOps & Cloud Security",
     catSecurityDesc:
       "Hardened CI/CD pipelines with SAST/SCA analysis, Secret Scanning, Docker containerization, and defensive posture across AWS and GCP clouds.",
-    card3Tag: "03 // RED TEAM & APPSEC",
+    stackCard3Tag: "03 // RED TEAM & APPSEC",
     catToolsTitle: "Offensive Security & Analysis",
     catToolsDesc:
       "Penetration testing fundamentals, OWASP Top 10 mitigation, adversary emulation, source code auditing, network analysis, and automation in Python and Linux.",
-    card4Tag: "04 // HARDENING & OBSERVABILITY",
+    stackCard4Tag: "04 // HARDENING & OBSERVABILITY",
     catQualityTitle: "Active Security, Hardening & Metrics",
     catQualityDesc:
       "In-memory credential isolation (AES-256-GCM), brute-force defense via rate limiting (Bucket4j), automated testing, and real-time microservices observability.",
@@ -220,26 +200,6 @@ export const translations = {
     p4Title: "Hardened Pipeline CI/CD",
     p4Desc:
       "Automated pipeline with static code analysis (SAST), vulnerable dependency scanning (SCA), and secure Docker container deployment.",
-
-    p5Cat: "05 // DISTRIBUTED SYSTEMS",
-    p5Title: "Event Stream Telemetry",
-    p5Desc:
-      "Event-driven architecture for collecting, aggregating, and processing real-time distributed audit logs with high availability.",
-
-    p6Cat: "06 // CLI & APPSEC",
-    p6Title: "Hyperion Packet Monitor",
-    p6Desc:
-      "Tactical CLI tool for packet inspection, structured sniffing, and network traffic integrity analysis focused on anomaly detection.",
-
-    p7Cat: "07 // DATABASE ENGINE",
-    p7Title: "Electronic Dictionary Engine",
-    p7Desc:
-      "Optimized lexical search engine for technical dictionaries featuring advanced persistence modeling and fast lookup APIs.",
-
-    p8Cat: "08 // DEFENSIVE ARCHITECTURE",
-    p8Title: "Cloud Shield Orchestrator",
-    p8Desc:
-      "Defensive orchestrator under active development focused on managing and enforcing active security policies across hybrid cloud environments.",
 
     // Section 6: Contact
     contactTag: "[ CONTACT // DIRECT CHANNELS ]",
