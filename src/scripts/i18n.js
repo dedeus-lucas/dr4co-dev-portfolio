@@ -95,14 +95,14 @@ export const translations = {
     // Seção 6: Contato
     contactTag: "[ CONTATO // CANAIS DIRETO ]",
     contactTitle:
-      'Pronto para construir <span class="highlight">sistemas blindados</span> e de alto impacto?',
+      'Pronto para construir e auditar <span class="highlight">sistemas blindados</span> e resilientes?',
     contactDesc:
-      "Aberto a oportunidades profissionais, colaboração em engenharia backend segura, auditorias de código e segurança de infraestrutura.",
+      "Aberto a oportunidades profissionais em Cybersecurity Engineering, DevSecOps, Application Security (AppSec), Cloud Security e operações de Red Team / Pentest.",
     protoCardNum: "01 // DISPONIBILIDADE TÁTICA",
-    protoTitle: "Oportunidades & Atuação",
+    protoTitle: "Atuação & Prontidão Operacional",
     protoDesc:
-      "Aberto a contratações para posições de Estágio, Desenvolvedor Júnior e funções de engenharia backend/DevSecOps e AppSec em nível inicial.",
-    statusText: "STATUS: DISPONÍVEL PARA ESTÁGIO E JÚNIOR",
+      "Disponível para contratação e atuação estratégica em Engenharia de Segurança, esteiras DevSecOps, auditorias de vulnerabilidades (SAST/SCA), Hardening e Segurança em Nuvem.",
+    statusText: "STATUS: DISPONÍVEL PARA CYBERSECURITY & DEVSECOPS",
     timeLabel: "Tempo Médio de Resposta:",
     timeValue: "< 12 Horas",
     footerRights: "TODOS OS DIREITOS RESERVADOS.",
@@ -204,14 +204,14 @@ export const translations = {
     // Section 6: Contact
     contactTag: "[ CONTACT // DIRECT CHANNELS ]",
     contactTitle:
-      'Ready to build <span class="highlight">hardened systems</span> with high impact?',
+      'Ready to build and audit <span class="highlight">hardened systems</span> and resilient infrastructure?',
     contactDesc:
-      "Open to career opportunities, secure backend engineering collaboration, code audits, and infrastructure security.",
+      "Open to career opportunities in Cybersecurity Engineering, DevSecOps, Application Security (AppSec), Cloud Security, and Red Team / Pentest operations.",
     protoCardNum: "01 // TACTICAL AVAILABILITY",
-    protoTitle: "Opportunities & Roles",
+    protoTitle: "Operations & Readiness",
     protoDesc:
-      "Open to hiring for Internship positions, Junior Developer, and entry-level backend engineering/DevSecOps/AppSec roles.",
-    statusText: "STATUS: AVAILABLE FOR INTERNSHIP & JUNIOR ROLES",
+      "Available for strategic engagement in Security Engineering, hardened DevSecOps pipelines, vulnerability assessments (SAST/SCA), system hardening, and Cloud Security.",
+    statusText: "STATUS: AVAILABLE FOR CYBERSECURITY & DEVSECOPS ROLES",
     timeLabel: "Average Response Time:",
     timeValue: "< 12 Hours",
     footerRights: "ALL RIGHTS RESERVED.",
