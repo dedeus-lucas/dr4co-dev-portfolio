@@ -700,16 +700,22 @@
         </div>
       </section>
 
-      <!-- 6. CONTACT SECTION -->
+      <!-- 6. CONTACT SECTION (CYBERSEC COMMAND HUB) -->
       <section class="contact-section" id="contact">
+        <div class="contact-ambient-radar" aria-hidden="true"></div>
         <div class="contact-container">
+          <!-- Coluna 1: Informações e Canais Diretos -->
           <div class="contact-info">
-            <span class="contact-tag" data-i18n="contactTag"
-              >[ CONTATO // CANAIS DIRETO ]</span
-            >
+            <div class="contact-tag-group">
+              <span class="contact-tag" data-i18n="contactTag"
+                >[ CONTATO // CANAIS DIRETO ]</span
+              >
+              <span class="contact-secure-badge">ENCRYPTED_CHANNEL</span>
+            </div>
+
             <h2 class="contact-title" data-i18n="contactTitle">
               Pronto para construir
-              <span class="highlight">soluções resilientes</span> e de alto
+              <span class="highlight">sistemas blindados</span> e de alto
               impacto?
             </h2>
             <p class="contact-desc" data-i18n="contactDesc">
@@ -717,15 +723,22 @@
               backend segura, auditorias de código e segurança de
               infraestrutura.
             </p>
+
             <div class="contact-direct-links">
+              <!-- E-mail Direto com Indicador Tático -->
               <a
                 href="mailto:silvadedeus.lucas@gmail.com"
                 class="contact-link-item"
                 data-cursor="hover"
               >
-                <span class="link-label">[ EMAIL ]</span>
-                <span class="link-value">silvadedeus.lucas@gmail.com</span>
+                <div class="link-label-group">
+                  <span class="link-label">[ EMAIL ]</span>
+                  <span class="link-value">silvadedeus.lucas@gmail.com</span>
+                </div>
+                <span class="link-action-tag">&rarr; ENVIAR</span>
               </a>
+
+              <!-- WhatsApp Direto -->
               <a
                 href="https://wa.me/5573981230728"
                 target="_blank"
@@ -733,16 +746,29 @@
                 class="contact-link-item"
                 data-cursor="hover"
               >
-                <span class="link-label">[ WHATSAPP ]</span>
-                <span class="link-value">+55 (73) 98123-0728</span>
+                <div class="link-label-group">
+                  <span class="link-label">[ WHATSAPP ]</span>
+                  <span class="link-value">+55 (73) 98123-0728</span>
+                </div>
+                <span class="link-action-tag">&rarr; CHAT</span>
               </a>
             </div>
           </div>
+
+          <!-- Coluna 2: Card de Protocolo & Disponibilidade Tática -->
           <div class="contact-protocol-card">
+            <span class="card-hud-corner tl" aria-hidden="true"></span>
+            <span class="card-hud-corner tr" aria-hidden="true"></span>
+            <span class="card-hud-corner bl" aria-hidden="true"></span>
+            <span class="card-hud-corner br" aria-hidden="true"></span>
+
             <div class="protocol-card-header">
-              <span class="protocol-card-num" data-i18n="protoCardNum"
-                >01 // DISPONIBILIDADE TÁTICA</span
-              >
+              <div class="protocol-header-top">
+                <span class="protocol-card-num" data-i18n="protoCardNum"
+                  >01 // DISPONIBILIDADE TÁTICA</span
+                >
+                <span class="protocol-chip">SYS.READY</span>
+              </div>
               <h3 class="protocol-card-title" data-i18n="protoTitle">
                 Oportunidades & Atuação
               </h3>
@@ -752,6 +778,7 @@
                 nível inicial.
               </p>
             </div>
+
             <div class="protocol-status-group">
               <div class="status-indicator">
                 <span class="status-dot"></span>
