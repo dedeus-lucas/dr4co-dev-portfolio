@@ -11,22 +11,22 @@ export const translations = {
     navProj: "Projetos",
     navContact: "Contato",
 
-    // Seção 2: Sobre / Filosofia (Alinhado com Currículo e Empregabilidade CyberSec)
+    // Seção 2: Sobre / Filosofia
     manifestoSectionTag: "[ SOBRE // FILOSOFIA ]",
     manifestoTitle:
-      'Código não é apenas um sistema executável. É a <span class="highlight">engenharia invisível</span> que garante resiliência, segurança ativa e contenção de riscos em operações críticas.',
-    card1Tag: "01 // CORE BACKEND",
-    card1Title: "Engenharia Backend & APIs",
+      'Segurança não é uma camada sobreposta. É a <span class="highlight">engenharia invisível</span> que garante resiliência, mitigação de riscos e integridade operacional contínua.',
+    card1Tag: "01 // SECURITY ENGINEERING",
+    card1Title: "Engenharia de Cibersegurança",
     card1Desc:
-      "Desenvolvimento de APIs RESTful resilientes com Java 21, Spring Boot, Spring Security e JPA/Hibernate. Arquitetura orientada à contenção de falhas e controle de acesso estrito.",
-    card2Tag: "02 // DEVSECOPS & APPSEC",
-    card2Title: "DevSecOps & Red Operations",
+      "Arquitetura de sistemas resilientes, segurança e proteção de APIs RESTful, modelagem de ameaças e isolamento criptográfico em memória RAM (AES-256-GCM / Java 21).",
+    card2Tag: "02 // RED TEAM & PENTEST",
+    card2Title: "Segurança Ofensiva & Testes",
     card2Desc:
-      "Integração contínua (CI/CD) com esteiras blindadas por SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog) e análise em contêineres Docker com foco em OWASP Top 10.",
-    card3Tag: "03 // SEGURANÇA ATIVA",
-    card3Title: "Criptografia & Resiliência",
+      "Fundamentos de testes de intrusão, mapeamento do OWASP Top 10, simulação de adversários, auditoria ativa de vulnerabilidades e automação de scripts táticos com Python.",
+    card3Tag: "03 // DEVSECOPS & CLOUD",
+    card3Title: "DevSecOps & Cloud Security",
     card3Desc:
-      "Cofres criptográficos em memória (AES-256-GCM), proteção contra força bruta com Rate Limiting (Bucket4j), observabilidade (Prometheus) e princípios de Clean Architecture.",
+      "Esteiras de CI/CD blindadas com SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), hardening de contêineres Docker e gestão de postura de segurança em Cloud (AWS/GCP).",
 
     // Seção 3: Jornada / Trajetória
     journeySectionTag: "[ JORNADA // TRAJETÓRIA ]",
@@ -140,19 +140,19 @@ export const translations = {
     // Section 2: About / Philosophy (Aligned with Resume & Cybersecurity Focus)
     manifestoSectionTag: "[ ABOUT // PHILOSOPHY ]",
     manifestoTitle:
-      'Code is not merely executable logic. It is the <span class="highlight">invisible engineering</span> that ensures resilience, active security, and risk containment for critical operations.',
-    card1Tag: "01 // CORE BACKEND",
-    card1Title: "Backend & API Engineering",
+      'Security is not an added layer. It is the <span class="highlight">invisible engineering</span> that ensures resilience, risk mitigation, and continuous operational integrity.',
+    card1Tag: "01 // SECURITY ENGINEERING",
+    card1Title: "Cybersecurity Engineering",
     card1Desc:
-      "Development of resilient RESTful APIs using Java 21, Spring Boot, Spring Security, and JPA/Hibernate. Failure-containment architecture and strict access control.",
-    card2Tag: "02 // DEVSECOPS & APPSEC",
-    card2Title: "DevSecOps & Red Operations",
+      "Resilient systems architecture, REST API security and hardening, threat modeling, and in-memory cryptographic isolation (AES-256-GCM / Java 21).",
+    card2Tag: "02 // RED TEAM & PENTEST",
+    card2Title: "Offensive Security & Testing",
     card2Desc:
-      "Continuous integration (CI/CD) with hardened pipelines via SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), and container security focusing on OWASP Top 10.",
-    card3Tag: "03 // ACTIVE SECURITY",
-    card3Title: "Cryptography & Resilience",
+      "Penetration testing fundamentals, OWASP Top 10 mitigation, adversary emulation, active vulnerability assessment, and tactical script automation via Python.",
+    card3Tag: "03 // DEVSECOPS & CLOUD",
+    card3Title: "DevSecOps & Cloud Security",
     card3Desc:
-      "In-memory cryptographic vaults (AES-256-GCM), brute-force rate limiting (Bucket4j), telemetry observability (Prometheus), and Clean Architecture principles.",
+      "Hardened CI/CD pipelines with SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), Docker container hardening, and cloud security posture management (AWS/GCP).",
 
     // Section 3: Journey / Trajectory
     journeySectionTag: "[ JOURNEY // TRAJECTORY ]",
