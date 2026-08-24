@@ -67,7 +67,7 @@ export const translations = {
     catQualityDesc:
       "Isolamento de credenciais na RAM (AES-256-GCM), proteção anti-brute force via Rate Limiting (Bucket4j), testes automatizados e observabilidade de microsserviços em tempo real.",
 
-    // Seção 5: Projetos
+    // Seção 5: Galeria de Projetos (Foco Tático & DevSecOps)
     projectsSectionTag: "[ PROJETOS // ENGENHARIA & ARQUITETURA ]",
     projectsScrollHint: "// ARRASTE OU USE O SCROLL PARA NAVEGAR",
     projectCaseBtn: "VER DETALHES \u2192",
@@ -75,22 +75,22 @@ export const translations = {
     p1Cat: "01 // VAULT & CRIPTOGRAFIA",
     p1Title: "Sentinel-Vault Core Engine",
     p1Desc:
-      "Núcleo central de cofre criptográfico projetado para isolamento estrito de credenciais através do algoritmo AES-256-GCM. Elimina o vazamento de segredos em pipelines de CI/CD e infraestruturas distribuídas, oferecendo auditoria imutável e controle de acesso baseado em papéis.",
+      "Núcleo central de cofre criptográfico projetado para isolamento estrito de credenciais através do algoritmo AES-256-GCM. Elimina vazamento de segredos em pipelines de CI/CD e infraestruturas distribuídas com auditoria imutável.",
 
     p2Cat: "02 // INJEÇÃO EM MEMÓRIA",
     p2Title: "Sentinel Env Injector",
     p2Desc:
-      "Extensão para Spring Boot que intercepta a inicialização do contexto para injetar segredos do Vault diretamente na memória RAM volátil. Garante persistência zero em disco ao aplicar higienização ativa com sobrescrita de zeros em buffers sensíveis e vetores criptográficos.",
+      "Extensão para Spring Boot que intercepta a inicialização do contexto para injetar segredos do Vault diretamente na memória RAM volátil, garantindo persistência zero em disco e descarte seguro.",
 
     p3Cat: "03 // API & MICROSSERVIÇOS",
     p3Title: "Identity Guard OAuth2 Server",
     p3Desc:
-      "Servidor centralizado de autenticação e autorização com suporte a tokens JWT e controle de acesso RBAC construído em Spring Boot.",
+      "Servidor centralizado de autenticação e autorização com suporte a tokens JWT e controle de acesso baseado em papéis (RBAC) construído em Spring Boot.",
 
     p4Cat: "04 // DEVSECOPS & INFRA",
     p4Title: "Hardened Pipeline CI/CD",
     p4Desc:
-      "Pipeline automatizado com análise estática de código (SAST), verificação de dependências vulneráveis (SCA) e deploy seguro em contêineres Docker.",
+      "Pipeline automatizado com análise estática de código (SAST via Semgrep), verificação de dependências vulneráveis (SCA via Snyk), Secret Scanning (TruffleHog) e deploy seguro em contêineres Docker.",
 
     // Seção 6: Contato
     contactTag: "[ CONTATO // CANAIS DIRETO ]",
@@ -184,12 +184,12 @@ export const translations = {
     p1Cat: "01 // VAULT & CRYPTOGRAPHY",
     p1Title: "Sentinel-Vault Core Engine",
     p1Desc:
-      "Central cryptographic vault core engineered for strict credential isolation via the AES-256-GCM algorithm. Eliminates secret leakage across CI/CD pipelines and distributed infrastructures while providing immutable auditing and role-based access control.",
+      "Central cryptographic vault core engineered for strict credential isolation via the AES-256-GCM algorithm. Eliminates secret leakage across CI/CD pipelines and distributed infrastructures while providing immutable auditing.",
 
     p2Cat: "02 // IN-MEMORY INJECTION",
     p2Title: "Sentinel Env Injector",
     p2Desc:
-      "Spring Boot extension that intercepts context initialization to inject Vault secrets directly into volatile RAM memory. Guarantees zero-disk persistence by applying active hygiene with zero-overwrite across sensitive buffers and cryptographic vectors.",
+      "Spring Boot extension that intercepts context initialization to inject Vault secrets directly into volatile RAM memory. Guarantees zero-disk persistence by applying active memory hygiene.",
 
     p3Cat: "03 // API & MICROSERVICES",
     p3Title: "Identity Guard OAuth2 Server",
@@ -199,7 +199,7 @@ export const translations = {
     p4Cat: "04 // DEVSECOPS & INFRA",
     p4Title: "Hardened Pipeline CI/CD",
     p4Desc:
-      "Automated pipeline with static code analysis (SAST), vulnerable dependency scanning (SCA), and secure Docker container deployment.",
+      "Automated pipeline with static code analysis (SAST via Semgrep), vulnerable dependency scanning (SCA via Snyk), Secret Scanning (TruffleHog), and secure Docker container deployment.",
 
     // Section 6: Contact
     contactTag: "[ CONTACT // DIRECT CHANNELS ]",
