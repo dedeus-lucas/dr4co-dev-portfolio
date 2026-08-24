@@ -67,7 +67,7 @@ export const translations = {
     catQualityDesc:
       "Isolamento de credenciais na RAM (AES-256-GCM), proteção anti-brute force via Rate Limiting (Bucket4j), testes automatizados e observabilidade de microsserviços em tempo real.",
 
-    // Seção 5: Galeria de Projetos (Foco Tático & DevSecOps)
+    // Seção 5: Galeria de Projetos
     projectsSectionTag: "[ PROJETOS // ENGENHARIA & ARQUITETURA ]",
     projectsScrollHint: "// ARRASTE OU USE O SCROLL PARA NAVEGAR",
     projectCaseBtn: "VER DETALHES \u2192",
