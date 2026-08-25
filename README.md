@@ -1,106 +1,200 @@
-# ⚡ DR4CO.DEV // Cybernetic Portfolio System (SYS.v2)
+# ⚡ SHIELD PROTOCOL // CYBERSECURITY ARCHITECTURE (SYS.v2)
 
 ![Status](https://img.shields.io/badge/STATUS-OPERATIONAL-00f0ff?style=for-the-badge&logo=cloudflare)
 ![License](https://img.shields.io/badge/LICENSE-MIT-purple?style=for-the-badge)
 ![Vite](https://img.shields.io/badge/BUILD-VITE_5-646CFF?style=for-the-badge&logo=vite)
-![Stack](https://img.shields.io/badge/STACK-JAVA%20%7C%20SPRING%20BOOT%20%7C%20DEVSECOPS-green?style=for-the-badge)
+![Focus](https://img.shields.io/badge/FOCUS-SECURITY%20ENGINEERING%20%7C%20DEVSECOPS%20%7C%20RED%20TEAM-green?style=for-the-badge)
 
-Portfólio de engenharia de software e arquitetura backend de alta resiliência, desenvolvido com estética Retro-Cyberpunk Tática (inspirado na direção de arte de Ghost in the Shell / Masamune Shirow) e alta performance de renderização no navegador.
-
----
-
-## 🛠️ Arquitetura e Engenharia Frontend
-
-- Bundler & Build Tool: Vite 5 para HMR ultra-rápido e empacotamento otimizado.
-- Animações & Layout: GSAP com ScrollTrigger para rolagem horizontal tática (projects.js) e Lenis para Smooth Scroll.
-- Interface e HUD: Pseudo-código de fundo estilo Java/Spring Boot iluminado por holofote tático (Spotlight Sweep Mask em CSS3 puro).
-- Internacionalização (i18n): Sistema nativo em JavaScript para alternância dinâmica de idioma (pt-BR / en-US) sem dependência de bibliotecas externas.
-- Design System: Vidro fumaça (Glassmorphism), acentos Neon Ciano (#00F0FF), variáveis CSS modularizadas e responsividade Mobile-First.
+[ 🌐 Language Selection / Seleção de Idioma ]
+* English: [Jump to English Documentation](#english-documentation)
+* Português: [Ir para a Documentação em Português](#documentação-em-português)
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## ENGLISH DOCUMENTATION
+
+### Overview
+Shield Protocol is a specialized, production-ready technical portfolio and interface engineered for cybersecurity operations, offensive adversary emulation, and defensive system architecture. Built upon a Tactical Military Retro-Cyberpunk design system (HUD telemetry, isolation barriers, and volatile memory buffers), it is optimized for sub-millisecond responsiveness, zero-overhead asset delivery, and resilient critical infrastructure patterns.
+
+### Core Security Capabilities
+- Cybersecurity Engineering: Resilient distributed systems architecture, enterprise threat modeling, RESTful API hardening, and defense-in-depth enforcement.
+- DevSecOps & Pipeline Hardening: Automated CI/CD security gates integrating SAST (Semgrep), SCA (Snyk), Secret Scanning (TruffleHog), and container image vulnerability audits.
+- Active Security & Cryptography: Applied cryptographic controls in transit and at rest (AES-256-GCM / BCrypt), in-memory RAM payload isolation, and zero-disk data persistence.
+- Offensive Security & Red Team: Penetration testing fundamentals, OWASP Top 10 vulnerability mitigation, adversary emulation, and tactical automation via Python and Linux internals.
+
+### Technical Architecture
+- Build Tooling: Vite 5 for instant Hot Module Replacement (HMR) and tree-shaken static compilation.
+- Kinetic & Animation Engine: GSAP ScrollTrigger for pinned horizontal inspection galleries and Lenis for 60 FPS inertial smooth scrolling.
+- HUD & Telemetry Overlay: Dynamic offensive Java/Security code stream illuminated by a pure CSS3 spotlight sweep mask.
+- Decoupled i18n Architecture: Custom zero-overhead JavaScript engine for instant runtime switching between pt-BR and en-US dictionaries.
+- Tactical Design System: Matte glassmorphism, deep obsidian background (#07090e), neon cyan accents (#00f0ff), HUD coordinate brackets, and strict mobile-first viewport scaling.
+
+### Repository Structure
 
 ```text
-dr4co-dev-portfolio/
-├── public/                 # Assets estáticos de build
+Shield-Protocol/
+├── public/
+│   ├── assets/
+│   │   └── images/
+│   └── favicon.ico
 ├── src/
-│   ├── assets/             # Imagens, artes e ícones
-│   ├── scripts/            # Lógica JS modularizada
-│   │   ├── cursor.js       # HUD Custom Cursor
-│   │   ├── footer-year.js  # Copyright dinâmico
-│   │   ├── hero.js         # Carrossel do Hero
-│   │   ├── hud-background.js # Código Java iluminado por lanterna
-│   │   ├── i18n.js         # Dicionário de tradução bilíngue
-│   │   ├── lenis.js        # Smooth Scrolling Lenis/GSAP
-│   │   ├── manifesto.js    # Animações de entrada
-│   │   ├── navbar.js       # Scroll behavior da barra de navegação
-│   │   └── projects.js     # Scroll horizontal dos cards
-│   └── styles/             # Módulos CSS isolados por seção
-├── index.html              # Estrutura HTML5 semântica
-├── vite.config.js          # Configuração de build do Vite
-├── package.json            # Dependências e scripts do projeto
-├── LICENSE                 # Licença MIT
-└── README.md               # Documentação técnica do repositório
+│   ├── scripts/
+│   │   ├── cursor.js
+│   │   ├── hero.js
+│   │   ├── hud-background.js
+│   │   ├── i18n.js
+│   │   ├── lenis.js
+│   │   ├── manifesto.js
+│   │   ├── navbar.js
+│   │   └── projects.js
+│   ├── styles/
+│   │   ├── contact.css
+│   │   ├── cursor.css
+│   │   ├── hero.css
+│   │   ├── journey.css
+│   │   ├── manifesto.css
+│   │   ├── navbar.css
+│   │   ├── projects.css
+│   │   ├── reset.css
+│   │   ├── services.css
+│   │   └── variables.css
+│   └── main.js
+├── index.html
+├── vite.config.js
+├── package.json
+├── LICENSE
+└── README.md
 ```
 
----
-
-## 🚀 Como Executar Localmente
-
-### Pré-requisitos
-- Node.js (versão 18.x ou superior)
-- npm ou pnpm
-
-### Passo a Passo
-
-1. Clone o repositório:
-
-    ```bash
-    git clone https://github.com/dedeus-lucas/dr4co-dev-portfolio.git
-    cd dr4co-dev-portfolio
-    ```
-
-2. Instale as dependências:
-
-    ```bash
-    npm install
-    ```
-
-3. Inicie o servidor de desenvolvimento:
-
-    ```bash
-    npm run dev
-    ```
-
-4. Acesse no navegador:
-    http://localhost:3000
-
----
-
-## 📦 Build e Deploy no Cloudflare Pages
-
-Para gerar o pacote de produção otimizado:
+### Local Development & Setup
+1. Clone the repository:
 
 ```bash
-npm run build
+git clone https://github.com/dedeus-lucas/shield-protocol.git
+cd shield-protocol
 ```
 
-O diretório final gerado será o /dist.
+2. Install project dependencies:
 
-### Configuração no Cloudflare Pages:
-- Framework preset: None (Static HTML/JS)
-- Build command: npm run build
-- Build output directory: dist
+```bash
+npm install
+```
+
+3. Launch local development server:
+
+```bash
+npm run dev
+```
+
+4. Access local instance:
+
+```bash
+http://localhost:3000
+```
+
+### Production Build & Deployment
+To generate the production-ready distribution package:
+npm run build
+
+The compiled artifacts will be output to the /dist directory.
+
+### License
+Distributed under the MIT License. See LICENSE for full terms and conditions.
 
 ---
 
-## 📄 Licença
+## DOCUMENTAÇÃO EM PORTUGUÊS
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para mais detalhes.
+### Visão Geral
+O Shield Protocol é uma interface e portfólio técnico de alto nível, desenvolvido para demonstrar competências práticas em engenharia de segurança cibernética, operações de Red Team e arquitetura defensiva de sistemas. Construído sob uma direção visual Retro-Cyberpunk Tática Militar (telemetria em HUD, malhas de contenção e buffers voláteis), a aplicação prioriza zero overhead de execução, renderização veloz e princípios de resiliência aplicados a infraestruturas críticas.
+
+### Pilares de Atuação em Segurança
+- Engenharia de Cibersegurança: Arquitetura de sistemas resilientes, modelagem de ameaças corporativas, proteção ativa de APIs RESTful e aplicação de defesa em profundidade.
+- DevSecOps & Blindagem de Pipelines: Automação de esteiras CI/CD seguras com análise estática de código (SAST via Semgrep), análise de composição de software (SCA via Snyk), detecção de segredos (TruffleHog) e auditoria de contêineres Docker.
+- Segurança Ativa & Criptografia: Implementação de algoritmos criptográficos robustos (AES-256-GCM / BCrypt), injeção segura de segredos em memória RAM volátil e mitigação de persistência não autorizada em disco.
+- Segurança Ofensiva & Red Team: Fundamentos de testes de intrusão (Pentest), mitigação dos vetores do OWASP Top 10, simulação de adversários e automação de scripts táticos em Python e ambiente Linux.
+
+### Arquitetura & Engenharia Técnica
+- Ferramental de Build: Vite 5 com compilação estática otimizada, bundling enxuto e Hot Module Replacement (HMR) instantâneo.
+- Camada Cinética & Animações: GSAP ScrollTrigger para pinning e rolagem horizontal na galeria de projetos e motor Lenis para rolagem inercial suave a 60 FPS.
+- Telemetria & HUD Dinâmico: Overlay com fluxo de código Java/Offensive iluminado por feixe de varredura tático utilizando CSS3 puro (Spotlight Masking).
+- Internacionalização Nativa (i18n): Motor nativo e desacoplado em JavaScript para comutação dinâmica de dicionário (pt-BR / en-US) sem impacto no desempenho.
+- Sistema Visual (Design System): Glassmorphism fosco, paleta Obsidian Charcoal com realces em Neon Cyan (#00f0ff), cantoneiras táticas em HUD e responsividade mobile-first rigorosa.
+
+### Estrutura do Repositório
+
+```text
+Shield-Protocol/
+├── public/
+│   ├── assets/
+│   │   └── images/
+│   └── favicon.ico
+├── src/
+│   ├── scripts/
+│   │   ├── cursor.js
+│   │   ├── hero.js
+│   │   ├── hud-background.js
+│   │   ├── i18n.js
+│   │   ├── lenis.js
+│   │   ├── manifesto.js
+│   │   ├── navbar.js
+│   │   └── projects.js
+│   ├── styles/
+│   │   ├── contact.css
+│   │   ├── cursor.css
+│   │   ├── hero.css
+│   │   ├── journey.css
+│   │   ├── manifesto.css
+│   │   ├── navbar.css
+│   │   ├── projects.css
+│   │   ├── reset.css
+│   │   ├── services.css
+│   │   └── variables.css
+│   └── main.js
+├── index.html
+├── vite.config.js
+├── package.json
+├── LICENSE
+└── README.md
+```
+
+### Execução Local & Configuração
+1. Clonar o repositório oficial:
+
+```bash
+git clone https://github.com/dedeus-lucas/shield-protocol.git
+cd shield-protocol
+```
+
+2. Instalar as dependências do projeto:
+
+```bash
+npm install
+```
+
+3. Iniciar o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+4. Acessar a aplicação no navegador:
+
+```bash
+http://localhost:3000
+```
+
+### Compilação para Produção (Build)
+Para gerar o pacote estático otimizado para deploy:
+npm run build
+
+Os arquivos finais compilados serão gerados no diretório /dist.
+
+### Licença
+Este projeto é distribuído sob os termos da licença MIT. Consulte o arquivo LICENSE para obter os termos integrais.
 
 ---
 
 <p align="center">
-  <b>DR4CO ARCHITECTURE &copy; 2024 - 2026 // ALL RIGHTS RESERVED</b>
+  <b>SHIELD PROTOCOL &copy; 2024 - 2026 // CYBERSECURITY ARCHITECTURE & RED OPS</b>
 </p>
