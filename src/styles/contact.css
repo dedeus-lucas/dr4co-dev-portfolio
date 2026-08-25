@@ -379,6 +379,77 @@
     gap: 3rem;
   }
 
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .contact-tag-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .contact-tag {
+    white-space: nowrap;
+  }
+
+  .contact-secure-badge {
+    order: 2;
+    align-self: flex-start;
+    margin-top: 0.25rem;
+  }
+
+  .contact-title {
+    order: 1;
+    margin: 0;
+  }
+
+  .contact-desc {
+    order: 3;
+  }
+
+  .contact-direct-links {
+    order: 4;
+    gap: 1.25rem;
+  }
+
+  .contact-link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.25rem;
+  }
+
+  .link-label-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .contact-link-item .link-label {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .contact-link-item .link-value {
+    display: block;
+    width: 100%;
+    word-break: break-all;
+  }
+
+  .link-action-tag {
+    display: block;
+    align-self: flex-start;
+    margin-top: 0.25rem;
+  }
+
   .contact-protocol-card {
     padding: 2rem 1.5rem;
   }
